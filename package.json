@@ -1,7 +1,7 @@
 {
   "name": "@rainbowatcher/js-utils",
   "version": "0.0.2",
-  "description": "Opinionated collection of common JavaScript / TypeScript utils by @antfu",
+  "description": "Opinionated collection of common JavaScript / TypeScript utils by @rainbowatcher",
   "author": "rainbowatcher <rainbow-w@qq.com>",
   "license": "MIT",
   "keywords": [
@@ -25,14 +25,18 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "vitest",
-    "release": "changelogen --release && npm publish && git push --follow-tags"
+    "release": "pnpm build && changelogen --release && npm publish && git push --follow-tags"
   },
   "devDependencies": {
     "@antfu/eslint-config-ts": "^0.35.2",
     "changelogen": "^0.4.1",
     "eslint": "^8.34.0",
+    "simple-git-hooks": "^2.8.1",
     "typescript": "^4.9.5",
     "unbuild": "^1.1.1",
     "vitest": "^0.28.5"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint:fix"
   }
 }
