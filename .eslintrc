@@ -1,0 +1,17 @@
+{
+  "extends": "@antfu/eslint-config-ts",
+  "rules": {
+    "no-console": "off",
+    "curly": "off",
+    "brace-style": "off",
+    "@typescript-eslint/brace-style": [
+      "error",
+      "1tbs",
+      {
+        "allowSingleLine": true
+      }
+    ],
+    "quotes": ["warn", "double"],
+    "@typescript-eslint/quotes": ["warn", "double"]
+  }
+}
