@@ -7,3 +7,10 @@ export const isAsyncFunction = (fn: Function | undefined) => {
     return false
   return Object.getPrototypeOf(fn)[Symbol.toStringTag] === "AsyncFunction"
 }
+
+export function isString(obj: unknown) {
+  if (typeof obj !== "string") {
+    return false
+  }
+  return true
+}
