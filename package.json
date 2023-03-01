@@ -31,7 +31,9 @@
   },
   "devDependencies": {
     "@antfu/eslint-config-ts": "^0.35.2",
+    "@commitlint/types": "^17.4.4",
     "changelogen": "^0.4.1",
+    "commitlint": "^17.4.4",
     "eslint": "^8.34.0",
     "lint-staged": "^13.1.2",
     "simple-git-hooks": "^2.8.1",
@@ -41,7 +43,8 @@
     "vitest": "^0.28.5"
   },
   "simple-git-hooks": {
-    "pre-commit": "npx lint-staged"
+    "pre-commit": "npx lint-staged",
+    "commit-msg": "npx commitlint --edit $1"
   },
   "lint-staged": {
     "*.{ts,json}": "eslint --fix"
