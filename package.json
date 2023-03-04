@@ -32,7 +32,7 @@
   "devDependencies": {
     "@antfu/eslint-config-ts": "^0.35.2",
     "@commitlint/types": "^17.4.4",
-    "changelogen": "^0.4.1",
+    "changelogen": "^0.5.0",
     "commitlint": "^17.4.4",
     "eslint": "^8.34.0",
     "lint-staged": "^13.1.2",
