@@ -4,6 +4,7 @@
   "description": "Opinionated collection of common JavaScript / TypeScript utils by @rainbowatcher",
   "author": "rainbowatcher <rainbow-w@qq.com>",
   "license": "MIT",
+  "repository": "rainbowatcher/js-utils",
   "keywords": [
     "utils"
   ],
