@@ -1,4 +1,28 @@
 
+## v0.0.5
+
+
+### 🚀 Enhancements
+
+  - Add validater (d38fcc1)
+
+### 💅 Refactors
+
+  - Move isString to str.ts and add docs (25f0752)
+
+### 📖 Documentation
+
+  - Update docs (e3f909a)
+  - Update readme (9a17743)
+
+### 🤖 CI
+
+  - Change schedule in renovate (8714552)
+
+### ❤️  Contributors
+
+- Rainbowatcher <rainbow-w@qq.com>
+
 ## v0.0.4
 
 
