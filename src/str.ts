@@ -1,6 +1,14 @@
-import { isString, isUndefined } from "./is"
+import { isUndefined } from "./is"
 
 export namespace Strings {
+  export const isString = (obj: any) => typeof obj === "string"
+
+  /**
+   * checks if a string is empty or not
+   * @param str input string
+   * @param trim trim white space in string
+   * @returns true for empty false for not
+   */
   export function isEmpty(str: string | undefined, trim = false): boolean {
     if (isUndefined(str))
       return true
@@ -15,6 +23,9 @@ export namespace Strings {
     return !isEmpty(str, trim)
   }
 
+  /**
+   * Takes a parameter str that can either be a string or undefined type and returns the parameter str in upper case letters
+   */
   export function toUpperCase(str: string | undefined) {
     if (isUndefined(str))
       return undefined
