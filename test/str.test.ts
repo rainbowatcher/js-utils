@@ -33,4 +33,17 @@ describe("String Utils", () => {
     expect(() => Strings.toUpperCase(a)).toThrowErrorMatchingInlineSnapshot("\"Strings.toUpperCase accepts only string type parameters\"")
     expect(Strings.toUpperCase(b)).toBe("LOWCASE")
   })
+
+  it("isString", () => {
+    const func = () => {}
+    const asyncFunc = async () => {}
+    expect(Strings.isString("string")).toBe(true)
+    expect(Strings.isString(ud)).toBe(false)
+    expect(Strings.isString(func)).toBe(false)
+    expect(Strings.isString(asyncFunc)).toBe(false)
+    expect(Strings.isString(0)).toBe(false)
+    expect(Strings.isString(NaN)).toBe(false)
+    expect(Strings.isString(null)).toBe(false)
+    expect(Strings.isString({})).toBe(false)
+  })
 })
