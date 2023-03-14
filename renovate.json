@@ -4,7 +4,7 @@
     "config:base"
   ],
   "schedule": [
-    "0 0 7 * * *"
+    "0 7 * * *"
   ],
   "labels": ["chore"]
 }
