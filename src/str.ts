@@ -1,7 +1,9 @@
 import { isUndefined } from "./is"
 
 export namespace Strings {
-  export const isString = (obj: any) => typeof obj === "string"
+  export function isString(obj: any) {
+    return typeof obj === "string"
+  }
 
   /**
    * checks if a string is empty or not
