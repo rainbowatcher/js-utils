@@ -41,7 +41,7 @@
     "typescript": "^5.0.0",
     "unbuild": "^1.1.1",
     "vite": "^4.1.1",
-    "vitest": "^0.30.0"
+    "vitest": "^0.31.0"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged",
