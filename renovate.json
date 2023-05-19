@@ -1,10 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
-  ],
-  "schedule": [
-    "* 7 * * *"
-  ],
-  "labels": ["chore"]
+    "github>rainbowatcher/renovate-config"
+  ]
 }
