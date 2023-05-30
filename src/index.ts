@@ -1,3 +1,6 @@
-export * from "./str"
+import * as Lists from "./lists"
+import * as Strings from "./str"
+
 export * from "./is"
-export * from "./lists"
+
+export { Lists, Strings }

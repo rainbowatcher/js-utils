@@ -1,4 +1,27 @@
 
+## v0.0.6
+
+[compare changes](https://undefined/undefined/compare/v0.0.5...v0.0.6)
+
+
+### 🩹 Fixes
+
+  - Repair renovate schedule expression (6b09c79)
+  - Renovate does not support minute granularity (0985e87)
+  - Move isString to str.test.ts because of wrong place (07adba7)
+
+### 🏡 Chore
+
+  - Use renovate config from rainbowatcher/renovate-config (4c85466)
+
+### 🎨 Styles
+
+  - Apply top level function rule (43c4584)
+
+### ❤️  Contributors
+
+- Rainbowatcher <rainbow-w@qq.com>
+
 ## v0.0.5
 
 
