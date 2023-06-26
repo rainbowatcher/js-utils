@@ -34,7 +34,7 @@
     "@antfu/eslint-config-ts": "^0.39.5",
     "@commitlint/types": "^17.4.4",
     "changelogen": "^0.5.3",
-    "commitlint": "^17.6.5",
+    "commitlint": "^17.6.6",
     "eslint": "^8.43.0",
     "lint-staged": "^13.2.2",
     "simple-git-hooks": "^2.8.1",
