@@ -1,4 +1,17 @@
 
+## v0.0.7
+
+[compare changes](https://undefined/undefined/compare/v0.0.6...v0.0.7)
+
+
+### 🚀 Enhancements
+
+  - Use @rainbowatcher/eslint-config-ts (7115b14)
+
+### ❤️  Contributors
+
+- Rainbowatcher <rainbow-w@qq.com>
+
 ## v0.0.6
 
 [compare changes](https://undefined/undefined/compare/v0.0.5...v0.0.6)

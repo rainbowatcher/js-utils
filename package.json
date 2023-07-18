@@ -1,6 +1,6 @@
 {
   "name": "@rainbowatcher/js-utils",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Opinionated collection of common JavaScript / TypeScript utils by @rainbowatcher",
   "author": "rainbowatcher <rainbow-w@qq.com>",
   "license": "MIT",
