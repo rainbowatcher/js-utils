@@ -42,7 +42,7 @@ describe("String Utils", () => {
     expect(Strings.isString(func)).toBe(false)
     expect(Strings.isString(asyncFunc)).toBe(false)
     expect(Strings.isString(0)).toBe(false)
-    expect(Strings.isString(NaN)).toBe(false)
+    expect(Strings.isString(Number.NaN)).toBe(false)
     expect(Strings.isString(null)).toBe(false)
     expect(Strings.isString({})).toBe(false)
   })
