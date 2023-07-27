@@ -1,4 +1,16 @@
 
+## v0.0.8
+
+[compare changes](https://undefined/undefined/compare/v0.0.7...v0.0.8)
+
+### 🚀 Enhancements
+
+- Add isDeepEquals function (8bc89bf)
+
+### ❤️  Contributors
+
+- Rainbowatcher <rainbow-w@qq.com>
+
 ## v0.0.7
 
 [compare changes](https://undefined/undefined/compare/v0.0.6...v0.0.7)
