@@ -35,13 +35,13 @@
     "@rainbowatcher/eslint-config-json": "^0.3.0",
     "@rainbowatcher/eslint-config-ts": "^0.3.0",
     "changelogen": "^0.5.4",
-    "commitlint": "^17.6.7",
-    "eslint": "^8.45.0",
+    "commitlint": "^17.7.1",
+    "eslint": "^8.46.0",
     "lint-staged": "^13.2.3",
     "simple-git-hooks": "^2.9.0",
     "typescript": "^5.1.6",
     "unbuild": "^1.2.1",
-    "vitest": "^0.33.0"
+    "vitest": "^0.34.1"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged",
