@@ -36,12 +36,12 @@
     "@rainbowatcher/eslint-config-ts": "^0.3.0",
     "changelogen": "^0.5.4",
     "commitlint": "^17.7.1",
-    "eslint": "^8.46.0",
+    "eslint": "^8.47.0",
     "lint-staged": "^14.0.0",
     "simple-git-hooks": "^2.9.0",
     "typescript": "^5.1.6",
     "unbuild": "^1.2.1",
-    "vitest": "^0.34.1"
+    "vitest": "^0.34.2"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged",
