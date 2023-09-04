@@ -32,8 +32,8 @@
   },
   "devDependencies": {
     "@commitlint/types": "^17.4.4",
-    "@rainbowatcher/eslint-config-json": "^0.3.1",
-    "@rainbowatcher/eslint-config-ts": "^0.3.1",
+    "@rainbowatcher/eslint-config-json": "^0.3.2",
+    "@rainbowatcher/eslint-config-ts": "^0.3.2",
     "changelogen": "^0.5.5",
     "commitlint": "^17.7.1",
     "eslint": "^8.48.0",
