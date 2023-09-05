@@ -9,11 +9,11 @@ devDependencies:
     specifier: ^17.4.4
     version: 17.4.4
   '@rainbowatcher/eslint-config-json':
-    specifier: ^0.3.1
-    version: 0.3.1(eslint@8.48.0)
+    specifier: ^0.3.2
+    version: 0.3.2(eslint@8.48.0)
   '@rainbowatcher/eslint-config-ts':
-    specifier: ^0.3.1
-    version: 0.3.1(eslint@8.48.0)(typescript@5.2.2)
+    specifier: ^0.3.2
+    version: 0.3.2(eslint@8.48.0)(typescript@5.2.2)
   changelogen:
     specifier: ^0.5.5
     version: 0.5.5
@@ -84,7 +84,7 @@ packages:
       debug: 4.3.4
       gensync: 1.0.0-beta.2
       json5: 2.2.3
-      semver: 6.3.0
+      semver: 6.3.1
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -110,7 +110,7 @@ packages:
       '@babel/helper-validator-option': 7.21.0
       browserslist: 4.21.5
       lru-cache: 5.1.1
-      semver: 6.3.0
+      semver: 6.3.1
     dev: true
 
   /@babel/helper-environment-visitor@7.21.5:
@@ -755,8 +755,8 @@ packages:
       fastq: 1.15.0
     dev: true
 
-  /@rainbowatcher/eslint-config-js@0.3.1(@typescript-eslint/parser@6.4.1)(eslint@8.48.0):
-    resolution: {integrity: sha512-DiKUKnxfqySOc21VxvM2E3bWufzd7llRWnCAUoOnaM77Rj7Xab575zO2zl9jc/PPZudbQXs3GsLB9UAIDNHJig==}
+  /@rainbowatcher/eslint-config-js@0.3.2(@typescript-eslint/parser@6.4.1)(eslint@8.48.0):
+    resolution: {integrity: sha512-7piKkqRYsDs2a4CktYh3DombuZsDnB4lQhECb25N2/wlWxzkUDaHH8w6HV4TNJh//dHi2Z6yigN3fs96TCPnyw==}
     peerDependencies:
       eslint: '>=8.47.0'
     dependencies:
@@ -770,8 +770,8 @@ packages:
       - supports-color
     dev: true
 
-  /@rainbowatcher/eslint-config-json@0.3.1(eslint@8.48.0):
-    resolution: {integrity: sha512-AmX/3Yp7UuZP06leB8WRwTkxXhTw9A0YoZk9IcauaqzKAPr+Ru+O6aNlydUAhI98NnmW2mePnXR+72LqKUOYYw==}
+  /@rainbowatcher/eslint-config-json@0.3.2(eslint@8.48.0):
+    resolution: {integrity: sha512-mIBfwoWVCrCZF35FsuayabZjDzXM8V/JZgBWOE6bIGAA0QZiIGFTsdS4eIMV7n24yRU9ygoqtQLhrUY7i+Focw==}
     peerDependencies:
       eslint: '>=8.47.0'
     dependencies:
@@ -780,17 +780,17 @@ packages:
       eslint-plugin-jsonc: 2.9.0(eslint@8.48.0)
     dev: true
 
-  /@rainbowatcher/eslint-config-ts@0.3.1(eslint@8.48.0)(typescript@5.2.2):
-    resolution: {integrity: sha512-ukF5Assjb+Jf7riUXfyJBiBYyXt+L8Ac6hHCS8ZyUUkrUjBS598Kmcyfsnqnnkx1A1e/+GLe4b4L1UmTyNlHPQ==}
+  /@rainbowatcher/eslint-config-ts@0.3.2(eslint@8.48.0)(typescript@5.2.2):
+    resolution: {integrity: sha512-hoAuZT90FnJlpACAsdBdNsZahtVEH8P6qX5gxQ/pLFF6+3N0hNRXoNpIDTNqLQYRAUgwtaVfSwRjOxDEhRPsbA==}
     peerDependencies:
       eslint: '>=8.47.0'
-      typescript: '>= 5.1.6'
+      typescript: '>= 5.2.2'
     dependencies:
-      '@rainbowatcher/eslint-config-js': 0.3.1(@typescript-eslint/parser@6.4.1)(eslint@8.48.0)
+      '@rainbowatcher/eslint-config-js': 0.3.2(@typescript-eslint/parser@6.4.1)(eslint@8.48.0)
       '@typescript-eslint/eslint-plugin': 6.4.1(@typescript-eslint/parser@6.4.1)(eslint@8.48.0)(typescript@5.2.2)
       '@typescript-eslint/parser': 6.4.1(eslint@8.48.0)(typescript@5.2.2)
       eslint: 8.48.0
-      eslint-plugin-antfu: 0.40.3(eslint@8.48.0)(typescript@5.2.2)
+      eslint-plugin-antfu: 0.41.0(eslint@8.48.0)(typescript@5.2.2)
       eslint-plugin-jest: 27.2.3(@typescript-eslint/eslint-plugin@6.4.1)(eslint@8.48.0)(typescript@5.2.2)
       typescript: 5.2.2
     transitivePeerDependencies:
@@ -2061,8 +2061,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-antfu@0.40.3(eslint@8.48.0)(typescript@5.2.2):
-    resolution: {integrity: sha512-1f0OifSyaIQNHAHNzh0wHfUKkc3cP3fDDOk51WtCBL7ffgd4dSEq95FJIRUyGKecq4CY3d3gHpOOUbClcHiV1w==}
+  /eslint-plugin-antfu@0.41.0(eslint@8.48.0)(typescript@5.2.2):
+    resolution: {integrity: sha512-JeEeDZgz7oqYPYWYNQHdXrKaW2nhJz/70jeMZUkaNjVp72cpsJPH3idiEhIhGu3wjFdsOMCoEkboT/DQXlCaqA==}
     dependencies:
       '@typescript-eslint/utils': 6.4.1(eslint@8.48.0)(typescript@5.2.2)
     transitivePeerDependencies:
@@ -3889,11 +3889,6 @@ packages:
 
   /semver@5.7.1:
     resolution: {integrity: sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==}
-    hasBin: true
-    dev: true
-
-  /semver@6.3.0:
-    resolution: {integrity: sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==}
     hasBin: true
     dev: true
 
