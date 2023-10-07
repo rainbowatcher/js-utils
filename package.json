@@ -32,16 +32,16 @@
   },
   "devDependencies": {
     "@commitlint/types": "^17.4.4",
-    "@rainbowatcher/eslint-config-json": "^0.3.2",
-    "@rainbowatcher/eslint-config-ts": "^0.3.2",
+    "@rainbowatcher/eslint-config-json": "^0.3.3",
+    "@rainbowatcher/eslint-config-ts": "^0.3.3",
     "changelogen": "^0.5.5",
-    "commitlint": "^17.7.1",
-    "eslint": "^8.48.0",
+    "commitlint": "^17.7.2",
+    "eslint": "^8.51.0",
     "lint-staged": "^14.0.1",
     "simple-git-hooks": "^2.9.0",
     "typescript": "^5.2.2",
     "unbuild": "^2.0.0",
-    "vitest": "^0.34.3"
+    "vitest": "^0.34.6"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged",
