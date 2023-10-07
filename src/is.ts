@@ -23,7 +23,8 @@ export function isDeepEquals(first: any, second: any, keys?: string[]): boolean 
   if (Array.isArray(first) && Array.isArray(second)) {
     if (first.length !== second.length) {
       return false
-    } else {
+    }
+    else {
     // Compare arrays
       return first.every((item, index) => isDeepEquals(item, second[index]))
     }
