@@ -31,11 +31,11 @@
     "release": "pnpm build && changelogen --release && npm publish && git push --follow-tags"
   },
   "devDependencies": {
-    "@commitlint/types": "^17.4.4",
+    "@commitlint/types": "^18.1.0",
     "@rainbowatcher/eslint-config-json": "^0.3.3",
     "@rainbowatcher/eslint-config-ts": "^0.3.3",
     "changelogen": "^0.5.5",
-    "commitlint": "^17.7.2",
+    "commitlint": "^18.2.0",
     "eslint": "^8.51.0",
     "lint-staged": "^14.0.1",
     "simple-git-hooks": "^2.9.0",
