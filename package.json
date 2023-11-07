@@ -36,7 +36,7 @@
     "@rainbowatcher/eslint-config-ts": "^0.3.3",
     "changelogen": "^0.5.5",
     "commitlint": "^18.2.0",
-    "eslint": "^8.51.0",
+    "eslint": "^8.53.0",
     "lint-staged": "^15.0.2",
     "simple-git-hooks": "^2.9.0",
     "typescript": "^5.2.2",
