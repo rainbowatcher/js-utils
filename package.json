@@ -1,53 +1,53 @@
 {
-  "name": "@rainbowatcher/js-utils",
-  "version": "0.0.8",
-  "description": "Opinionated collection of common JavaScript / TypeScript utils by @rainbowatcher",
-  "author": "rainbowatcher <rainbow-w@qq.com>",
-  "license": "MIT",
-  "repository": "rainbowatcher/js-utils",
-  "keywords": [
-    "utils"
-  ],
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs"
+    "name": "@rainbowatcher/js-utils",
+    "version": "0.0.8",
+    "description": "Opinionated collection of common JavaScript / TypeScript utils by @rainbowatcher",
+    "author": "rainbowatcher <rainbow-w@qq.com>",
+    "license": "MIT",
+    "repository": "rainbowatcher/js-utils",
+    "keywords": [
+        "utils"
+    ],
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "require": "./dist/index.cjs",
+            "import": "./dist/index.mjs"
+        }
+    },
+    "main": "dist/index.cjs",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "unbuild",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "test": "vitest",
+        "typecheck": "tsc --noEmit",
+        "prepare": "simple-git-hooks",
+        "release": "pnpm build && changelogen --release && npm publish && git push --follow-tags"
+    },
+    "devDependencies": {
+        "@commitlint/types": "^18.4.4",
+        "@rainbowatcher/eslint-config-json": "^0.3.7",
+        "@rainbowatcher/eslint-config-ts": "^0.3.7",
+        "changelogen": "^0.5.5",
+        "commitlint": "^18.4.4",
+        "eslint": "^8.56.0",
+        "lint-staged": "^15.2.0",
+        "simple-git-hooks": "^2.9.0",
+        "typescript": "^5.3.3",
+        "unbuild": "^2.0.0",
+        "vitest": "^0.34.6"
+    },
+    "simple-git-hooks": {
+        "pre-commit": "npx lint-staged",
+        "commit-msg": "npx commitlint --edit $1"
+    },
+    "lint-staged": {
+        "*.{ts,json}": "eslint"
     }
-  },
-  "main": "dist/index.cjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "build": "unbuild",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "test": "vitest",
-    "typecheck": "tsc --noEmit",
-    "prepare": "simple-git-hooks",
-    "release": "pnpm build && changelogen --release && npm publish && git push --follow-tags"
-  },
-  "devDependencies": {
-    "@commitlint/types": "^18.4.4",
-    "@rainbowatcher/eslint-config-json": "^0.3.7",
-    "@rainbowatcher/eslint-config-ts": "^0.3.7",
-    "changelogen": "^0.5.5",
-    "commitlint": "^18.4.4",
-    "eslint": "^8.56.0",
-    "lint-staged": "^15.2.0",
-    "simple-git-hooks": "^2.9.0",
-    "typescript": "^5.3.3",
-    "unbuild": "^2.0.0",
-    "vitest": "^0.34.6"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "npx lint-staged",
-    "commit-msg": "npx commitlint --edit $1"
-  },
-  "lint-staged": {
-    "*.{ts,json}": "eslint"
-  }
 }
