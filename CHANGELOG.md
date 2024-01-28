@@ -1,4 +1,21 @@
 
+## v0.0.9
+
+[compare changes](https://github.com/rainbowatcher/js-utils/compare/v0.0.8...v0.0.9)
+
+### 🚀 Enhancements
+
+- Add is functions ([b0e035b](https://github.com/rainbowatcher/js-utils/commit/b0e035b))
+
+### 🎨 Styles
+
+- Apply brace-style rule ([562f6b9](https://github.com/rainbowatcher/js-utils/commit/562f6b9))
+- Indent with four spaces ([76c71e2](https://github.com/rainbowatcher/js-utils/commit/76c71e2))
+
+### ❤️ Contributors
+
+- Rainbowatcher <rainbow-w@qq.com>
+
 ## v0.0.8
 
 [compare changes](https://undefined/undefined/compare/v0.0.7...v0.0.8)
