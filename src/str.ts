@@ -1,8 +1,4 @@
-import { isUndefined } from "./is"
-
-export function isString(obj: any) {
-    return typeof obj === "string"
-}
+import { isString, isUndefined } from "./is"
 
 /**
    * checks if a string is empty or not
@@ -17,7 +13,7 @@ export function isEmpty(str: string | undefined, trim = false): boolean {
     if (!isString(str))
         throw new TypeError("Strings.isEmpty accepts only string type parameters")
 
-    return trim ? str!.trim().length === 0 : str!.length === 0
+    return trim ? str.trim().length === 0 : str.length === 0
 }
 
 export function isNotEmpty(str: string | undefined, trim = false): boolean {
