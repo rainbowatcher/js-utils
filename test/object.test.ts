@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest"
 import { deepCopy, deepEqual } from "../src/object"
 
-describe("isDeepEquals function", () => {
+describe("deepEqual", () => {
     it("Accurately compare two non-object", () => {
         expect(deepEqual(1, 1)).toBe(true)
         expect(deepEqual(1, "1")).toBe(false)

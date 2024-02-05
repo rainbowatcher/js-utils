@@ -12,7 +12,7 @@ suite("Validater", () => {
     it("validateParamType", () => {
         expect(() => { foo<string>("string") }).toMatchInlineSnapshot("[Function]")
         expect(() => { foo<string>(a) }).toMatchInlineSnapshot("[Function]")
-        expect(() => { foo<string>(b) }).toThrowErrorMatchingInlineSnapshot("\"Parameter type incorrect.\"")
+        expect(() => { foo<string>(b) }).toThrowErrorMatchingInlineSnapshot("[TypeError: Parameter type incorrect.]")
         expect(() => { foo<string>(b) }).toThrow(TypeError)
     })
 })

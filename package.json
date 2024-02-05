@@ -1,5 +1,6 @@
 {
     "name": "@rainbowatcher/js-utils",
+    "type": "module",
     "version": "0.0.8",
     "description": "Opinionated collection of common JavaScript / TypeScript utils by @rainbowatcher",
     "author": "rainbowatcher <rainbow-w@qq.com>",
@@ -37,6 +38,7 @@
         "changelogen": "^0.5.5",
         "commitlint": "^18.6.0",
         "eslint": "^8.56.0",
+        "happy-dom": "^13.3.8",
         "lint-staged": "^15.2.0",
         "simple-git-hooks": "^2.9.0",
         "typescript": "^5.3.3",

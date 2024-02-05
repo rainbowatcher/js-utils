@@ -67,26 +67,6 @@ export function isObject(value: unknown): value is object {
 }
 
 /**
-* Checks if the given value is an array and optionally matches the provided assertion.
-*
-* @param value - The value to check
-* @param [assertion] - Optional assertion function
-* @return Whether the value is an array that matches the assertion
-*/
-export function isArray<T = unknown>(value: unknown, assertion?: (value: T) => value is T): value is T[] {
-    if (!Array.isArray(value)) {
-        return false
-    }
-
-    if (!isFunction(assertion)) {
-        return true
-    }
-
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
-    return value.every(element => assertion(element))
-}
-
-/**
 * Checks if the given value is a string.
 *
 * just check if the type of value is string
