@@ -29,7 +29,8 @@
         "test": "vitest",
         "typecheck": "tsc --noEmit",
         "prepare": "simple-git-hooks",
-        "release": "pnpm build && changelogen --release && npm publish && git push --follow-tags"
+        "changelog": "changelogen -o CHANGELOGEN.md",
+        "release": "pnpm build && bumpp && pnpm changelog && git push --follow-tags"
     },
     "devDependencies": {
         "@commitlint/types": "^19.0.3",
