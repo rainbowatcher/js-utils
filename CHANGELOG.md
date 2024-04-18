@@ -1,7 +1,6 @@
+## v0.1.0...v0.1.0
 
-## v0.0.9
-
-[compare changes](https://github.com/rainbowatcher/js-utils/compare/v0.0.8...v0.0.9)
+[compare changes](https://github.com/rainbowatcher/js-utils/compare/v0.1.0...v0.1.0)
 
 ### 🚀 Enhancements
 
