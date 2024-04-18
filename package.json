@@ -23,7 +23,7 @@
         "dist"
     ],
     "engines": {
-        "node": ">=18.0.0"
+        "node": ">=18.20.2"
     },
     "scripts": {
         "build": "unbuild",
@@ -43,12 +43,12 @@
         "changelogen": "^0.5.5",
         "commitlint": "^19.2.2",
         "eslint": "^8.57.0",
-        "happy-dom": "^14.3.9",
+        "happy-dom": "^14.7.1",
         "lint-staged": "^15.2.2",
         "simple-git-hooks": "^2.11.1",
-        "typescript": "^5.4.3",
+        "typescript": "^5.4.5",
         "unbuild": "^2.0.0",
-        "vitest": "^1.4.0"
+        "vitest": "^1.5.0"
     },
     "simple-git-hooks": {
         "pre-commit": "npx lint-staged",
