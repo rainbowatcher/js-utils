@@ -42,7 +42,7 @@
         "bumpp": "^9.4.1",
         "changelogen": "^0.5.5",
         "commitlint": "^19.3.0",
-        "eslint": "^8.57.0",
+        "eslint": "^9.2.0",
         "happy-dom": "^14.10.1",
         "lint-staged": "^15.2.2",
         "simple-git-hooks": "^2.11.1",
