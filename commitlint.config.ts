@@ -2,8 +2,8 @@ import type { UserConfig } from "@commitlint/types"
 
 const conf: UserConfig = {
     rules: {
-        "scope-enum": [2, "always", ["ci", "build"]],
         "scope-empty": [0, "never"],
+        "scope-enum": [2, "always", ["ci", "build"]],
         "type-enum": [
             2,
             "always",

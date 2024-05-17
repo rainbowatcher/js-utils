@@ -17,7 +17,6 @@ export function isArray<T = unknown>(value: unknown, assertion?: (value: T) => v
         return true
     }
 
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
     return value.every(element => assertion(element))
 }
 

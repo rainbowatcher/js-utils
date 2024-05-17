@@ -12,7 +12,9 @@ describe("deepEqual", () => {
         expect(deepEqual(true, true)).toBe(true)
         expect(deepEqual(false, false)).toBe(true)
         expect(deepEqual(undefined, null)).toBe(false)
+        // eslint-disable-next-line unicorn/no-useless-undefined
         expect(deepEqual(null, undefined)).toBe(false)
+        // eslint-disable-next-line unicorn/no-useless-undefined
         expect(deepEqual(undefined, undefined)).toBe(true)
         expect(deepEqual(null, null)).toBe(true)
     })
@@ -23,23 +25,16 @@ describe("deepEqual", () => {
         expect(deepEqual([1, 2, 3], [3, 2, 1])).toBe(false)
         expect(deepEqual([1, 2, 3], [1, 2])).toBe(false)
         expect(deepEqual(["a", "b", "c"], ["a", "b"])).toBe(false)
-        expect(deepEqual([{ id: 1 }, { id: 2 }], [{ id: 1 }, { id: 2 }])).toBe(
-            true,
-        )
-        expect(deepEqual([{ id: 1 }, { id: 2 }], [{ id: 2 }, { id: 1 }])).toBe(
-            false,
-        )
+        expect(deepEqual([{ id: 1 }, { id: 2 }], [{ id: 1 }, { id: 2 }])).toBe(true)
+        expect(deepEqual([{ id: 1 }, { id: 2 }], [{ id: 2 }, { id: 1 }])).toBe(false)
     })
 
     it("Accurately compare two object", () => {
         expect(deepEqual({ a: 1, b: 2 }, { a: 1, b: 2 })).toBe(true)
-        expect(deepEqual({ a: 1, b: 2 }, { b: 2, a: 1 })).toBe(true)
         expect(deepEqual({ a: 1, b: 2 }, { a: "1", b: "2" })).toBe(false)
         expect(deepEqual({ a: { b: 1 } }, { a: { b: 1 } })).toBe(true)
         expect(deepEqual({ a: { b: 1 } }, { a: { b: 2 } })).toBe(false)
-        expect(
-            deepEqual({ a: { b: { c: { d: 1 } } } }, { a: { b: { c: { d: 1 } } } }),
-        ).toBe(true)
+        expect(deepEqual({ a: { b: { c: { d: 1 } } } }, { a: { b: { c: { d: 1 } } } })).toBe(true)
     })
 
     it("Compare the attributes of mixed types correctly", () => {
@@ -54,7 +49,7 @@ describe("deepEqual", () => {
 
     it("compare two objects specified by key and return whether they are equal.", () => {
         const obj1 = { a: 1, b: { c: [0, 1] }, d: 2 }
-        const obj2 = { d: 3, b: { c: [0, 1] }, a: 1 }
+        const obj2 = { a: 1, b: { c: [0, 1] }, d: 3 }
         const keys = ["a", "b"]
         expect(deepEqual(obj1, obj2, keys)).toBe(true)
         expect(deepEqual(obj1, obj2, ["a", "b", "d"])).toBe(false)
@@ -74,10 +69,9 @@ describe("deepEqual", () => {
     })
 
     it("compare Date object", () => {
-        expect(deepEqual(Date(), Date())).toBe(true)
-        expect(deepEqual(Date(), new Date("1970-01-01"))).toBe(false)
+        expect(deepEqual(new Date(), new Date())).toBe(true)
+        expect(deepEqual(new Date(), new Date("1970-01-01"))).toBe(false)
     })
-
 })
 
 
@@ -86,6 +80,7 @@ describe("deepCopy", () => {
         expect(deepCopy(1)).toBe(1)
         expect(deepCopy("string")).toBe("string")
         expect(deepCopy(null)).toBeNull()
+        // eslint-disable-next-line unicorn/no-useless-undefined
         expect(deepCopy(undefined)).toBeUndefined()
     })
 

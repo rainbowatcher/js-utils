@@ -1,6 +1,9 @@
-import { isAsyncFunction, isBoolean, isDate, isFunction, isNull, isNumber, isObject, isPlainObject, isString, isUndefined } from "./primitive"
 import { isArray, isMap, isSet } from "./collection"
 import { isHtmlElement } from "./dom"
+import {
+    isAsyncFunction, isBoolean, isDate, isFunction, isNull, isNumber,
+    isObject, isPlainObject, isString, isUndefined,
+} from "./primitive"
 
 export const is = {
     array: isArray,
@@ -19,7 +22,6 @@ export const is = {
     undefined: isUndefined,
 }
 
-export * from "./primitive"
-export * from "./dom"
 export * from "./collection"
-
+export * from "./dom"
+export * from "./primitive"

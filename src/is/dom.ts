@@ -13,8 +13,8 @@ import { isObject, isPlainObject, isString } from "./primitive"
  */
 export function isHtmlElement(value: unknown): value is HTMLElement {
     return isObject(value)
-      && (value as HTMLElement).nodeType === Node.ELEMENT_NODE
-      && isString((value as HTMLElement).nodeName)
-      && !isPlainObject(value)
-      && DOM_PROPERTIES_TO_CHECK.every(property => property in value)
+        && (value as HTMLElement).nodeType === Node.ELEMENT_NODE
+        && isString((value as HTMLElement).nodeName)
+        && !isPlainObject(value)
+        && DOM_PROPERTIES_TO_CHECK.every(property => property in value)
 }

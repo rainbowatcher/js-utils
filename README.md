@@ -7,6 +7,7 @@
 ![GitHub License](https://img.shields.io/github/license/rainbowatcher/js-utils)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/rainbowatcher/js-utils)
 ![node-lts](https://img.shields.io/node/v-lts/@rainbowatcher/js-utils)
+
 # Js-utils
 
 Some helpful js functions.

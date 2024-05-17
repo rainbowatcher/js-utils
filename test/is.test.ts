@@ -1,13 +1,19 @@
 import { describe, expect, it } from "vitest"
-import { isArray, isAsyncFunction, isBoolean, isDate, isFunction, isHtmlElement, isMap, isNull, isNumber, isObject, isPlainObject, isSet, isString, isUndefined } from "../src/is"
+import {
+    isArray, isAsyncFunction, isBoolean, isDate, isFunction,
+    isHtmlElement, isMap, isNull, isNumber, isObject,
+    isPlainObject, isSet, isString, isUndefined,
+} from "../src/is"
 
 const a: any = {}
 const ud = undefined
 // eslint-disable-next-line antfu/top-level-function
 const arrowFunc = () => {}
+
 function func() {
     return true
 }
+
 async function asyncFunc() {
     return new Promise(() => {})
 }
@@ -27,10 +33,11 @@ describe("isUndefined", () => {
         expect(isUndefined("")).toBe(false)
         expect(isUndefined("foo")).toBe(false)
         expect(isUndefined(/foo/)).toBe(false)
-        expect(isUndefined(/foo/ig)).toBe(false)
+        expect(isUndefined(/foo/gi)).toBe(false)
         expect(isUndefined(new Date())).toBe(false)
         expect(isUndefined(Symbol())).toBe(false)
         expect(isUndefined(Symbol("foo"))).toBe(false)
+        // eslint-disable-next-line unicorn/error-message
         expect(isUndefined(new Error())).toBe(false)
         expect(isUndefined(new Error("foo"))).toBe(false)
         expect(isUndefined(new Uint8Array())).toBe(false)
@@ -53,10 +60,11 @@ describe("isNull", () => {
         expect(isNull("")).toBe(false)
         expect(isNull("foo")).toBe(false)
         expect(isNull(/foo/)).toBe(false)
-        expect(isNull(/foo/ig)).toBe(false)
+        expect(isNull(/foo/gi)).toBe(false)
         expect(isNull(new Date())).toBe(false)
         expect(isNull(Symbol())).toBe(false)
         expect(isNull(Symbol("foo"))).toBe(false)
+        // eslint-disable-next-line unicorn/error-message
         expect(isNull(new Error())).toBe(false)
         expect(isNull(new Error("foo"))).toBe(false)
         expect(isNull(new Uint8Array())).toBe(false)
@@ -80,10 +88,11 @@ describe("isBoolean", () => {
         expect(isBoolean("")).toBe(false)
         expect(isBoolean("foo")).toBe(false)
         expect(isBoolean(/foo/)).toBe(false)
-        expect(isBoolean(/foo/ig)).toBe(false)
+        expect(isBoolean(/foo/gi)).toBe(false)
         expect(isBoolean(new Date())).toBe(false)
         expect(isBoolean(Symbol())).toBe(false)
         expect(isBoolean(Symbol("foo"))).toBe(false)
+        // eslint-disable-next-line unicorn/error-message
         expect(isBoolean(new Error())).toBe(false)
         expect(isBoolean(new Error("foo"))).toBe(false)
         expect(isBoolean(new Uint8Array())).toBe(false)
@@ -107,10 +116,11 @@ describe("isNumber", () => {
         expect(isNumber("")).toBe(false)
         expect(isNumber("foo")).toBe(false)
         expect(isNumber(/foo/)).toBe(false)
-        expect(isNumber(/foo/ig)).toBe(false)
+        expect(isNumber(/foo/gi)).toBe(false)
         expect(isNumber(new Date())).toBe(false)
         expect(isNumber(Symbol())).toBe(false)
         expect(isNumber(Symbol("foo"))).toBe(false)
+        // eslint-disable-next-line unicorn/error-message
         expect(isNumber(new Error())).toBe(false)
         expect(isNumber(new Error("foo"))).toBe(false)
         expect(isNumber(new Uint8Array())).toBe(false)
@@ -134,10 +144,11 @@ describe("isFunction", () => {
         expect(isFunction("")).toBe(false)
         expect(isFunction("foo")).toBe(false)
         expect(isFunction(/foo/)).toBe(false)
-        expect(isFunction(/foo/ig)).toBe(false)
+        expect(isFunction(/foo/gi)).toBe(false)
         expect(isFunction(new Date())).toBe(false)
         expect(isFunction(Symbol())).toBe(false)
         expect(isFunction(Symbol("foo"))).toBe(false)
+        // eslint-disable-next-line unicorn/error-message
         expect(isFunction(new Error())).toBe(false)
         expect(isFunction(new Error("foo"))).toBe(false)
         expect(isFunction(new Uint8Array())).toBe(false)
@@ -151,6 +162,7 @@ describe("isObject", () => {
         expect(isObject([])).toBe(true)
         expect(isObject(/foo/)).toBe(true)
         expect(isObject(new Date())).toBe(true)
+        // eslint-disable-next-line unicorn/error-message
         expect(isObject(new Error())).toBe(true)
     })
 
@@ -168,15 +180,16 @@ describe("isString", () => {
     it("isString should return true for a string", () => {
         expect(isString("string")).toBe(true)
         expect(isString("")).toBe(true)
-        // eslint-disable-next-line quotes
+        // eslint-disable-next-line style-ts/quotes
         expect(isString('')).toBe(true)
-        // eslint-disable-next-line quotes
+        // eslint-disable-next-line style-ts/quotes
         expect(isString('foo')).toBe(true)
         expect(isString(`${a}`)).toBe(true)
         expect(isString((() => "foo")())).toBe(true)
     })
     it("isString should return false for other values", () => {
         expect(isString(ud)).toBe(false)
+        // eslint-disable-next-line unicorn/no-useless-undefined
         expect(isString(undefined)).toBe(false)
         expect(isString(null)).toBe(false)
         expect(isString(func)).toBe(false)
@@ -184,14 +197,14 @@ describe("isString", () => {
         expect(isString(asyncFunc)).toBe(false)
         expect(isString(0)).toBe(false)
         expect(isString(0.1)).toBe(false)
-        expect(isString(.1)).toBe(false)
-        expect(isString(.1e3)).toBe(false)
-        expect(isString(-.1e3)).toBe(false)
-        expect(isString(-.1)).toBe(false)
+        expect(isString(0.1)).toBe(false)
+        expect(isString(0.1e3)).toBe(false)
+        expect(isString(-0.1e3)).toBe(false)
+        expect(isString(-0.1)).toBe(false)
         expect(isString(-1)).toBe(false)
         expect(isString(/foo/)).toBe(false)
         expect(isString(/foo/i)).toBe(false)
-        expect(isString(/foo/ig)).toBe(false)
+        expect(isString(/foo/gi)).toBe(false)
         expect(isString(Number.NaN)).toBe(false)
         expect(isString([])).toBe(false)
         expect(isString([1])).toBe(false)
@@ -209,6 +222,7 @@ describe("isDate", () => {
     })
     it("isDate should return false for other values", () => {
         expect(isDate(ud)).toBe(false)
+        // eslint-disable-next-line unicorn/no-useless-undefined
         expect(isDate(undefined)).toBe(false)
         expect(isDate(null)).toBe(false)
         expect(isDate(func)).toBe(false)
@@ -216,7 +230,7 @@ describe("isDate", () => {
         expect(isDate(asyncFunc)).toBe(false)
         expect(isDate("")).toBe(false)
         expect(isDate("2020-01-01")).toBe(false)
-        expect(isDate(1234567890)).toBe(false)
+        expect(isDate(1_234_567_890)).toBe(false)
         expect(isDate([])).toBe(false)
         expect(isDate({})).toBe(false)
         expect(isDate({ foo: "bar" })).toBe(false)
@@ -225,8 +239,11 @@ describe("isDate", () => {
 
 describe("isAsyncFunction", () => {
     it("isAsyncFunction", () => {
+        // eslint-disable-next-line unicorn/consistent-function-scoping
         const func0 = () => {}
+        // eslint-disable-next-line unicorn/consistent-function-scoping
         const asyncFunc0 = async () => {}
+        // eslint-disable-next-line unicorn/no-useless-undefined
         expect(isAsyncFunction(undefined)).toBe(false)
         expect(isAsyncFunction(func0)).toBe(false)
         expect(isAsyncFunction(asyncFunc0)).toBe(true)
@@ -247,7 +264,7 @@ describe("isPlainObject", () => {
     })
 
     it("should return false for objects with prototype chain or symbols", () => {
-        // eslint-disable-next-line @typescript-eslint/no-extraneous-class
+        // eslint-disable-next-line ts/no-extraneous-class
         class CustomClass {}
         const customObj = new CustomClass()
         const objWithPrototype = Object.create({ prop: "value" })
@@ -274,10 +291,11 @@ describe("isArray", () => {
         expect(isArray("")).toBe(false)
         expect(isArray("foo")).toBe(false)
         expect(isArray(/foo/)).toBe(false)
-        expect(isArray(/foo/ig)).toBe(false)
+        expect(isArray(/foo/gi)).toBe(false)
         expect(isArray(new Date())).toBe(false)
         expect(isArray(Symbol())).toBe(false)
         expect(isArray(Symbol("foo"))).toBe(false)
+        // eslint-disable-next-line unicorn/error-message
         expect(isArray(new Error())).toBe(false)
         expect(isArray(new Error("foo"))).toBe(false)
         expect(isArray(new Uint8Array())).toBe(false)

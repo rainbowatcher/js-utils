@@ -7,7 +7,7 @@ import { getObjectType } from "../helper"
  * @return Returns true if the value is undefined, false otherwise
  */
 export function isUndefined(value: unknown): value is undefined {
-    return typeof value === "undefined"
+    return value === undefined
 }
 
 /**
@@ -16,7 +16,7 @@ export function isUndefined(value: unknown): value is undefined {
 * @param value - The value to be checked
 * @returns Returns true if the value is null, false otherwise
 */
-// eslint-disable-next-line @typescript-eslint/ban-types
+// eslint-disable-next-line ts/ban-types
 export function isNull(value: unknown): value is null {
     return value === null
 }
@@ -47,7 +47,7 @@ export function isNumber(value: unknown): value is number {
 * @param value - the value to be checked
 * @returns Returns true if the value is a function, false otherwise
 */
-// eslint-disable-next-line @typescript-eslint/ban-types
+// eslint-disable-next-line ts/ban-types
 export function isFunction(value: unknown): value is Function {
     return typeof value === "function"
 }
@@ -61,7 +61,7 @@ export function isFunction(value: unknown): value is Function {
 * @param value - the value to be checked
 * @return true if the value is an object, false otherwise
 */
-// eslint-disable-next-line @typescript-eslint/ban-types
+// eslint-disable-next-line ts/ban-types
 export function isObject(value: unknown): value is object {
     return !isNull(value) && typeof value === "object" || isFunction(value)
 }

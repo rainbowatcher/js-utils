@@ -1,7 +1,7 @@
 /**
  * if the return value is true, the attribute will be removed from the object
  */
-type FilterFunction = (key: string, value: any) => boolean;
+type FilterFunction = (key: string, value: any) => boolean
 
 /**
  * Creates a deep copy of the input object, applying a filter function to exclude specific properties.
@@ -52,12 +52,12 @@ export function deepEqual(first: unknown, second: unknown, keys?: string[]): boo
 
     // Compare arrays
     if (Array.isArray(first) && Array.isArray(second)) {
-        if (first.length !== second.length) {
-            return false
-        }
-        else {
+        // eslint-disable-next-line unicorn/prefer-ternary
+        if (first.length === second.length) {
             // Compare arrays
             return first.every((item, index) => deepEqual(item, second[index]))
+        } else {
+            return false
         }
     }
 
