@@ -1,126 +1,121 @@
-## v0.1.0...v0.1.0
+# Changelog
 
-[compare changes](https://github.com/rainbowatcher/js-utils/compare/v0.1.0...v0.1.0)
+All notable changes to this project will be documented in this file.
 
-### 🚀 Enhancements
+## [0.1.0] - 2024-04-18
 
-- Add is functions ([b0e035b](https://github.com/rainbowatcher/js-utils/commit/b0e035b))
+### 🚀 Features
 
-### 🎨 Styles
+- Add is functions ([b0e035b](b0e035bbcfdad0e467e6094eb9614b24673c295a))
 
-- Apply brace-style rule ([562f6b9](https://github.com/rainbowatcher/js-utils/commit/562f6b9))
-- Indent with four spaces ([76c71e2](https://github.com/rainbowatcher/js-utils/commit/76c71e2))
+### 🚜 Refactor
 
-### ❤️ Contributors
+- Add unit tests ([7664c74](7664c746bcc9b3f9ef14228ffda545836f823dba))
+- Refactor release ([facc8c6](facc8c6d2125ec962635637a7ef9e94ca6cfe870))
 
-- Rainbowatcher <rainbow-w@qq.com>
+### 🎨 Styling
 
-## v0.0.8
+- Apply brace-style rule ([562f6b9](562f6b9ac3fb9381c258fbc102790fa3d1b8203e))
+- Indent with four spaces ([76c71e2](76c71e2d0c5142aab87adcb62ffcf825f7b24ca3))
 
-[compare changes](https://undefined/undefined/compare/v0.0.7...v0.0.8)
+### ⚙️ Miscellaneous Tasks
 
-### 🚀 Enhancements
+- Update changelog ([5a331d0](5a331d0a9a035a3f27d53de173ba1d4714d8e0c2))
+- Bump deps ([a270c0e](a270c0e0b712c0a9222482567c626b83c1c89c01))
+- Remove node 16 support ([ed0f50b](ed0f50b99e0063c974b61f43b914e6c5ab01ece7))
+- Release v0.1.0 ([6ce39d6](6ce39d6284861aabfcb7375549126794d7437383))
 
-- Add isDeepEquals function (8bc89bf)
+## [0.0.8] - 2023-07-27
 
-### ❤️  Contributors
+### 🚀 Features
 
-- Rainbowatcher <rainbow-w@qq.com>
+- Add isDeepEquals function ([8bc89bf](8bc89bff5065ccb7c0360347a571a9360725df70))
 
-## v0.0.7
+### ⚙️ Miscellaneous Tasks
 
-[compare changes](https://undefined/undefined/compare/v0.0.6...v0.0.7)
+- *(release)* V0.0.8 ([0fa16bf](0fa16bf5ac9d916d6ae71ef73f7699ff0dccb32a))
 
+## [0.0.7] - 2023-07-18
 
-### 🚀 Enhancements
+### 🚀 Features
 
-  - Use @rainbowatcher/eslint-config-ts (7115b14)
+- Use @rainbowatcher/eslint-config-ts ([7115b14](7115b145243e94aa4ced9dda8a569b83eb5a0744))
 
-### ❤️  Contributors
+### ⚙️ Miscellaneous Tasks
 
-- Rainbowatcher <rainbow-w@qq.com>
+- *(release)* V0.0.7 ([3e617de](3e617de142f27e0f76bceac9db2dbc892249bd5b))
 
-## v0.0.6
+## [0.0.6] - 2023-05-30
 
-[compare changes](https://undefined/undefined/compare/v0.0.5...v0.0.6)
+### 🐛 Bug Fixes
 
+- Repair renovate schedule expression ([6b09c79](6b09c7995e6fd9631281ef27df7a1bd8018e562d))
+- Renovate does not support minute granularity ([0985e87](0985e87e880fac5c6ca3e2bcb0e68f7e17725c74))
+- Move isString to str.test.ts because of wrong place ([07adba7](07adba7e29ba5e0fa7b1e3df4fa40bdf6b0d11c4))
 
-### 🩹 Fixes
+### 🎨 Styling
 
-  - Repair renovate schedule expression (6b09c79)
-  - Renovate does not support minute granularity (0985e87)
-  - Move isString to str.test.ts because of wrong place (07adba7)
+- Apply top level function rule ([43c4584](43c45840feba1298bbf838cf9f97300147f004d5))
 
-### 🏡 Chore
+### ⚙️ Miscellaneous Tasks
 
-  - Use renovate config from rainbowatcher/renovate-config (4c85466)
+- Use renovate config from rainbowatcher/renovate-config ([4c85466](4c854662a7c7c7cfc553e5f1eaf2b42930a73a2d))
+- *(release)* V0.0.6 ([6494908](649490893b65e869037fcc685cb52e587bca19ab))
 
-### 🎨 Styles
+## [0.0.5] - 2023-03-06
 
-  - Apply top level function rule (43c4584)
+### 🚀 Features
 
-### ❤️  Contributors
+- Add validater ([d38fcc1](d38fcc119f7daf98e3258dacbf3d7aa7955d4f3d))
 
-- Rainbowatcher <rainbow-w@qq.com>
+### 🚜 Refactor
 
-## v0.0.5
+- Move isString to str.ts and add docs ([25f0752](25f0752768269ccbc411b896ef4b4d93f94384e7))
 
+### 📚 Documentation
 
-### 🚀 Enhancements
+- Update docs ([e3f909a](e3f909a7469b4c76f77808cbf130580535e31701))
+- Update readme ([9a17743](9a177434297ee5c39b63d8057d6cbf28f21097ec))
 
-  - Add validater (d38fcc1)
+### ⚙️ Miscellaneous Tasks
 
-### 💅 Refactors
+- Change schedule in renovate ([8714552](8714552299e7c9066fc79e331ca51bb705d3dd02))
+- *(release)* V0.0.5 ([b80f6dd](b80f6dd07a6bee922f676daaea800042a3c7abac))
 
-  - Move isString to str.ts and add docs (25f0752)
+## [0.0.4] - 2023-03-01
 
-### 📖 Documentation
+### 🚀 Features
 
-  - Update docs (e3f909a)
-  - Update readme (9a17743)
+- Add deps & config precommit ([7f3baf2](7f3baf2046c32e776e293fd9696448359d45d1ef))
+- Add isAsyncFunction ([7ceb6b1](7ceb6b1acadb381d2dac583fafa86c7f5f4a1c56))
+- *(build)* Add commitlint ([c129d2d](c129d2d6471f6fe4f5bcbdb363851eb324133b5b))
+- Add isString ([16c31ed](16c31ed9e7a271ad602f87f5516be593fbded871))
+- Add Strings.toUpperCase ([aa68ab8](aa68ab82efe6397b36c1ffc2962d530e87b20437))
 
-### 🤖 CI
+### ⚙️ Miscellaneous Tasks
 
-  - Change schedule in renovate (8714552)
+- Add readme ([8788a48](8788a48b2ff72646e49ce385a2ca133e9df4079e))
+- *(release)* V0.0.4 ([19cac94](19cac9441ab9a20f663f439cee692b0b9dd1ede6))
 
-### ❤️  Contributors
+## [0.0.3] - 2023-02-14
 
-- Rainbowatcher <rainbow-w@qq.com>
+### 🚀 Features
 
-## v0.0.4
+- Add git hooks ([5a9ea38](5a9ea387b372d87b0d6a0e18efa79e1333b445b0))
 
+### 🐛 Bug Fixes
 
-### 🚀 Enhancements
+- *(ci)* Fix ci broken ([3ea94de](3ea94de007dd9da3107d2e12773ed075d5bc3492))
+- *(ci)* Fix node env version missing ([107ca7a](107ca7ac4f4fbfd9a4a4b74b22e2bb8af77b4c1f))
 
-  - Add deps & config precommit (7f3baf2)
-  - Add isAsyncFunction (7ceb6b1)
-  - **build:** Add commitlint (c129d2d)
-  - Add isString (16c31ed)
-  - Add Strings.toUpperCase (aa68ab8)
+### ⚙️ Miscellaneous Tasks
 
-### 🏡 Chore
+- *(release)* V0.0.3 ([f8f3adf](f8f3adfe2af3045b848f2fac78a7b7267dea91a5))
 
-  - Add readme (8788a48)
+## [0.0.2] - 2023-02-14
 
-### ❤️  Contributors
+### ⚙️ Miscellaneous Tasks
 
-- Rainbowatcher <rainbow-w@qq.com>
+- *(release)* V0.0.2 ([98cad30](98cad30b071db9dad7353ae7db5ef43afd88d4d2))
 
-## v0.0.3
-
-
-### 🚀 Enhancements
-
-  - Add git hooks (5a9ea38)
-
-### 🩹 Fixes
-
-  - **ci:** Fix ci broken (3ea94de)
-  - **ci:** Fix node env version missing (107ca7a)
-
-### ❤️  Contributors
-
-- Rainbowatcher <rainbow-w@qq.com>
-
-## v0.0.2
-
+<!-- generated by git-cliff -->
