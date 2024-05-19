@@ -24,7 +24,7 @@
         "dist"
     ],
     "engines": {
-        "node": ">=18"
+        "node": ">=18.20.2"
     },
     "scripts": {
         "build": "unbuild",
@@ -47,7 +47,7 @@
         "@rainbowatcher/eslint-config-ts": "^0.6.3",
         "bumpp": "^9.4.1",
         "commitlint": "^19.3.0",
-        "eslint": "^9.2.0",
+        "eslint": "^9.3.0",
         "git-cliff": "^2.2.2",
         "happy-dom": "^14.11.0",
         "lint-staged": "^15.2.2",
