@@ -69,6 +69,8 @@ describe("deepEqual", () => {
     })
 
     it("compare Date object", () => {
+        // eslint-disable-next-line unicorn/new-for-builtins
+        expect(deepEqual(Date(), Date())).toBe(true)
         expect(deepEqual(new Date(), new Date())).toBe(true)
         expect(deepEqual(new Date(), new Date("1970-01-01"))).toBe(false)
     })

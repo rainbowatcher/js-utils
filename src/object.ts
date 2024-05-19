@@ -62,8 +62,7 @@ export function deepEqual(first: unknown, second: unknown, keys?: string[]): boo
     }
 
     if (first instanceof Date && second instanceof Date) {
-        // return first.getTime() === second.getTime()
-        return first === second
+        return first.getTime() === second.getTime()
     }
 
     // Compare objects
