@@ -25,6 +25,29 @@ All notable changes to this project will be documented in this file.
 - Remove node 16 support ([ed0f50b](ed0f50b99e0063c974b61f43b914e6c5ab01ece7))
 - Release v0.1.0 ([6ce39d6](6ce39d6284861aabfcb7375549126794d7437383))
 
+## [0.1.0] - 2024-04-18
+
+### 🚀 Features
+
+- Add is functions ([b0e035b](b0e035bbcfdad0e467e6094eb9614b24673c295a))
+
+### 🚜 Refactor
+
+- Add unit tests ([7664c74](7664c746bcc9b3f9ef14228ffda545836f823dba))
+- Refactor release ([facc8c6](facc8c6d2125ec962635637a7ef9e94ca6cfe870))
+
+### 🎨 Styling
+
+- Apply brace-style rule ([562f6b9](562f6b9ac3fb9381c258fbc102790fa3d1b8203e))
+- Indent with four spaces ([76c71e2](76c71e2d0c5142aab87adcb62ffcf825f7b24ca3))
+
+### ⚙️ Miscellaneous Tasks
+
+- Update changelog ([5a331d0](5a331d0a9a035a3f27d53de173ba1d4714d8e0c2))
+- Bump deps ([a270c0e](a270c0e0b712c0a9222482567c626b83c1c89c01))
+- Remove node 16 support ([ed0f50b](ed0f50b99e0063c974b61f43b914e6c5ab01ece7))
+- Release v0.1.0 ([6ce39d6](6ce39d6284861aabfcb7375549126794d7437383))
+
 ## [0.0.8] - 2023-07-27
 
 ### 🚀 Features

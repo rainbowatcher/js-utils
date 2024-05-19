@@ -1,7 +1,7 @@
 {
     "name": "@rainbowatcher/js-utils",
     "type": "module",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Opinionated collection of common JavaScript / TypeScript utils by @rainbowatcher",
     "author": "rainbowatcher <rainbow-w@qq.com>",
     "license": "MIT",
@@ -33,7 +33,7 @@
         "typecheck": "tsc --noEmit",
         "prepare": "simple-git-hooks",
         "changelog": "git-cliff -lp CHANGELOG.md",
-        "release": "bumpp -all -x 'pnpm changelog' && pnpm build && pnpm publish"
+        "release": "bumpp --all -x 'pnpm changelog' && pnpm build && pnpm publish"
     },
     "devDependencies": {
         "@commitlint/types": "^19.0.3",
