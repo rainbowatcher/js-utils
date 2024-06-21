@@ -24,7 +24,7 @@
         "dist"
     ],
     "engines": {
-        "node": ">=20.14.0"
+        "node": ">=20.15.0"
     },
     "scripts": {
         "build": "unbuild",
@@ -38,21 +38,21 @@
     },
     "devDependencies": {
         "@commitlint/types": "^19.0.3",
-        "@rainbowatcher/eslint-config": "^0.9.0",
-        "@rainbowatcher/eslint-config-ignore": "^0.9.0",
-        "@rainbowatcher/eslint-config-js": "^0.9.0",
-        "@rainbowatcher/eslint-config-json": "^0.9.0",
-        "@rainbowatcher/eslint-config-md": "^0.9.0",
-        "@rainbowatcher/eslint-config-prettier": "^0.9.0",
-        "@rainbowatcher/eslint-config-ts": "^0.9.0",
+        "@rainbowatcher/eslint-config": "^0.9.1",
+        "@rainbowatcher/eslint-config-ignore": "^0.9.1",
+        "@rainbowatcher/eslint-config-js": "^0.9.1",
+        "@rainbowatcher/eslint-config-json": "^0.9.1",
+        "@rainbowatcher/eslint-config-md": "^0.9.1",
+        "@rainbowatcher/eslint-config-prettier": "^0.9.1",
+        "@rainbowatcher/eslint-config-ts": "^0.9.1",
         "bumpp": "^9.4.1",
         "commitlint": "^19.3.0",
         "eslint": "^9.5.0",
         "git-cliff": "^2.3.0",
-        "happy-dom": "^14.12.0",
+        "happy-dom": "^14.12.3",
         "lint-staged": "^15.2.7",
         "simple-git-hooks": "^2.11.1",
-        "typescript": "^5.4.5",
+        "typescript": "^5.5.2",
         "unbuild": "^2.0.0",
         "vitest": "^1.6.0"
     },
