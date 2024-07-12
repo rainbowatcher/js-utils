@@ -2,7 +2,7 @@
     "name": "@rainbowatcher/js-utils",
     "type": "module",
     "version": "0.1.1",
-    "packageManager": "pnpm@9.4.0",
+    "packageManager": "pnpm@9.5.0",
     "description": "Opinionated collection of common JavaScript / TypeScript utils by @rainbowatcher",
     "author": "rainbowatcher <rainbow-w@qq.com>",
     "license": "MIT",
@@ -24,7 +24,7 @@
         "dist"
     ],
     "engines": {
-        "node": ">=20.15.0"
+        "node": ">=20.15.1"
     },
     "scripts": {
         "build": "unbuild",
@@ -38,21 +38,21 @@
     },
     "devDependencies": {
         "@commitlint/types": "^19.0.3",
-        "@rainbowatcher/eslint-config": "^0.9.1",
-        "@rainbowatcher/eslint-config-ignore": "^0.9.1",
-        "@rainbowatcher/eslint-config-js": "^0.9.1",
-        "@rainbowatcher/eslint-config-json": "^0.9.1",
-        "@rainbowatcher/eslint-config-md": "^0.9.1",
-        "@rainbowatcher/eslint-config-prettier": "^0.9.1",
-        "@rainbowatcher/eslint-config-ts": "^0.9.1",
+        "@rainbowatcher/eslint-config": "^0.10.2",
+        "@rainbowatcher/eslint-config-ignore": "^0.10.2",
+        "@rainbowatcher/eslint-config-js": "^0.10.2",
+        "@rainbowatcher/eslint-config-json": "^0.10.2",
+        "@rainbowatcher/eslint-config-md": "^0.10.2",
+        "@rainbowatcher/eslint-config-prettier": "^0.10.2",
+        "@rainbowatcher/eslint-config-ts": "^0.10.2",
         "bumpp": "^9.4.1",
         "commitlint": "^19.3.0",
-        "eslint": "^9.5.0",
-        "git-cliff": "^2.3.0",
+        "eslint": "^9.7.0",
+        "git-cliff": "^2.4.0",
         "happy-dom": "^14.12.3",
         "lint-staged": "^15.2.7",
         "simple-git-hooks": "^2.11.1",
-        "typescript": "^5.5.2",
+        "typescript": "^5.5.3",
         "unbuild": "^2.0.0",
         "vitest": "^1.6.0"
     },
