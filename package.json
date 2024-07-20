@@ -38,13 +38,13 @@
     },
     "devDependencies": {
         "@commitlint/types": "^19.0.3",
-        "@rainbowatcher/eslint-config": "^0.10.2",
-        "@rainbowatcher/eslint-config-ignore": "^0.10.2",
-        "@rainbowatcher/eslint-config-js": "^0.10.2",
-        "@rainbowatcher/eslint-config-json": "^0.10.2",
-        "@rainbowatcher/eslint-config-md": "^0.10.2",
-        "@rainbowatcher/eslint-config-prettier": "^0.10.2",
-        "@rainbowatcher/eslint-config-ts": "^0.10.2",
+        "@rainbowatcher/eslint-config": "^0.11.3",
+        "@rainbowatcher/eslint-config-ignore": "^0.11.3",
+        "@rainbowatcher/eslint-config-js": "^0.11.3",
+        "@rainbowatcher/eslint-config-json": "^0.11.3",
+        "@rainbowatcher/eslint-config-md": "^0.11.3",
+        "@rainbowatcher/eslint-config-prettier": "^0.11.3",
+        "@rainbowatcher/eslint-config-ts": "^0.11.3",
         "bumpp": "^9.4.1",
         "commitlint": "^19.3.0",
         "eslint": "^9.7.0",
@@ -54,7 +54,7 @@
         "simple-git-hooks": "^2.11.1",
         "typescript": "^5.5.3",
         "unbuild": "^2.0.0",
-        "vitest": "^2.0.2"
+        "vitest": "^2.0.3"
     },
     "simple-git-hooks": {
         "pre-commit": "npx lint-staged",
