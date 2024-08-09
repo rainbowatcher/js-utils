@@ -1,5 +1,5 @@
 import { expect, it, suite } from "vitest"
-import { validateParamType } from "../src/validater"
+import { validateParamType } from "../packages/is/src/validater"
 
 function foo<T>(arg: T) {
     validateParamType(arg, "string")

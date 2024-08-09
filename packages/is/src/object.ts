@@ -52,7 +52,6 @@ export function deepEqual(first: unknown, second: unknown, keys?: string[]): boo
 
     // Compare arrays
     if (Array.isArray(first) && Array.isArray(second)) {
-        // eslint-disable-next-line unicorn/prefer-ternary
         if (first.length === second.length) {
             // Compare arrays
             return first.every((item, index) => deepEqual(item, second[index]))

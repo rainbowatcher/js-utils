@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest"
-import { Collections } from "../src"
+import { Collections } from "."
 
 describe("List Utils", () => {
     const ud = undefined

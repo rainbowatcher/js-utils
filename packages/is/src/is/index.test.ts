@@ -3,7 +3,7 @@ import {
     isArray, isAsyncFunction, isBoolean, isDate, isFunction,
     isHtmlElement, isMap, isNull, isNumber, isObject,
     isPlainObject, isSet, isString, isUndefined,
-} from "../src/is"
+} from "."
 
 const a: any = {}
 const ud = undefined
@@ -239,9 +239,7 @@ describe("isDate", () => {
 
 describe("isAsyncFunction", () => {
     it("isAsyncFunction", () => {
-        // eslint-disable-next-line unicorn/consistent-function-scoping
         const func0 = () => {}
-        // eslint-disable-next-line unicorn/consistent-function-scoping
         const asyncFunc0 = async () => {}
         // eslint-disable-next-line unicorn/no-useless-undefined
         expect(isAsyncFunction(undefined)).toBe(false)

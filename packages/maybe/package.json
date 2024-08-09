@@ -1,0 +1,28 @@
+{
+    "name": "@rainbowatcher/maybe",
+    "type": "module",
+    "version": "0.1.1",
+    "packageManager": "pnpm@9.7.0",
+    "description": "Type",
+    "author": "rainbowatcher <rainbow-w@qq.com>",
+    "license": "MIT",
+    "repository": "rainbowatcher/js-utils",
+    "keywords": [
+        "utils"
+    ],
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts"
+        }
+    },
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "engines": {
+        "node": ">=18"
+    },
+    "scripts": {
+        "build": "tsc src/index.ts -d --outDir dist --skipLibCheck"
+    }
+}

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest"
-import { deepCopy, deepEqual } from "../src/object"
+import { deepCopy, deepEqual } from "./object"
 
 describe("deepEqual", () => {
     it("Accurately compare two non-object", () => {

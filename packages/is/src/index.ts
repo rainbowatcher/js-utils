@@ -3,4 +3,4 @@ import * as is from "./is"
 import * as Strings from "./str"
 
 
-export { Collections, Strings, is }
+export { Collections, is, Strings }
