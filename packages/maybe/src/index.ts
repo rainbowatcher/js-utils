@@ -2,9 +2,9 @@ export type MaybeArray<T> = T | T[]
 
 export type MaybeUndefined<T> = T | undefined
 
-// eslint-disable-next-line ts/ban-types
+// eslint-disable-next-line ts/no-restricted-types
 export type Maybe<T> = null | T | undefined
-// eslint-disable-next-line ts/ban-types
+// eslint-disable-next-line ts/no-restricted-types
 export type MaybeNull<T> = null | T
 
 export type MaybeBoolean<T> = boolean | T
