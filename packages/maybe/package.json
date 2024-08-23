@@ -20,7 +20,7 @@
         "dist"
     ],
     "engines": {
-        "node": ">=20.17.0"
+        "node": ">=20"
     },
     "scripts": {
         "build": "tsc src/index.ts -d --outDir dist --skipLibCheck"
