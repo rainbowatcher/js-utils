@@ -2,7 +2,7 @@
     "name": "@rainbowatcher/maybe",
     "type": "module",
     "version": "0.1.1",
-    "packageManager": "pnpm@9.7.1",
+    "packageManager": "pnpm@9.8.0",
     "description": "Type",
     "author": "rainbowatcher <rainbow-w@qq.com>",
     "license": "MIT",
@@ -20,7 +20,7 @@
         "dist"
     ],
     "engines": {
-        "node": ">=20.16.0"
+        "node": ">=20.17.0"
     },
     "scripts": {
         "build": "tsc src/index.ts -d --outDir dist --skipLibCheck"
