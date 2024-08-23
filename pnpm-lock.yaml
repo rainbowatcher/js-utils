@@ -16,13 +16,13 @@ importers:
         version: 19.0.3
       '@rainbowatcher/eslint-config':
         specifier: ^0.13.1
-        version: 0.13.1(@rainbowatcher/eslint-config-ignore@0.13.1)(@rainbowatcher/eslint-config-js@0.13.1(@typescript-eslint/eslint-plugin@8.1.0(@typescript-eslint/parser@8.1.0(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4)(vitest@2.0.5(@types/node@22.5.0)(happy-dom@14.12.3)))(@rainbowatcher/eslint-config-json@0.13.1(eslint@9.9.0(jiti@1.21.6)))(@rainbowatcher/eslint-config-md@0.13.1(eslint@9.9.0(jiti@1.21.6)))(@rainbowatcher/eslint-config-prettier@0.13.1(@types/eslint@9.6.0)(eslint@9.9.0(jiti@1.21.6)))(@rainbowatcher/eslint-config-ts@0.13.1(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))
+        version: 0.13.1(@rainbowatcher/eslint-config-ignore@0.13.1)(@rainbowatcher/eslint-config-js@0.13.1(@typescript-eslint/eslint-plugin@8.1.0(@typescript-eslint/parser@8.1.0(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4)(vitest@2.0.5(@types/node@22.5.0)(happy-dom@15.0.0)))(@rainbowatcher/eslint-config-json@0.13.1(eslint@9.9.0(jiti@1.21.6)))(@rainbowatcher/eslint-config-md@0.13.1(eslint@9.9.0(jiti@1.21.6)))(@rainbowatcher/eslint-config-prettier@0.13.1(@types/eslint@9.6.0)(eslint@9.9.0(jiti@1.21.6)))(@rainbowatcher/eslint-config-ts@0.13.1(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))
       '@rainbowatcher/eslint-config-ignore':
         specifier: ^0.13.1
         version: 0.13.1
       '@rainbowatcher/eslint-config-js':
         specifier: ^0.13.1
-        version: 0.13.1(@typescript-eslint/eslint-plugin@8.1.0(@typescript-eslint/parser@8.1.0(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4)(vitest@2.0.5(@types/node@22.5.0)(happy-dom@14.12.3))
+        version: 0.13.1(@typescript-eslint/eslint-plugin@8.1.0(@typescript-eslint/parser@8.1.0(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4)(vitest@2.0.5(@types/node@22.5.0)(happy-dom@15.0.0))
       '@rainbowatcher/eslint-config-json':
         specifier: ^0.13.1
         version: 0.13.1(eslint@9.9.0(jiti@1.21.6))
@@ -51,8 +51,8 @@ importers:
         specifier: ^2.4.0
         version: 2.4.0
       happy-dom:
-        specifier: ^14.12.3
-        version: 14.12.3
+        specifier: ^15.0.0
+        version: 15.0.0
       lint-staged:
         specifier: ^15.2.9
         version: 15.2.9
@@ -70,7 +70,7 @@ importers:
         version: 2.0.0(typescript@5.5.4)
       vitest:
         specifier: ^2.0.5
-        version: 2.0.5(@types/node@22.5.0)(happy-dom@14.12.3)
+        version: 2.0.5(@types/node@22.5.0)(happy-dom@15.0.0)
 
   packages/is: {}
 
@@ -2090,9 +2090,9 @@ packages:
   graphemer@1.4.0:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
 
-  happy-dom@14.12.3:
-    resolution: {integrity: sha512-vsYlEs3E9gLwA1Hp+w3qzu+RUDFf4VTT8cyKqVICoZ2k7WM++Qyd2LwzyTi5bqMJFiIC/vNpTDYuxdreENRK/g==}
-    engines: {node: '>=16.0.0'}
+  happy-dom@15.0.0:
+    resolution: {integrity: sha512-DsvANUcxxY20iCo3Yllm7dqwzPVPduGfVFxa7mONwMBLczFeQgkN0LpDir1kIY322JMh+hrcPV3aGLyHCESDlA==}
+    engines: {node: '>=18.0.0'}
 
   has-flag@3.0.0:
     resolution: {integrity: sha512-sKJf1+ceQBr4SMkvQnBDNDtf4TXpVhVGateu0t918bl30FnbE2m4vNLX+VWe/dpjlb+HugGYzW7uQXH98HPEYw==}
@@ -3905,7 +3905,7 @@ snapshots:
       '@rainbowatcher/eslint-config-shared': 0.13.1
       eslint-config-flat-gitignore: 0.1.8
 
-  '@rainbowatcher/eslint-config-js@0.13.1(@typescript-eslint/eslint-plugin@8.1.0(@typescript-eslint/parser@8.1.0(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4)(vitest@2.0.5(@types/node@22.5.0)(happy-dom@14.12.3))':
+  '@rainbowatcher/eslint-config-js@0.13.1(@typescript-eslint/eslint-plugin@8.1.0(@typescript-eslint/parser@8.1.0(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4)(vitest@2.0.5(@types/node@22.5.0)(happy-dom@15.0.0))':
     dependencies:
       '@eslint/js': 9.9.0
       '@rainbowatcher/eslint-config-shared': 0.13.1
@@ -3921,7 +3921,7 @@ snapshots:
       eslint-plugin-regexp: 2.6.0(eslint@9.9.0(jiti@1.21.6))
       eslint-plugin-unicorn: 55.0.0(eslint@9.9.0(jiti@1.21.6))
       eslint-plugin-unused-imports: 4.1.3(@typescript-eslint/eslint-plugin@8.1.0(@typescript-eslint/parser@8.1.0(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))
-      eslint-plugin-vitest: 0.5.4(@typescript-eslint/eslint-plugin@8.1.0(@typescript-eslint/parser@8.1.0(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4)(vitest@2.0.5(@types/node@22.5.0)(happy-dom@14.12.3))
+      eslint-plugin-vitest: 0.5.4(@typescript-eslint/eslint-plugin@8.1.0(@typescript-eslint/parser@8.1.0(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4)(vitest@2.0.5(@types/node@22.5.0)(happy-dom@15.0.0))
       globals: 15.9.0
     transitivePeerDependencies:
       - '@typescript-eslint/eslint-plugin'
@@ -3979,7 +3979,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@rainbowatcher/eslint-config@0.13.1(@rainbowatcher/eslint-config-ignore@0.13.1)(@rainbowatcher/eslint-config-js@0.13.1(@typescript-eslint/eslint-plugin@8.1.0(@typescript-eslint/parser@8.1.0(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4)(vitest@2.0.5(@types/node@22.5.0)(happy-dom@14.12.3)))(@rainbowatcher/eslint-config-json@0.13.1(eslint@9.9.0(jiti@1.21.6)))(@rainbowatcher/eslint-config-md@0.13.1(eslint@9.9.0(jiti@1.21.6)))(@rainbowatcher/eslint-config-prettier@0.13.1(@types/eslint@9.6.0)(eslint@9.9.0(jiti@1.21.6)))(@rainbowatcher/eslint-config-ts@0.13.1(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))':
+  '@rainbowatcher/eslint-config@0.13.1(@rainbowatcher/eslint-config-ignore@0.13.1)(@rainbowatcher/eslint-config-js@0.13.1(@typescript-eslint/eslint-plugin@8.1.0(@typescript-eslint/parser@8.1.0(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4)(vitest@2.0.5(@types/node@22.5.0)(happy-dom@15.0.0)))(@rainbowatcher/eslint-config-json@0.13.1(eslint@9.9.0(jiti@1.21.6)))(@rainbowatcher/eslint-config-md@0.13.1(eslint@9.9.0(jiti@1.21.6)))(@rainbowatcher/eslint-config-prettier@0.13.1(@types/eslint@9.6.0)(eslint@9.9.0(jiti@1.21.6)))(@rainbowatcher/eslint-config-ts@0.13.1(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))':
     dependencies:
       '@antfu/install-pkg': 0.3.5
       '@clack/prompts': 0.7.0
@@ -3992,7 +3992,7 @@ snapshots:
       picocolors: 1.0.1
     optionalDependencies:
       '@rainbowatcher/eslint-config-ignore': 0.13.1
-      '@rainbowatcher/eslint-config-js': 0.13.1(@typescript-eslint/eslint-plugin@8.1.0(@typescript-eslint/parser@8.1.0(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4)(vitest@2.0.5(@types/node@22.5.0)(happy-dom@14.12.3))
+      '@rainbowatcher/eslint-config-js': 0.13.1(@typescript-eslint/eslint-plugin@8.1.0(@typescript-eslint/parser@8.1.0(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4)(vitest@2.0.5(@types/node@22.5.0)(happy-dom@15.0.0))
       '@rainbowatcher/eslint-config-json': 0.13.1(eslint@9.9.0(jiti@1.21.6))
       '@rainbowatcher/eslint-config-md': 0.13.1(eslint@9.9.0(jiti@1.21.6))
       '@rainbowatcher/eslint-config-prettier': 0.13.1(@types/eslint@9.6.0)(eslint@9.9.0(jiti@1.21.6))
@@ -4949,13 +4949,13 @@ snapshots:
     optionalDependencies:
       '@typescript-eslint/eslint-plugin': 8.1.0(@typescript-eslint/parser@8.1.0(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4)
 
-  eslint-plugin-vitest@0.5.4(@typescript-eslint/eslint-plugin@8.1.0(@typescript-eslint/parser@8.1.0(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4)(vitest@2.0.5(@types/node@22.5.0)(happy-dom@14.12.3)):
+  eslint-plugin-vitest@0.5.4(@typescript-eslint/eslint-plugin@8.1.0(@typescript-eslint/parser@8.1.0(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4)(vitest@2.0.5(@types/node@22.5.0)(happy-dom@15.0.0)):
     dependencies:
       '@typescript-eslint/utils': 7.18.0(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4)
       eslint: 9.9.0(jiti@1.21.6)
     optionalDependencies:
       '@typescript-eslint/eslint-plugin': 8.1.0(@typescript-eslint/parser@8.1.0(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4)
-      vitest: 2.0.5(@types/node@22.5.0)(happy-dom@14.12.3)
+      vitest: 2.0.5(@types/node@22.5.0)(happy-dom@15.0.0)
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -5259,7 +5259,7 @@ snapshots:
 
   graphemer@1.4.0: {}
 
-  happy-dom@14.12.3:
+  happy-dom@15.0.0:
     dependencies:
       entities: 4.5.0
       webidl-conversions: 7.0.0
@@ -6287,7 +6287,7 @@ snapshots:
       '@types/node': 22.5.0
       fsevents: 2.3.3
 
-  vitest@2.0.5(@types/node@22.5.0)(happy-dom@14.12.3):
+  vitest@2.0.5(@types/node@22.5.0)(happy-dom@15.0.0):
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@vitest/expect': 2.0.5
@@ -6310,7 +6310,7 @@ snapshots:
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 22.5.0
-      happy-dom: 14.12.3
+      happy-dom: 15.0.0
     transitivePeerDependencies:
       - less
       - lightningcss
