@@ -32,6 +32,7 @@
         "happy-dom": "^15.0.0",
         "lint-staged": "^15.2.9",
         "simple-git-hooks": "^2.11.1",
+        "tsd": "^0.31.1",
         "tsup": "^8.2.4",
         "typescript": "^5.5.4",
         "unbuild": "^2.0.0",
@@ -45,6 +46,8 @@
         "*.{js,ts,json,md,toml}": "eslint"
     },
     "commitlint": {
-        "extends": ["@commitlint/config-conventional"]
+        "extends": [
+            "@commitlint/config-conventional"
+        ]
     }
 }
