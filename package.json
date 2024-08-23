@@ -29,7 +29,7 @@
         "commitlint": "^19.4.0",
         "eslint": "^9.9.0",
         "git-cliff": "^2.4.0",
-        "happy-dom": "^14.12.3",
+        "happy-dom": "^15.0.0",
         "lint-staged": "^15.2.9",
         "simple-git-hooks": "^2.11.1",
         "tsup": "^8.2.4",
