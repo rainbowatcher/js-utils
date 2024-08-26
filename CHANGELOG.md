@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.1] - 2024-05-19
+
+### 🚀 Features
+
+- Upgrade to eslint v9 ([db24051](db240513bfd085cd2b380319e6f79312b57be442))
+- Use git cliff to generate changelog ([cb1597b](cb1597b880cc19dfc5169f51505906477811df86))
+
+### 🐛 Bug Fixes
+
+- Date object should compare the time not it self ([400baf3](400baf35a2be4a75356f5f505a7b787019515a34))
+
+### 🚜 Refactor
+
+- Refactor release script ([8801d12](8801d124b7aec2a18994621246094b44cf48c134))
+
+### ⚙️ Miscellaneous Tasks
+
+- Use --no-frozen-lockfile ([b929d97](b929d976ef32cece26f50c1bd3aae1b68a0886bd))
+- Update engine compatibility ([9627734](9627734990499fe7df87240048377b716786676f))
+- Add typecheck ([419346a](419346a36c9c4ad24999cd4ad26cc5e426915e68))
+- Apply eslint rules ([823e948](823e9489672d7b991ad28ef16c86d6b56511836f))
+- Use --no-frozen-lockfile for test job ([0f6fa90](0f6fa90bbfa10a699bae8b7381dd40e3a48b6128))
+- Release v0.1.1 ([a356895](a356895cfec437451fe7442ce796ee6df2baa1ac))
+
 ## [0.1.0] - 2024-04-18
 
 ### 🚀 Features
