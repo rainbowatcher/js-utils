@@ -12,7 +12,7 @@
         "typecheck": "tsc --noEmit",
         "prepare": "simple-git-hooks",
         "changelog": "git-cliff -lp CHANGELOG.md",
-        "release": "bumpp -r --all -x 'pnpm changelog' && pnpm build && pnpm publish"
+        "release": "bumpp --all -rx 'pnpm changelog' && pnpm build && pnpm -r publish"
     },
     "devDependencies": {
         "@commitlint/config-conventional": "^19.2.2",
