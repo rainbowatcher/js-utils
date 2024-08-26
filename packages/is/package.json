@@ -2,7 +2,7 @@
     "name": "@rainbowatcher/js-utils",
     "type": "module",
     "version": "0.2.0",
-    "packageManager": "pnpm@9.8.0",
+    "packageManager": "pnpm@9.9.0",
     "description": "Opinionated collection of common JavaScript / TypeScript utils by @rainbowatcher",
     "author": "rainbowatcher <rainbow-w@qq.com>",
     "license": "MIT",
@@ -22,7 +22,7 @@
         "dist"
     ],
     "engines": {
-        "node": ">=20"
+        "node": ">=20.17.0"
     },
     "scripts": {
         "build": "tsup"

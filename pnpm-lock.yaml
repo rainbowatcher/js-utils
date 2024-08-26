@@ -75,7 +75,7 @@ importers:
         specifier: ^2.0.5
         version: 2.0.5(@types/node@22.5.0)(happy-dom@15.0.0)
 
-  packages/fs:
+  packages/fs-extra:
     devDependencies:
       memfs:
         specifier: ^4.11.1
@@ -85,7 +85,7 @@ importers:
 
   packages/maybe: {}
 
-  packages/path: {}
+  packages/path-extra: {}
 
 packages:
 
