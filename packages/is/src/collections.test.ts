@@ -4,20 +4,20 @@ import { Collections } from "."
 describe("List Utils", () => {
     const ud = undefined
     it("isEmpty", () => {
-        expect(Collections.isEmpty("not empty")).toBe(false)
-        expect(Collections.isEmpty("")).toBe(true)
-        expect(Collections.isEmpty(" ")).toBe(false)
-        expect(Collections.isEmpty([])).toBe(true)
-        expect(Collections.isEmpty(["a"])).toBe(false)
-        expect(Collections.isEmpty(ud)).toBe(true)
+        expect(Collections.isEmpty("not empty")).toBeFalsy()
+        expect(Collections.isEmpty("")).toBeTruthy()
+        expect(Collections.isEmpty(" ")).toBeFalsy()
+        expect(Collections.isEmpty([])).toBeTruthy()
+        expect(Collections.isEmpty(["a"])).toBeFalsy()
+        expect(Collections.isEmpty(ud)).toBeTruthy()
     })
 
     it("isNotEmpty", () => {
-        expect(Collections.isNotEmpty("not empty")).toBe(true)
-        expect(Collections.isNotEmpty("")).toBe(false)
-        expect(Collections.isNotEmpty(" ")).toBe(true)
-        expect(Collections.isNotEmpty([])).toBe(false)
-        expect(Collections.isNotEmpty(["a"])).toBe(true)
-        expect(Collections.isNotEmpty(ud)).toBe(false)
+        expect(Collections.isNotEmpty("not empty")).toBeTruthy()
+        expect(Collections.isNotEmpty("")).toBeFalsy()
+        expect(Collections.isNotEmpty(" ")).toBeTruthy()
+        expect(Collections.isNotEmpty([])).toBeFalsy()
+        expect(Collections.isNotEmpty(["a"])).toBeTruthy()
+        expect(Collections.isNotEmpty(ud)).toBeFalsy()
     })
 })

@@ -1,4 +1,4 @@
-import { expect, it, suite } from "vitest"
+import { describe, expect, it } from "vitest"
 import { validateParamType } from "./validater"
 
 function foo<T>(arg: T) {
@@ -8,7 +8,7 @@ function foo<T>(arg: T) {
 const a: any = "string"
 const b: any = undefined
 
-suite("Validater", () => {
+describe("Validater", () => {
     it("validateParamType", () => {
         expect(() => { foo<string>("string") }).toMatchInlineSnapshot("[Function]")
         expect(() => { foo<string>(a) }).toMatchInlineSnapshot("[Function]")
