@@ -7,4 +7,8 @@ export default defineConfig({
     style: true,
     typescript: true,
     yaml: true,
+}, {
+    rules: {
+        "test/max-expects": "off",
+    },
 })

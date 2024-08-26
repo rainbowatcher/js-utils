@@ -1,0 +1,19 @@
+{
+    "name": "@rainbowatcher/fs",
+    "type": "module",
+    "version": "0.1.0",
+    "description": "fs extra utils",
+    "author": "rainbowatcher <rainbow-w@qq.com>",
+    "license": "MIT",
+    "keywords": [
+        "fs"
+    ],
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsup"
+    },
+    "devDependencies": {
+        "memfs": "^4.11.1"
+    }
+}

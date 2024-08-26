@@ -17,18 +17,18 @@
     "devDependencies": {
         "@commitlint/config-conventional": "^19.2.2",
         "@commitlint/types": "^19.0.3",
-        "@rainbowatcher/eslint-config": "^0.13.1",
-        "@rainbowatcher/eslint-config-ignore": "^0.13.1",
-        "@rainbowatcher/eslint-config-js": "^0.13.1",
-        "@rainbowatcher/eslint-config-json": "^0.13.1",
-        "@rainbowatcher/eslint-config-md": "^0.13.1",
-        "@rainbowatcher/eslint-config-prettier": "^0.13.1",
-        "@rainbowatcher/eslint-config-ts": "^0.13.1",
+        "@rainbowatcher/eslint-config": "^0.14.1",
+        "@rainbowatcher/eslint-config-ignore": "^0.14.1",
+        "@rainbowatcher/eslint-config-js": "^0.14.1",
+        "@rainbowatcher/eslint-config-json": "^0.14.1",
+        "@rainbowatcher/eslint-config-md": "^0.14.1",
+        "@rainbowatcher/eslint-config-prettier": "^0.14.1",
+        "@rainbowatcher/eslint-config-ts": "^0.14.1",
         "@types/node": "^22.5.0",
         "bumpp": "^9.5.2",
         "commitlint": "^19.4.0",
-        "eslint": "^9.9.0",
-        "git-cliff": "^2.4.0",
+        "eslint": "^9.9.1",
+        "git-cliff": "^2.5.0",
         "happy-dom": "^15.0.0",
         "lint-staged": "^15.2.9",
         "simple-git-hooks": "^2.11.1",
@@ -48,6 +48,17 @@
     "commitlint": {
         "extends": [
             "@commitlint/config-conventional"
+        ],
+        "scope-enum": [
+            2,
+            "always",
+            [
+                "path-extra",
+                "fs-extra",
+                "is",
+                "maybe",
+                "deps"
+            ]
         ]
     }
 }
