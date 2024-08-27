@@ -1,5 +1,6 @@
 {
     "name": "@rainbowatcher/path-extra",
+    "type": "module",
     "version": "0.2.1",
     "description": "path extra utils",
     "author": "rainbowatcher <rainbow-w@outlook.com>",
@@ -7,8 +8,14 @@
     "keywords": [
         "path"
     ],
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts"
+        }
+    },
+    "main": "./dist/index.js",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
     "files": [
         "dist"
     ],
