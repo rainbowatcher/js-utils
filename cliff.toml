@@ -63,6 +63,8 @@ commit_parsers = [
   { message = "^refactor", group = "<!-- 2 -->🚜 Refactor" },
   { message = "^style", group = "<!-- 5 -->🎨 Styling" },
   { message = "^test", group = "<!-- 6 -->🧪 Testing" },
+  # ignore release commits
+  { message = "^chore: release v.*", skip = true },
   { message = "^chore\\(release\\): prepare for", skip = true },
   { message = "^chore\\(deps.*\\)", skip = true },
   { message = "^chore\\(pr\\)", skip = true },
@@ -84,6 +86,6 @@ filter_commits = false
 # sort the tags topologically
 topo_order = false
 # sort the commits inside sections by oldest/newest order
-sort_commits = "oldest"
+sort_commits = "newest"
 # limit the number of commits included in the changelog.
 # limit_commits = 42
