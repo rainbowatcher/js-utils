@@ -2,13 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.2.1] - 2024-08-27
+## [0.2.2] - 2024-08-27
 
 ### ⚙️ Miscellaneous Tasks
 
-- *(path-extra)* Specify files property ([50073a4](50073a4c25e8917638a80d617ab95b1033352dd4))
-- *(fs-extra)* Rename package and specify files property ([94e29e9](94e29e92a6717d00351851558be5e5c621d7dfb0))
-- Update author ([952a309](952a309d50d8cf4f73ab86ff9269a245fb9ce888))
+- Add option to ignore release commits ([7697556](7697556b9bb7bdbaf87582e46c936cba82eafa2b))
+- Update changelog ([a4092b1](a4092b149e40455f5515dd8fe2d627a02f70d85c))
+- *(fs-extra)* Add properties ([5706766](5706766b430038a17d44e0ba663f36132f3c28c3))
+- *(path-extra)* Re-organize files ([ff8fcfe](ff8fcfe3639984c6d596e8fe74e8d13ce7b09267))
 
 ## [0.2.1] - 2024-08-27
 
