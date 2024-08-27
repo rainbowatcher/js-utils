@@ -6,6 +6,14 @@ All notable changes to this project will be documented in this file.
 
 ### ⚙️ Miscellaneous Tasks
 
+- *(path-extra)* Specify files property ([50073a4](50073a4c25e8917638a80d617ab95b1033352dd4))
+- *(fs-extra)* Rename package and specify files property ([94e29e9](94e29e92a6717d00351851558be5e5c621d7dfb0))
+- Update author ([952a309](952a309d50d8cf4f73ab86ff9269a245fb9ce888))
+
+## [0.2.1] - 2024-08-27
+
+### ⚙️ Miscellaneous Tasks
+
 - Update author ([952a309](952a309d50d8cf4f73ab86ff9269a245fb9ce888))
 - *(fs-extra)* Rename package and specify files property ([94e29e9](94e29e92a6717d00351851558be5e5c621d7dfb0))
 - *(path-extra)* Specify files property ([50073a4](50073a4c25e8917638a80d617ab95b1033352dd4))

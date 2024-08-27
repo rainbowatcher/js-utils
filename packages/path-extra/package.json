@@ -1,7 +1,7 @@
 {
     "name": "@rainbowatcher/path-extra",
     "type": "module",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "description": "path extra utils",
     "author": "rainbowatcher <rainbow-w@outlook.com>",
     "license": "MIT",
