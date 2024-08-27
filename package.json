@@ -11,7 +11,7 @@
         "test": "vitest",
         "typecheck": "tsc --noEmit",
         "prepare": "simple-git-hooks",
-        "changelog": "git-cliff -lp CHANGELOG.md",
+        "changelog": "git-cliff --current -lp CHANGELOG.md",
         "release": "bumpp --all -rx 'pnpm changelog' && pnpm build && pnpm -r publish"
     },
     "devDependencies": {
