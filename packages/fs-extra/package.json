@@ -1,5 +1,5 @@
 {
-    "name": "@rainbowatcher/fs",
+    "name": "@rainbowatcher/fs-extra",
     "type": "module",
     "version": "0.2.0",
     "description": "fs extra utils",
@@ -10,6 +10,9 @@
     ],
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
     "scripts": {
         "build": "tsup"
     },
