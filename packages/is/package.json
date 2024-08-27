@@ -4,7 +4,7 @@
     "version": "0.2.0",
     "packageManager": "pnpm@9.9.0",
     "description": "Opinionated collection of common JavaScript / TypeScript utils by @rainbowatcher",
-    "author": "rainbowatcher <rainbow-w@qq.com>",
+    "author": "rainbowatcher <rainbow-w@outlook.com>",
     "license": "MIT",
     "repository": "rainbowatcher/js-utils",
     "keywords": [
