@@ -2,6 +2,38 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.0] - 2024-08-26
+
+### 🚀 Features
+
+- Add type KeysOf ([14cab41](14cab41510076b88d4abab4b149d629831781e71))
+- Add fs-extra and maybe and path-extra ([583ab37](583ab37837b0562d4bf50e60ec457dca3ac3c146))
+
+### 🐛 Bug Fixes
+
+- Ci on mac missing packageManager field will use yarn as default ([bc69002](bc690021809e60badfc256873547dc73013d80b8))
+- Eslint rule ts/ban-types is deprecated ([1a30032](1a300325054e583031c5236cef5e7e280bc72e14))
+
+### 🚜 Refactor
+
+- Refactor to mono repo ([184b754](184b75459174793af5163880c6568c5bd248311b))
+
+### 🧪 Testing
+
+- Fix import path error ([aefa4ea](aefa4eae2dbeae15bf3fae1a6ec9ec2284739887))
+- Fix test path error ([b0ea721](b0ea72171063bbe30a60779b8083fa5196df1ccf))
+- Update style to match eslint rules ([b6ee681](b6ee681119b9511ec5b4949158f2c587d48ab085))
+
+### ⚙️ Miscellaneous Tasks
+
+- Remove addition rule in eslint config ([e898900](e898900497096d94925553afe66f99bb25267509))
+- Add tsd for type test ([18b080a](18b080a4d3449399ee70c80882753e1866b8a607))
+- Only limit major version of node ([2e2860c](2e2860c245e1df19c4df6ace212bf09c0203018d))
+- Add mocks for node:fs ([d6f19e3](d6f19e3117ae820413e9f0b844ebd58e5bdddb6b))
+- Add test name ([8d38efc](8d38efca5da2eaea15cac8b43c598a81c0e8e2ca))
+- Update release script ([a02ba6e](a02ba6ec63519534e63d2599d7e49afa0a87ef9a))
+- Release v0.2.0 ([f4df73d](f4df73d7861b26a34af4ca0b94af429ef26b94eb))
+
 ## [0.1.1] - 2024-05-19
 
 ### 🚀 Features
