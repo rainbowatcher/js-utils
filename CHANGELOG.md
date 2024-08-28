@@ -1,218 +1,193 @@
-# Changelog
+## <small>0.2.2 (2024-08-27)</small>
+
+* chore: add option to ignore release commits ([7697556](https://github.com/rainbowatcher/js-utils/commit/7697556))
+* chore: release v0.2.2 ([3868f03](https://github.com/rainbowatcher/js-utils/commit/3868f03))
+* chore: update changelog ([a4092b1](https://github.com/rainbowatcher/js-utils/commit/a4092b1))
+* chore(fs-extra): add properties ([5706766](https://github.com/rainbowatcher/js-utils/commit/5706766))
+* chore(path-extra): re-organize files ([ff8fcfe](https://github.com/rainbowatcher/js-utils/commit/ff8fcfe))
+
+
+
+## <small>0.2.1 (2024-08-27)</small>
+
+* chore: release v0.2.1 ([bba667d](https://github.com/rainbowatcher/js-utils/commit/bba667d))
+* chore: update author ([952a309](https://github.com/rainbowatcher/js-utils/commit/952a309))
+* chore(deps): update all non-major dependencies ([3e5867f](https://github.com/rainbowatcher/js-utils/commit/3e5867f))
+* chore(fs-extra): rename package and specify files property ([94e29e9](https://github.com/rainbowatcher/js-utils/commit/94e29e9))
+* chore(path-extra): specify files property ([50073a4](https://github.com/rainbowatcher/js-utils/commit/50073a4))
+
+
+
+## 0.2.0 (2024-08-26)
+
+* chore: add mocks for node:fs ([d6f19e3](https://github.com/rainbowatcher/js-utils/commit/d6f19e3))
+* chore: add test name ([8d38efc](https://github.com/rainbowatcher/js-utils/commit/8d38efc))
+* chore: add tsd for type test ([18b080a](https://github.com/rainbowatcher/js-utils/commit/18b080a))
+* chore: only limit major version of node ([2e2860c](https://github.com/rainbowatcher/js-utils/commit/2e2860c))
+* chore: release v0.2.0 ([f4df73d](https://github.com/rainbowatcher/js-utils/commit/f4df73d))
+* chore: remove addition rule in eslint config ([e898900](https://github.com/rainbowatcher/js-utils/commit/e898900))
+* chore: update release script ([a02ba6e](https://github.com/rainbowatcher/js-utils/commit/a02ba6e))
+* chore(deps): update all non-major dependencies ([c08f6f8](https://github.com/rainbowatcher/js-utils/commit/c08f6f8))
+* chore(deps): update all non-major dependencies ([4577075](https://github.com/rainbowatcher/js-utils/commit/4577075))
+* chore(deps): update all non-major dependencies ([1685082](https://github.com/rainbowatcher/js-utils/commit/1685082))
+* chore(deps): update all non-major dependencies ([ecae19a](https://github.com/rainbowatcher/js-utils/commit/ecae19a))
+* chore(deps): update all non-major dependencies ([0a9a082](https://github.com/rainbowatcher/js-utils/commit/0a9a082))
+* chore(deps): update all non-major dependencies ([aec03ad](https://github.com/rainbowatcher/js-utils/commit/aec03ad))
+* chore(deps): update all non-major dependencies ([17fec4f](https://github.com/rainbowatcher/js-utils/commit/17fec4f))
+* chore(deps): update all non-major dependencies ([03b96a8](https://github.com/rainbowatcher/js-utils/commit/03b96a8))
+* chore(deps): update all non-major dependencies ([3db054f](https://github.com/rainbowatcher/js-utils/commit/3db054f))
+* chore(deps): update all non-major dependencies ([b5df63a](https://github.com/rainbowatcher/js-utils/commit/b5df63a))
+* chore(deps): update all non-major dependencies ([577e6fe](https://github.com/rainbowatcher/js-utils/commit/577e6fe))
+* chore(deps): update devdependency happy-dom to v15 ([e625ff2](https://github.com/rainbowatcher/js-utils/commit/e625ff2))
+* chore(deps): update devdependency vitest to v2 ([b2beef9](https://github.com/rainbowatcher/js-utils/commit/b2beef9))
+* chore(deps): update node.js to v20 ([b906407](https://github.com/rainbowatcher/js-utils/commit/b906407))
+* chore(deps): update node.js to v20 ([e4871b9](https://github.com/rainbowatcher/js-utils/commit/e4871b9))
+* feat: add fs-extra and maybe and path-extra ([583ab37](https://github.com/rainbowatcher/js-utils/commit/583ab37))
+* feat: add type KeysOf ([14cab41](https://github.com/rainbowatcher/js-utils/commit/14cab41))
+* test: fix import path error ([aefa4ea](https://github.com/rainbowatcher/js-utils/commit/aefa4ea))
+* test: fix test path error ([b0ea721](https://github.com/rainbowatcher/js-utils/commit/b0ea721))
+* test: update style to match eslint rules ([b6ee681](https://github.com/rainbowatcher/js-utils/commit/b6ee681))
+* fix: ci on mac missing packageManager field will use yarn as default ([bc69002](https://github.com/rainbowatcher/js-utils/commit/bc69002))
+* fix: eslint rule ts/ban-types is deprecated ([1a30032](https://github.com/rainbowatcher/js-utils/commit/1a30032))
+* refactor: refactor to mono repo ([184b754](https://github.com/rainbowatcher/js-utils/commit/184b754))
+
+
+
+## <small>0.1.1 (2024-05-19)</small>
+
+* chore: apply eslint rules ([823e948](https://github.com/rainbowatcher/js-utils/commit/823e948))
+* chore: release v0.1.1 ([a356895](https://github.com/rainbowatcher/js-utils/commit/a356895))
+* chore: update engine compatibility ([9627734](https://github.com/rainbowatcher/js-utils/commit/9627734))
+* chore(deps): update all non-major dependencies ([fc0f562](https://github.com/rainbowatcher/js-utils/commit/fc0f562))
+* chore(deps): update all non-major dependencies ([562d310](https://github.com/rainbowatcher/js-utils/commit/562d310))
+* chore(deps): update all non-major dependencies ([47fff79](https://github.com/rainbowatcher/js-utils/commit/47fff79))
+* chore(deps): update all non-major dependencies ([a585a02](https://github.com/rainbowatcher/js-utils/commit/a585a02))
+* chore(deps): update devdependency vitest to ^1.6.0 ([92c6ffd](https://github.com/rainbowatcher/js-utils/commit/92c6ffd))
+* chore(deps): update node.js to v20 ([0535cb9](https://github.com/rainbowatcher/js-utils/commit/0535cb9))
+* ci: add typecheck ([419346a](https://github.com/rainbowatcher/js-utils/commit/419346a))
+* ci: use --no-frozen-lockfile ([b929d97](https://github.com/rainbowatcher/js-utils/commit/b929d97))
+* ci: use --no-frozen-lockfile for test job ([0f6fa90](https://github.com/rainbowatcher/js-utils/commit/0f6fa90))
+* feat: upgrade to eslint v9 ([db24051](https://github.com/rainbowatcher/js-utils/commit/db24051))
+* feat: use git cliff to generate changelog ([cb1597b](https://github.com/rainbowatcher/js-utils/commit/cb1597b))
+* fix: date object should compare the time not it self ([400baf3](https://github.com/rainbowatcher/js-utils/commit/400baf3))
+* refactor: refactor release script ([8801d12](https://github.com/rainbowatcher/js-utils/commit/8801d12))
+
+
+
+## 0.1.0 (2024-04-18)
+
+* chore: bump deps ([a270c0e](https://github.com/rainbowatcher/js-utils/commit/a270c0e))
+* chore: release v0.1.0 ([6ce39d6](https://github.com/rainbowatcher/js-utils/commit/6ce39d6))
+* chore: update changelog ([5a331d0](https://github.com/rainbowatcher/js-utils/commit/5a331d0))
+* chore(deps): update actions/checkout action to v4 ([7d0e716](https://github.com/rainbowatcher/js-utils/commit/7d0e716))
+* chore(deps): update actions/setup-node action to v4 ([a9001e1](https://github.com/rainbowatcher/js-utils/commit/a9001e1))
+* chore(deps): update all non-major dependencies ([74214ce](https://github.com/rainbowatcher/js-utils/commit/74214ce))
+* chore(deps): update all non-major dependencies ([2a755c0](https://github.com/rainbowatcher/js-utils/commit/2a755c0))
+* chore(deps): update all non-major dependencies ([d7bab79](https://github.com/rainbowatcher/js-utils/commit/d7bab79))
+* chore(deps): update all non-major dependencies ([6aafc00](https://github.com/rainbowatcher/js-utils/commit/6aafc00))
+* chore(deps): update all non-major dependencies ([ef79bee](https://github.com/rainbowatcher/js-utils/commit/ef79bee))
+* chore(deps): update all non-major dependencies ([1b9888e](https://github.com/rainbowatcher/js-utils/commit/1b9888e))
+* chore(deps): update all non-major dependencies ([ba21325](https://github.com/rainbowatcher/js-utils/commit/ba21325))
+* chore(deps): update all non-major dependencies ([c6adc0a](https://github.com/rainbowatcher/js-utils/commit/c6adc0a))
+* chore(deps): update all non-major dependencies ([f10b138](https://github.com/rainbowatcher/js-utils/commit/f10b138))
+* chore(deps): update all non-major dependencies ([74e8e15](https://github.com/rainbowatcher/js-utils/commit/74e8e15))
+* chore(deps): update all non-major dependencies ([795beab](https://github.com/rainbowatcher/js-utils/commit/795beab))
+* chore(deps): update all non-major dependencies ([3a55037](https://github.com/rainbowatcher/js-utils/commit/3a55037))
+* chore(deps): update all non-major dependencies to ^0.3.2 ([97685c8](https://github.com/rainbowatcher/js-utils/commit/97685c8))
+* chore(deps): update commitlint monorepo to v18 ([e029f83](https://github.com/rainbowatcher/js-utils/commit/e029f83))
+* chore(deps): update commitlint monorepo to v19 ([d2bca07](https://github.com/rainbowatcher/js-utils/commit/d2bca07))
+* chore(deps): update devdependency eslint to ^8.53.0 ([1247b09](https://github.com/rainbowatcher/js-utils/commit/1247b09))
+* chore(deps): update devdependency happy-dom to ^13.8.2 ([0cc48e8](https://github.com/rainbowatcher/js-utils/commit/0cc48e8))
+* chore(deps): update devdependency happy-dom to v14 ([8d45653](https://github.com/rainbowatcher/js-utils/commit/8d45653))
+* chore(deps): update devdependency lint-staged to ^15.2.2 ([dbf3ee7](https://github.com/rainbowatcher/js-utils/commit/dbf3ee7))
+* chore(deps): update devdependency lint-staged to v14 ([0e064db](https://github.com/rainbowatcher/js-utils/commit/0e064db))
+* chore(deps): update devdependency lint-staged to v15 ([63302fc](https://github.com/rainbowatcher/js-utils/commit/63302fc))
+* chore(deps): update devdependency unbuild to v2 ([e42a6c8](https://github.com/rainbowatcher/js-utils/commit/e42a6c8))
+* refactor: add unit tests ([7664c74](https://github.com/rainbowatcher/js-utils/commit/7664c74))
+* refactor: refactor release ([facc8c6](https://github.com/rainbowatcher/js-utils/commit/facc8c6))
+* ci: remove node 16 support ([ed0f50b](https://github.com/rainbowatcher/js-utils/commit/ed0f50b))
+* feat: add is functions ([b0e035b](https://github.com/rainbowatcher/js-utils/commit/b0e035b))
+* style: apply brace-style rule ([562f6b9](https://github.com/rainbowatcher/js-utils/commit/562f6b9))
+* style: indent with four spaces ([76c71e2](https://github.com/rainbowatcher/js-utils/commit/76c71e2))
 
-All notable changes to this project will be documented in this file.
 
-## [0.2.2] - 2024-08-27
 
-### ⚙️ Miscellaneous Tasks
+## <small>0.0.8 (2023-07-27)</small>
 
-- Add option to ignore release commits ([7697556](7697556b9bb7bdbaf87582e46c936cba82eafa2b))
-- Update changelog ([a4092b1](a4092b149e40455f5515dd8fe2d627a02f70d85c))
-- *(fs-extra)* Add properties ([5706766](5706766b430038a17d44e0ba663f36132f3c28c3))
-- *(path-extra)* Re-organize files ([ff8fcfe](ff8fcfe3639984c6d596e8fe74e8d13ce7b09267))
+* chore(deps): update all non-major dependencies ([60d0b45](https://github.com/rainbowatcher/js-utils/commit/60d0b45))
+* chore(deps): update all non-major dependencies ([1532ed2](https://github.com/rainbowatcher/js-utils/commit/1532ed2))
+* chore(release): v0.0.8 ([0fa16bf](https://github.com/rainbowatcher/js-utils/commit/0fa16bf))
+* feat: add isDeepEquals function ([8bc89bf](https://github.com/rainbowatcher/js-utils/commit/8bc89bf))
 
-## [0.2.1] - 2024-08-27
 
-### ⚙️ Miscellaneous Tasks
 
-- Update author ([952a309](952a309d50d8cf4f73ab86ff9269a245fb9ce888))
-- *(fs-extra)* Rename package and specify files property ([94e29e9](94e29e92a6717d00351851558be5e5c621d7dfb0))
-- *(path-extra)* Specify files property ([50073a4](50073a4c25e8917638a80d617ab95b1033352dd4))
-- Release v0.2.1 ([bba667d](bba667d3c7d22ed0081f0adafdd5e44731f0c43b))
+## <small>0.0.7 (2023-07-18)</small>
 
-## [0.2.0] - 2024-08-26
+* chore(deps): update all non-major dependencies ([cd20b56](https://github.com/rainbowatcher/js-utils/commit/cd20b56))
+* chore(deps): update all non-major dependencies ([fcbaaca](https://github.com/rainbowatcher/js-utils/commit/fcbaaca))
+* chore(deps): update all non-major dependencies ([518ad26](https://github.com/rainbowatcher/js-utils/commit/518ad26))
+* chore(deps): update devdependency commitlint to ^17.6.6 ([bd6bd57](https://github.com/rainbowatcher/js-utils/commit/bd6bd57))
+* chore(release): v0.0.7 ([3e617de](https://github.com/rainbowatcher/js-utils/commit/3e617de))
+* feat: use @rainbowatcher/eslint-config-ts ([7115b14](https://github.com/rainbowatcher/js-utils/commit/7115b14))
 
-### 🚀 Features
 
-- Add type KeysOf ([14cab41](14cab41510076b88d4abab4b149d629831781e71))
-- Add fs-extra and maybe and path-extra ([583ab37](583ab37837b0562d4bf50e60ec457dca3ac3c146))
 
-### 🐛 Bug Fixes
+## <small>0.0.6 (2023-05-30)</small>
 
-- Ci on mac missing packageManager field will use yarn as default ([bc69002](bc690021809e60badfc256873547dc73013d80b8))
-- Eslint rule ts/ban-types is deprecated ([1a30032](1a300325054e583031c5236cef5e7e280bc72e14))
+* chore: use renovate config from rainbowatcher/renovate-config ([4c85466](https://github.com/rainbowatcher/js-utils/commit/4c85466))
+* chore(deps): update all non-major dependencies ([9e177b6](https://github.com/rainbowatcher/js-utils/commit/9e177b6))
+* chore(deps): update dependency @antfu/eslint-config-ts to ^0.37.0 ([2db1bb0](https://github.com/rainbowatcher/js-utils/commit/2db1bb0))
+* chore(deps): update dependency @antfu/eslint-config-ts to ^0.38.0 ([9158659](https://github.com/rainbowatcher/js-utils/commit/9158659))
+* chore(deps): update dependency typescript to v5 ([b4a16bb](https://github.com/rainbowatcher/js-utils/commit/b4a16bb))
+* chore(deps): update dependency vitest to ^0.30.0 ([d2cda60](https://github.com/rainbowatcher/js-utils/commit/d2cda60))
+* chore(release): v0.0.6 ([6494908](https://github.com/rainbowatcher/js-utils/commit/6494908))
+* style: apply top level function rule ([43c4584](https://github.com/rainbowatcher/js-utils/commit/43c4584))
+* fix: move isString to str.test.ts because of wrong place ([07adba7](https://github.com/rainbowatcher/js-utils/commit/07adba7))
+* fix: renovate does not support minute granularity ([0985e87](https://github.com/rainbowatcher/js-utils/commit/0985e87))
+* fix: repair renovate schedule expression ([6b09c79](https://github.com/rainbowatcher/js-utils/commit/6b09c79))
 
-### 🚜 Refactor
 
-- Refactor to mono repo ([184b754](184b75459174793af5163880c6568c5bd248311b))
 
-### 🧪 Testing
+## <small>0.0.5 (2023-03-06)</small>
 
-- Fix import path error ([aefa4ea](aefa4eae2dbeae15bf3fae1a6ec9ec2284739887))
-- Fix test path error ([b0ea721](b0ea72171063bbe30a60779b8083fa5196df1ccf))
-- Update style to match eslint rules ([b6ee681](b6ee681119b9511ec5b4949158f2c587d48ab085))
+* chore(deps): update dependency @antfu/eslint-config-ts to ^0.36.0 ([023ee3e](https://github.com/rainbowatcher/js-utils/commit/023ee3e))
+* chore(deps): update dependency changelogen to ^0.5.0 ([3eb3c63](https://github.com/rainbowatcher/js-utils/commit/3eb3c63))
+* chore(deps): update dependency vitest to ^0.29.0 ([6bc654c](https://github.com/rainbowatcher/js-utils/commit/6bc654c))
+* chore(release): v0.0.5 ([b80f6dd](https://github.com/rainbowatcher/js-utils/commit/b80f6dd))
+* refactor: move isString to str.ts and add docs ([25f0752](https://github.com/rainbowatcher/js-utils/commit/25f0752))
+* ci: change schedule in renovate ([8714552](https://github.com/rainbowatcher/js-utils/commit/8714552))
+* docs: update docs ([e3f909a](https://github.com/rainbowatcher/js-utils/commit/e3f909a))
+* docs: update readme ([9a17743](https://github.com/rainbowatcher/js-utils/commit/9a17743))
+* Add renovate.json ([9e362fe](https://github.com/rainbowatcher/js-utils/commit/9e362fe))
+* feat: add validater ([d38fcc1](https://github.com/rainbowatcher/js-utils/commit/d38fcc1))
 
-### ⚙️ Miscellaneous Tasks
 
-- Remove addition rule in eslint config ([e898900](e898900497096d94925553afe66f99bb25267509))
-- Add tsd for type test ([18b080a](18b080a4d3449399ee70c80882753e1866b8a607))
-- Only limit major version of node ([2e2860c](2e2860c245e1df19c4df6ace212bf09c0203018d))
-- Add mocks for node:fs ([d6f19e3](d6f19e3117ae820413e9f0b844ebd58e5bdddb6b))
-- Add test name ([8d38efc](8d38efca5da2eaea15cac8b43c598a81c0e8e2ca))
-- Update release script ([a02ba6e](a02ba6ec63519534e63d2599d7e49afa0a87ef9a))
-- Release v0.2.0 ([f4df73d](f4df73d7861b26a34af4ca0b94af429ef26b94eb))
 
-## [0.1.1] - 2024-05-19
+## <small>0.0.4 (2023-03-01)</small>
 
-### 🚀 Features
+* chore: add readme ([8788a48](https://github.com/rainbowatcher/js-utils/commit/8788a48))
+* chore(release): v0.0.4 ([19cac94](https://github.com/rainbowatcher/js-utils/commit/19cac94))
+* feat: add deps & config precommit ([7f3baf2](https://github.com/rainbowatcher/js-utils/commit/7f3baf2))
+* feat: add isAsyncFunction ([7ceb6b1](https://github.com/rainbowatcher/js-utils/commit/7ceb6b1))
+* feat: add isString ([16c31ed](https://github.com/rainbowatcher/js-utils/commit/16c31ed))
+* feat: add Strings.toUpperCase ([aa68ab8](https://github.com/rainbowatcher/js-utils/commit/aa68ab8))
+* feat(build): add commitlint ([c129d2d](https://github.com/rainbowatcher/js-utils/commit/c129d2d))
 
-- Upgrade to eslint v9 ([db24051](db240513bfd085cd2b380319e6f79312b57be442))
-- Use git cliff to generate changelog ([cb1597b](cb1597b880cc19dfc5169f51505906477811df86))
 
-### 🐛 Bug Fixes
 
-- Date object should compare the time not it self ([400baf3](400baf35a2be4a75356f5f505a7b787019515a34))
+## <small>0.0.3 (2023-02-14)</small>
 
-### 🚜 Refactor
+* chore(release): v0.0.3 ([f8f3adf](https://github.com/rainbowatcher/js-utils/commit/f8f3adf))
+* fix(ci): fix ci broken ([3ea94de](https://github.com/rainbowatcher/js-utils/commit/3ea94de))
+* fix(ci): fix node env version missing ([107ca7a](https://github.com/rainbowatcher/js-utils/commit/107ca7a))
+* feat: add git hooks ([5a9ea38](https://github.com/rainbowatcher/js-utils/commit/5a9ea38))
 
-- Refactor release script ([8801d12](8801d124b7aec2a18994621246094b44cf48c134))
 
-### ⚙️ Miscellaneous Tasks
 
-- Use --no-frozen-lockfile ([b929d97](b929d976ef32cece26f50c1bd3aae1b68a0886bd))
-- Update engine compatibility ([9627734](9627734990499fe7df87240048377b716786676f))
-- Add typecheck ([419346a](419346a36c9c4ad24999cd4ad26cc5e426915e68))
-- Apply eslint rules ([823e948](823e9489672d7b991ad28ef16c86d6b56511836f))
-- Use --no-frozen-lockfile for test job ([0f6fa90](0f6fa90bbfa10a699bae8b7381dd40e3a48b6128))
-- Release v0.1.1 ([a356895](a356895cfec437451fe7442ce796ee6df2baa1ac))
+## <small>0.0.2 (2023-02-14)</small>
 
-## [0.1.0] - 2024-04-18
+* chore(release): v0.0.2 ([98cad30](https://github.com/rainbowatcher/js-utils/commit/98cad30))
+* Initial commit ([527da82](https://github.com/rainbowatcher/js-utils/commit/527da82))
 
-### 🚀 Features
 
-- Add is functions ([b0e035b](b0e035bbcfdad0e467e6094eb9614b24673c295a))
 
-### 🚜 Refactor
-
-- Add unit tests ([7664c74](7664c746bcc9b3f9ef14228ffda545836f823dba))
-- Refactor release ([facc8c6](facc8c6d2125ec962635637a7ef9e94ca6cfe870))
-
-### 🎨 Styling
-
-- Apply brace-style rule ([562f6b9](562f6b9ac3fb9381c258fbc102790fa3d1b8203e))
-- Indent with four spaces ([76c71e2](76c71e2d0c5142aab87adcb62ffcf825f7b24ca3))
-
-### ⚙️ Miscellaneous Tasks
-
-- Update changelog ([5a331d0](5a331d0a9a035a3f27d53de173ba1d4714d8e0c2))
-- Bump deps ([a270c0e](a270c0e0b712c0a9222482567c626b83c1c89c01))
-- Remove node 16 support ([ed0f50b](ed0f50b99e0063c974b61f43b914e6c5ab01ece7))
-- Release v0.1.0 ([6ce39d6](6ce39d6284861aabfcb7375549126794d7437383))
-
-## [0.1.0] - 2024-04-18
-
-### 🚀 Features
-
-- Add is functions ([b0e035b](b0e035bbcfdad0e467e6094eb9614b24673c295a))
-
-### 🚜 Refactor
-
-- Add unit tests ([7664c74](7664c746bcc9b3f9ef14228ffda545836f823dba))
-- Refactor release ([facc8c6](facc8c6d2125ec962635637a7ef9e94ca6cfe870))
-
-### 🎨 Styling
-
-- Apply brace-style rule ([562f6b9](562f6b9ac3fb9381c258fbc102790fa3d1b8203e))
-- Indent with four spaces ([76c71e2](76c71e2d0c5142aab87adcb62ffcf825f7b24ca3))
-
-### ⚙️ Miscellaneous Tasks
-
-- Update changelog ([5a331d0](5a331d0a9a035a3f27d53de173ba1d4714d8e0c2))
-- Bump deps ([a270c0e](a270c0e0b712c0a9222482567c626b83c1c89c01))
-- Remove node 16 support ([ed0f50b](ed0f50b99e0063c974b61f43b914e6c5ab01ece7))
-- Release v0.1.0 ([6ce39d6](6ce39d6284861aabfcb7375549126794d7437383))
-
-## [0.0.8] - 2023-07-27
-
-### 🚀 Features
-
-- Add isDeepEquals function ([8bc89bf](8bc89bff5065ccb7c0360347a571a9360725df70))
-
-### ⚙️ Miscellaneous Tasks
-
-- *(release)* V0.0.8 ([0fa16bf](0fa16bf5ac9d916d6ae71ef73f7699ff0dccb32a))
-
-## [0.0.7] - 2023-07-18
-
-### 🚀 Features
-
-- Use @rainbowatcher/eslint-config-ts ([7115b14](7115b145243e94aa4ced9dda8a569b83eb5a0744))
-
-### ⚙️ Miscellaneous Tasks
-
-- *(release)* V0.0.7 ([3e617de](3e617de142f27e0f76bceac9db2dbc892249bd5b))
-
-## [0.0.6] - 2023-05-30
-
-### 🐛 Bug Fixes
-
-- Repair renovate schedule expression ([6b09c79](6b09c7995e6fd9631281ef27df7a1bd8018e562d))
-- Renovate does not support minute granularity ([0985e87](0985e87e880fac5c6ca3e2bcb0e68f7e17725c74))
-- Move isString to str.test.ts because of wrong place ([07adba7](07adba7e29ba5e0fa7b1e3df4fa40bdf6b0d11c4))
-
-### 🎨 Styling
-
-- Apply top level function rule ([43c4584](43c45840feba1298bbf838cf9f97300147f004d5))
-
-### ⚙️ Miscellaneous Tasks
-
-- Use renovate config from rainbowatcher/renovate-config ([4c85466](4c854662a7c7c7cfc553e5f1eaf2b42930a73a2d))
-- *(release)* V0.0.6 ([6494908](649490893b65e869037fcc685cb52e587bca19ab))
-
-## [0.0.5] - 2023-03-06
-
-### 🚀 Features
-
-- Add validater ([d38fcc1](d38fcc119f7daf98e3258dacbf3d7aa7955d4f3d))
-
-### 🚜 Refactor
-
-- Move isString to str.ts and add docs ([25f0752](25f0752768269ccbc411b896ef4b4d93f94384e7))
-
-### 📚 Documentation
-
-- Update docs ([e3f909a](e3f909a7469b4c76f77808cbf130580535e31701))
-- Update readme ([9a17743](9a177434297ee5c39b63d8057d6cbf28f21097ec))
-
-### ⚙️ Miscellaneous Tasks
-
-- Change schedule in renovate ([8714552](8714552299e7c9066fc79e331ca51bb705d3dd02))
-- *(release)* V0.0.5 ([b80f6dd](b80f6dd07a6bee922f676daaea800042a3c7abac))
-
-## [0.0.4] - 2023-03-01
-
-### 🚀 Features
-
-- Add deps & config precommit ([7f3baf2](7f3baf2046c32e776e293fd9696448359d45d1ef))
-- Add isAsyncFunction ([7ceb6b1](7ceb6b1acadb381d2dac583fafa86c7f5f4a1c56))
-- *(build)* Add commitlint ([c129d2d](c129d2d6471f6fe4f5bcbdb363851eb324133b5b))
-- Add isString ([16c31ed](16c31ed9e7a271ad602f87f5516be593fbded871))
-- Add Strings.toUpperCase ([aa68ab8](aa68ab82efe6397b36c1ffc2962d530e87b20437))
-
-### ⚙️ Miscellaneous Tasks
-
-- Add readme ([8788a48](8788a48b2ff72646e49ce385a2ca133e9df4079e))
-- *(release)* V0.0.4 ([19cac94](19cac9441ab9a20f663f439cee692b0b9dd1ede6))
-
-## [0.0.3] - 2023-02-14
-
-### 🚀 Features
-
-- Add git hooks ([5a9ea38](5a9ea387b372d87b0d6a0e18efa79e1333b445b0))
-
-### 🐛 Bug Fixes
-
-- *(ci)* Fix ci broken ([3ea94de](3ea94de007dd9da3107d2e12773ed075d5bc3492))
-- *(ci)* Fix node env version missing ([107ca7a](107ca7ac4f4fbfd9a4a4b74b22e2bb8af77b4c1f))
-
-### ⚙️ Miscellaneous Tasks
-
-- *(release)* V0.0.3 ([f8f3adf](f8f3adfe2af3045b848f2fac78a7b7267dea91a5))
-
-## [0.0.2] - 2023-02-14
-
-### ⚙️ Miscellaneous Tasks
-
-- *(release)* V0.0.2 ([98cad30](98cad30b071db9dad7353ae7db5ef43afd88d4d2))
-
-<!-- generated by git-cliff -->

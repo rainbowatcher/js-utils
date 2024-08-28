@@ -11,7 +11,7 @@
         "test": "vitest",
         "typecheck": "tsc --noEmit",
         "prepare": "simple-git-hooks",
-        "changelog": "git-cliff --current -lp CHANGELOG.md",
+        "changelog": "conventional-changelog -si CHANGELOG.md",
         "release": "bumpp --all -rx 'pnpm changelog' && pnpm build && pnpm -r publish"
     },
     "devDependencies": {
@@ -27,8 +27,8 @@
         "@types/node": "^22.5.0",
         "bumpp": "^9.5.2",
         "commitlint": "^19.4.0",
+        "conventional-changelog-cli": "^5.0.0",
         "eslint": "^9.9.1",
-        "git-cliff": "^2.5.0",
         "happy-dom": "^15.0.0",
         "lint-staged": "^15.2.9",
         "simple-git-hooks": "^2.11.1",
