@@ -19,9 +19,6 @@
     "files": [
         "dist"
     ],
-    "engines": {
-        "node": ">=20.17.0"
-    },
     "scripts": {
         "build": "tsup"
     }
