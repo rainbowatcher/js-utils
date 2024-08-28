@@ -1,7 +1,7 @@
 {
     "name": "@rainbowatcher/fs-extra",
     "type": "module",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "description": "fs extra utils",
     "author": "rainbowatcher <rainbow-w@outlook.com>",
     "license": "MIT",

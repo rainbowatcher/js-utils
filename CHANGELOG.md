@@ -1,3 +1,13 @@
+## <small>0.2.3 (2024-08-28)</small>
+
+* chore: remove engines ([07ac4ed](https://github.com/rainbowatcher/js-utils/commit/07ac4ed))
+* chore: remove exports field in package.json ([00923ef](https://github.com/rainbowatcher/js-utils/commit/00923ef))
+* chore: try fix changelog mess ([45d6c8d](https://github.com/rainbowatcher/js-utils/commit/45d6c8d))
+* chore: update changelog.md ([187e685](https://github.com/rainbowatcher/js-utils/commit/187e685))
+* chore: use conventional-changelog instead of git cliff ([0fa7c5d](https://github.com/rainbowatcher/js-utils/commit/0fa7c5d))
+
+
+
 ## <small>0.2.2 (2024-08-27)</small>
 
 * chore: add option to ignore release commits ([7697556](https://github.com/rainbowatcher/js-utils/commit/7697556))
