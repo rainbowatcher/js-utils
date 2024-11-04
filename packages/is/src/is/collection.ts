@@ -1,5 +1,5 @@
-import { getObjectType } from "../helper"
 import { isFunction } from "./primitive"
+import { getObjectType } from "../helper"
 
 /**
 * Checks if the given value is an array and optionally matches the provided assertion.

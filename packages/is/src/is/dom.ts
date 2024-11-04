@@ -1,5 +1,5 @@
-import { DOM_PROPERTIES_TO_CHECK } from "../consts"
 import { isObject, isPlainObject, isString } from "./primitive"
+import { DOM_PROPERTIES_TO_CHECK } from "../consts"
 
 /**
  * Checks if the given value is an HTML element.
