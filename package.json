@@ -3,7 +3,7 @@
     "type": "module",
     "version": "0.2.3",
     "private": true,
-    "packageManager": "pnpm@9.15.1",
+    "packageManager": "pnpm@9.15.2",
     "scripts": {
         "build": "pnpm -r build",
         "lint": "eslint .",
@@ -30,12 +30,12 @@
         "conventional-changelog-cli": "^5.0.0",
         "eslint": "^9.17.0",
         "happy-dom": "^15.11.7",
-        "lint-staged": "^15.2.11",
+        "lint-staged": "^15.3.0",
         "simple-git-hooks": "^2.11.1",
         "tsd": "^0.31.2",
         "tsup": "^8.3.5",
         "typescript": "^5.7.2",
-        "unbuild": "^3.0.1",
+        "unbuild": "^3.1.0",
         "vitest": "^2.1.8"
     },
     "simple-git-hooks": {
