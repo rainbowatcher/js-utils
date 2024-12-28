@@ -2,7 +2,7 @@
     "name": "@rainbowatcher/js-utils",
     "type": "module",
     "version": "0.2.3",
-    "packageManager": "pnpm@9.15.1",
+    "packageManager": "pnpm@9.15.2",
     "description": "Opinionated collection of common JavaScript / TypeScript utils by @rainbowatcher",
     "author": "rainbowatcher <rainbow-w@outlook.com>",
     "license": "MIT",
