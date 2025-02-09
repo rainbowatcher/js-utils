@@ -29,7 +29,7 @@
         "commitlint": "^19.7.1",
         "conventional-changelog-cli": "^5.0.0",
         "eslint": "^9.20.0",
-        "happy-dom": "^16.8.1",
+        "happy-dom": "^17.0.2",
         "lint-staged": "^15.4.3",
         "simple-git-hooks": "^2.11.1",
         "tsd": "^0.31.2",
