@@ -106,8 +106,16 @@ describe("deepCopy", () => {
 
     it("should filter null fields", () => {
         const originalObject = { a: 1, b: null, c: 3 }
-        const copiedObject = deepCopy(originalObject, (_, value) => value === null)
+        const copiedObject = deepCopy(originalObject, { filter: (_, value) => value === null })
         expect(copiedObject).not.toBe(originalObject)
         expect(copiedObject).toStrictEqual({ a: 1, c: 3 })
+    })
+
+    it("should deep copy a cycle reference object", () => {
+        const originalObject: Record<string, any> = { a: 1, b: 2 }
+        originalObject.c = originalObject
+        const copiedObject = deepCopy(originalObject)
+        expect(copiedObject).not.toBe(originalObject)
+        expect(copiedObject).toStrictEqual(originalObject)
     })
 })

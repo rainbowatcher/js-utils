@@ -1,7 +1,14 @@
+import { isDate } from "./is"
+
 /**
  * if the return value is true, the attribute will be removed from the object
  */
 type FilterFunction = (key: string, value: any) => boolean
+
+type DeepCopyOptions = {
+    cycle?: boolean
+    filter?: FilterFunction
+}
 
 /**
  * Creates a deep copy of the input object, applying a filter function to exclude specific properties.
@@ -10,20 +17,33 @@ type FilterFunction = (key: string, value: any) => boolean
  * @param [filter=() => false] - the filter function to exclude specific properties
  * @return the deep copied object with excluded properties
  */
-export function deepCopy<T, U>(input: T, filter: FilterFunction = () => false): U {
+export function deepCopy<T, U>(input: T, opts?: DeepCopyOptions): U {
+    const {
+        cycle = true,
+        filter = () => false,
+    } = opts ?? {}
+
     if (typeof input !== "object" || input === null) {
         return input as unknown as U
     }
 
     if (Array.isArray(input)) {
-        return input.map(item => deepCopy(item, filter)) as unknown as U
+        return input.map(item => deepCopy(item, opts)) as unknown as U
     }
 
     const output: Record<string, unknown> = {}
 
     for (const key in input) {
         if (!filter(key, input[key])) {
-            output[key] = deepCopy(input[key], filter)
+            // judge if the value is cycle ref
+            if (input[key] === input) {
+                if (cycle) {
+                    output[key] = output
+                }
+                continue
+            }
+
+            output[key] = deepCopy(input[key], opts)
         }
     }
 
@@ -60,7 +80,7 @@ export function deepEqual(first: unknown, second: unknown, keys?: string[]): boo
         }
     }
 
-    if (first instanceof Date && second instanceof Date) {
+    if (isDate(first) && isDate(second)) {
         return first.getTime() === second.getTime()
     }
 
