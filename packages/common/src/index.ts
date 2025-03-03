@@ -1,6 +1,6 @@
 import * as Collections from "./collections"
-import * as is from "./is"
 import * as Strings from "./str"
 
+export * from "@sindresorhus/is"
 
-export { Collections, is, Strings }
+export { Collections, Strings }

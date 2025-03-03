@@ -24,13 +24,4 @@ describe("String Utils", () => {
         expect(() => Strings.isNotEmpty(a)).toThrow(TypeError)
         expect(() => Strings.isNotEmpty(a)).toThrowErrorMatchingInlineSnapshot("[TypeError: Strings.isEmpty accepts only string type parameters]")
     })
-
-    it("toUpperCase", () => {
-        const b: any = "lowcase"
-        expect(Strings.toUpperCase("lowcase")).toBe("LOWCASE")
-        expect(Strings.toUpperCase(ud)).toBeUndefined()
-        expect(() => Strings.toUpperCase(a)).toThrow(TypeError)
-        expect(() => Strings.toUpperCase(a)).toThrowErrorMatchingInlineSnapshot("[TypeError: Strings.toUpperCase accepts only string type parameters]")
-        expect(Strings.toUpperCase(b)).toBe("LOWCASE")
-    })
 })

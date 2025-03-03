@@ -1,4 +1,4 @@
-import { isString, isUndefined } from "./is"
+import { isString, isUndefined } from "@sindresorhus/is"
 
 /**
    * checks if a string is empty or not
@@ -17,15 +17,4 @@ export function isEmpty(str: string | undefined, trim = false): boolean {
 
 export function isNotEmpty(str: string | undefined, trim = false): boolean {
     return !isEmpty(str, trim)
-}
-
-/**
-   * Takes a parameter str that can either be a string or undefined type and returns the parameter str in upper case letters
-   */
-export function toUpperCase(str: string | undefined) {
-    if (isUndefined(str)) return
-    if (!isString(str)) {
-        throw new TypeError("Strings.toUpperCase accepts only string type parameters")
-    }
-    return str?.toUpperCase()
 }

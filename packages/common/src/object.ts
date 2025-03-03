@@ -1,4 +1,4 @@
-import { isDate } from "./is"
+import { isDate } from "@sindresorhus/is"
 
 /**
  * if the return value is true, the attribute will be removed from the object
