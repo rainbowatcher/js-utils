@@ -23,10 +23,41 @@ describe("normalize", () => {
 
     it("should remove trailing slash", () => {
         expect(normalize("path/to/directory/")).toBe("path/to/directory")
+        expect(normalize("path/to/directory///")).toBe("path/to/directory")
     })
 
     it("should replace multiple slashes with single slash", () => {
         expect(normalize("path//to/directory")).toBe("path/to/directory")
         expect(normalize(String.raw`path\\to\directory`)).toBe("path/to/directory")
+        expect(normalize("path///to////directory")).toBe("path/to/directory")
+    })
+
+    it("should handle mixed separators", () => {
+        expect(normalize(String.raw`path/to\\directory`)).toBe("path/to/directory")
+        expect(normalize(String.raw`path\\to/directory`)).toBe("path/to/directory")
+        expect(normalize(String.raw`path\\/to\\/directory`)).toBe("path/to/directory")
+    })
+
+    it("should handle windows path", () => {
+        expect(normalize(String.raw`C:\current\working\directory`)).toBe("C:/current/working/directory")
+    })
+
+    it("should handle windows path with trailing slash", () => {
+        expect(normalize(String.raw`C:\current\working\directory\\`)).toBe("C:/current/working/directory")
+    })
+    it("should handle windows path with multiple separators", () => {
+        expect(normalize(String.raw`C:\\current\\\working\\directory`)).toBe("C:/current/working/directory")
+    })
+    it("should handle windows path with mixed separators", () => {
+        expect(normalize(String.raw`C:/current\\working\\directory`)).toBe("C:/current/working/directory")
+    })
+    it("should handle windows path with namespace", () => {
+        expect(normalize(String.raw`${WIN32_FILE_NS}C:\current\working\directory`)).toBe("//?/C:/current/working/directory")
+        expect(normalize(String.raw`${WIN32_DEVICE_NS}C:\current\working\directory`)).toBe("//./C:/current/working/directory")
+    })
+
+    it("should handle complex cases", () => {
+        expect(normalize(String.raw`${WIN32_FILE_NS}C:\\current\\\working\\directory\\`)).toBe("//?/C:/current/working/directory")
+        expect(normalize(String.raw`${WIN32_DEVICE_NS}C://current//working\\directory`)).toBe("//./C:/current/working/directory")
     })
 })
