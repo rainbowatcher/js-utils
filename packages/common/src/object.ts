@@ -1,12 +1,13 @@
-import { isDate } from "@sindresorhus/is"
+import { isDate } from "./is"
 
-/**
- * if the return value is true, the attribute will be removed from the object
- */
-type FilterFunction = (key: string, value: any) => boolean
+export type FilterFunction = (key: string, value: any) => boolean
 
-type DeepCopyOptions = {
+export type DeepCopyOptions = {
     cycle?: boolean
+
+    /**
+     * if the return value is true, the attribute will be removed from the object
+     */
     filter?: FilterFunction
 }
 
@@ -14,7 +15,7 @@ type DeepCopyOptions = {
  * Creates a deep copy of the input object, applying a filter function to exclude specific properties.
  *
  * @param input - the input object to be deep copied
- * @param [filter=() => false] - the filter function to exclude specific properties
+ * @param opts - options to control copy behaviors @see DeepCopyOptions
  * @return the deep copied object with excluded properties
  */
 export function deepCopy<T, U>(input: T, opts?: DeepCopyOptions): U {
@@ -90,13 +91,13 @@ export function deepEqual(first: unknown, second: unknown, keys?: string[]): boo
         return false
     }
 
-    const keys1 = keys ?? Object.keys(first)
-    const keys2 = keys ?? Object.keys(second)
-
     // Check if both objects have the same number of properties
-    if (keys1.length !== keys2.length) {
+    if (Object.keys(first).length !== Object.keys(second).length) {
         return false
     }
+
+    const keys1 = keys ?? Object.keys(first)
+    const keys2 = keys ?? Object.keys(second)
 
     for (const key of keys1) {
         // check if the key exists in both objects, then compare their values
