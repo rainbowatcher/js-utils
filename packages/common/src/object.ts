@@ -128,8 +128,9 @@ export function mergeWith<L extends Record<PropertyKey, any>, R extends Record<P
     right: R,
     composer?: Composer<L, R>,
 ): L | (L & R) | R {
-    if (!left) return right
-
+    if (!isObject(left) || !isObject(right)) {
+        return left ?? right
+    }
     const result: Record<PropertyKey, any> = { ...left }
     const rightKeys = Object.keys(right) as Array<keyof R>
     for (const key of rightKeys) {
