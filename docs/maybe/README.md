@@ -8,7 +8,7 @@
 
 > **KeysOf**\<`T`, `KeyType`\>: keyof `{ [K in keyof T as T[K] extends KeyType ? K : never]: T[K] }`
 
-Defined in: [index.ts:32](https://github.com/rainbowatcher/js-utils/blob/61ffa0ab6afc1579d638930ef16f8d14406414ff/packages/maybe/src/index.ts#L32)
+Defined in: [index.ts:32](https://github.com/rainbowatcher/js-utils/blob/171183ea5be889d9b10be4cf6c406f1643ecac55/packages/maybe/src/index.ts#L32)
 
 #### Type Parameters
 
@@ -35,7 +35,7 @@ type C = KeysOf<A, number> // "age"
 
 > **Maybe**\<`T`\>: `null` \| `T` \| `undefined`
 
-Defined in: [index.ts:6](https://github.com/rainbowatcher/js-utils/blob/61ffa0ab6afc1579d638930ef16f8d14406414ff/packages/maybe/src/index.ts#L6)
+Defined in: [index.ts:6](https://github.com/rainbowatcher/js-utils/blob/171183ea5be889d9b10be4cf6c406f1643ecac55/packages/maybe/src/index.ts#L6)
 
 #### Type Parameters
 
@@ -49,7 +49,7 @@ Defined in: [index.ts:6](https://github.com/rainbowatcher/js-utils/blob/61ffa0ab
 
 > **MaybeArray**\<`T`\>: `T` \| `T`[]
 
-Defined in: [index.ts:1](https://github.com/rainbowatcher/js-utils/blob/61ffa0ab6afc1579d638930ef16f8d14406414ff/packages/maybe/src/index.ts#L1)
+Defined in: [index.ts:1](https://github.com/rainbowatcher/js-utils/blob/171183ea5be889d9b10be4cf6c406f1643ecac55/packages/maybe/src/index.ts#L1)
 
 #### Type Parameters
 
@@ -63,7 +63,7 @@ Defined in: [index.ts:1](https://github.com/rainbowatcher/js-utils/blob/61ffa0ab
 
 > **MaybeBoolean**\<`T`\>: `boolean` \| `T`
 
-Defined in: [index.ts:10](https://github.com/rainbowatcher/js-utils/blob/61ffa0ab6afc1579d638930ef16f8d14406414ff/packages/maybe/src/index.ts#L10)
+Defined in: [index.ts:10](https://github.com/rainbowatcher/js-utils/blob/171183ea5be889d9b10be4cf6c406f1643ecac55/packages/maybe/src/index.ts#L10)
 
 #### Type Parameters
 
@@ -77,7 +77,7 @@ Defined in: [index.ts:10](https://github.com/rainbowatcher/js-utils/blob/61ffa0a
 
 > **MaybeNull**\<`T`\>: `null` \| `T`
 
-Defined in: [index.ts:8](https://github.com/rainbowatcher/js-utils/blob/61ffa0ab6afc1579d638930ef16f8d14406414ff/packages/maybe/src/index.ts#L8)
+Defined in: [index.ts:8](https://github.com/rainbowatcher/js-utils/blob/171183ea5be889d9b10be4cf6c406f1643ecac55/packages/maybe/src/index.ts#L8)
 
 #### Type Parameters
 
@@ -91,7 +91,7 @@ Defined in: [index.ts:8](https://github.com/rainbowatcher/js-utils/blob/61ffa0ab
 
 > **MaybeNumber**\<`T`\>: `number` \| `T`
 
-Defined in: [index.ts:14](https://github.com/rainbowatcher/js-utils/blob/61ffa0ab6afc1579d638930ef16f8d14406414ff/packages/maybe/src/index.ts#L14)
+Defined in: [index.ts:14](https://github.com/rainbowatcher/js-utils/blob/171183ea5be889d9b10be4cf6c406f1643ecac55/packages/maybe/src/index.ts#L14)
 
 #### Type Parameters
 
@@ -105,7 +105,7 @@ Defined in: [index.ts:14](https://github.com/rainbowatcher/js-utils/blob/61ffa0a
 
 > **MaybeObject**\<`T`\>: `Record`\<`string`, `unknown`\> \| `T`
 
-Defined in: [index.ts:16](https://github.com/rainbowatcher/js-utils/blob/61ffa0ab6afc1579d638930ef16f8d14406414ff/packages/maybe/src/index.ts#L16)
+Defined in: [index.ts:16](https://github.com/rainbowatcher/js-utils/blob/171183ea5be889d9b10be4cf6c406f1643ecac55/packages/maybe/src/index.ts#L16)
 
 #### Type Parameters
 
@@ -119,7 +119,7 @@ Defined in: [index.ts:16](https://github.com/rainbowatcher/js-utils/blob/61ffa0a
 
 > **MaybePromise**\<`T`\>: `Promise`\<`T`\> \| `T`
 
-Defined in: [index.ts:18](https://github.com/rainbowatcher/js-utils/blob/61ffa0ab6afc1579d638930ef16f8d14406414ff/packages/maybe/src/index.ts#L18)
+Defined in: [index.ts:18](https://github.com/rainbowatcher/js-utils/blob/171183ea5be889d9b10be4cf6c406f1643ecac55/packages/maybe/src/index.ts#L18)
 
 #### Type Parameters
 
@@ -133,7 +133,7 @@ Defined in: [index.ts:18](https://github.com/rainbowatcher/js-utils/blob/61ffa0a
 
 > **MaybeString**\<`T`\>: `string` \| `T`
 
-Defined in: [index.ts:12](https://github.com/rainbowatcher/js-utils/blob/61ffa0ab6afc1579d638930ef16f8d14406414ff/packages/maybe/src/index.ts#L12)
+Defined in: [index.ts:12](https://github.com/rainbowatcher/js-utils/blob/171183ea5be889d9b10be4cf6c406f1643ecac55/packages/maybe/src/index.ts#L12)
 
 #### Type Parameters
 
@@ -147,7 +147,7 @@ Defined in: [index.ts:12](https://github.com/rainbowatcher/js-utils/blob/61ffa0a
 
 > **MaybeUndefined**\<`T`\>: `T` \| `undefined`
 
-Defined in: [index.ts:3](https://github.com/rainbowatcher/js-utils/blob/61ffa0ab6afc1579d638930ef16f8d14406414ff/packages/maybe/src/index.ts#L3)
+Defined in: [index.ts:3](https://github.com/rainbowatcher/js-utils/blob/171183ea5be889d9b10be4cf6c406f1643ecac55/packages/maybe/src/index.ts#L3)
 
 #### Type Parameters
 

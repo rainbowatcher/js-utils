@@ -8,7 +8,7 @@
 
 > **isEmpty**\<`T`\>(`arrayLike`): `boolean`
 
-Defined in: [collections.ts:6](https://github.com/rainbowatcher/js-utils/blob/61ffa0ab6afc1579d638930ef16f8d14406414ff/packages/common/src/collections.ts#L6)
+Defined in: [collections.ts:6](https://github.com/rainbowatcher/js-utils/blob/171183ea5be889d9b10be4cf6c406f1643ecac55/packages/common/src/collections.ts#L6)
 
 check array like object is empty
 
@@ -36,7 +36,7 @@ true if length equals 0, true if object is undefined
 
 > **isNotEmpty**\<`T`\>(`arrayLike`): `boolean`
 
-Defined in: [collections.ts:15](https://github.com/rainbowatcher/js-utils/blob/61ffa0ab6afc1579d638930ef16f8d14406414ff/packages/common/src/collections.ts#L15)
+Defined in: [collections.ts:15](https://github.com/rainbowatcher/js-utils/blob/171183ea5be889d9b10be4cf6c406f1643ecac55/packages/common/src/collections.ts#L15)
 
 check array like object is not empty
 
