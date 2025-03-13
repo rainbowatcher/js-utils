@@ -11,3 +11,10 @@
 # Js-utils
 
 Some helpful js functions.
+
+## API Docs
+
+- [@rainbowatcher/common](./docs/common/README.md)
+- [@rainbowatcher/fs-extra](./docs/fs-extra/README.md)
+- [@rainbowatcher/maybe](./docs/maybe/README.md)
+- [@rainbowatcher/path-extra](./docs/path-extra/README.md)

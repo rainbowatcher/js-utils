@@ -12,22 +12,20 @@ const options = {
     hideGroupHeadings: false,
     hidePageHeader: true,
     includeVersion: true,
+    indexFormat: "list",
+    interfacePropertiesFormat: "table",
     mergeReadme: true,
     outputFileStrategy: "modules",
     packageOptions: {
         entryPoints: ["src/index.ts"],
-        excludeScopesInPaths: true,
-        hideBreadcrumbs: false,
-        hideGroupHeadings: false,
-        hidePageHeader: true,
-        includeVersion: true,
-        mergeReadme: true,
-        outputFileStrategy: "modules",
         readme: "none",
     },
+    parametersFormat: "table",
     plugin: ["typedoc-plugin-markdown"],
     readme: "none",
-    // useCodeBlocks: true,
+    typeDeclarationFormat: "table",
+    typeDeclarationVisibility: "verbose",
+    useCodeBlocks: false,
 }
 
 // @ts-expect-error type missmatch
