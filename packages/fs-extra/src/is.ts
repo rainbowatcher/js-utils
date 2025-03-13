@@ -47,10 +47,8 @@ export async function isFile(inputPath: string) {
  * Checks if a path is a directory.
  *
  * @example
- * ```js
  * const isDir = await isDirSync("./")
  * // isDir === true
- * ```
  *
  * @param inputPath - The path to check.
  * @return Whether the path is a directory.
@@ -64,10 +62,8 @@ export function isDirSync(inputPath: string): boolean {
  * Checks if a file exists.
  *
  * @example
- * ```js
  * const isFile = await isFileSync("./package.json")
  * // isFile === true
- * ```
  *
  * @param inputPath - The absolute path to check.
  * @return Whether the file exists.
