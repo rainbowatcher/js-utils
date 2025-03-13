@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest"
-import { deepCopy, deepEqual, mergeWith } from "./object"
-import type { Composer } from "./object"
+import { deepCopy, deepEqual, mergeWith } from "./objects"
+import type { Composer } from "./objects"
 
 describe("deepEqual", () => {
     it("accurately compare two non-object", () => {
