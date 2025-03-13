@@ -14,6 +14,14 @@ describe("toAbsolute", () => {
         const cwd = "/current/working/directory"
         const result = toAbsolute(inputPath, cwd)
         expect(result).toBe("/current/working/directory/relative/path")
+
+        const inputPath2 = "./relative/path"
+        const result2 = toAbsolute(inputPath2, cwd)
+        expect(result2).toBe("/current/working/directory/relative/path")
+
+        const inputPath3 = "../relative/path"
+        const result3 = toAbsolute(inputPath3, cwd)
+        expect(result3).toBe("/current/working/relative/path")
     })
 
     it("should return current working directory when cwd is given", () => {
