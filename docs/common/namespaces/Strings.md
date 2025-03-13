@@ -8,23 +8,16 @@
 
 > **isEmpty**(`str`, `trim`): `boolean`
 
-Defined in: [packages/common/src/str.ts:9](https://github.com/rainbowatcher/js-utils/blob/68384686cd8847044b7e3911b28a2c08c926d445/packages/common/src/str.ts#L9)
+Defined in: [str.ts:7](https://github.com/rainbowatcher/js-utils/blob/863115a1625327043cdd04e9106ea4a32f58a369/packages/common/src/str.ts#L7)
 
 checks if a string is empty or not
 
 #### Parameters
 
-##### str
-
-input string
-
-`undefined` | `string`
-
-##### trim
-
-`boolean` = `false`
-
-trim white space in string
+| Parameter | Type                    | Default value | Description                |
+| --------- | ----------------------- | ------------- | -------------------------- |
+| `str`     | `undefined` \| `string` | `undefined`   | input string               |
+| `trim`    | `boolean`               | `false`       | trim white space in string |
 
 #### Returns
 
@@ -38,17 +31,14 @@ true for empty false for not
 
 > **isNotEmpty**(`str`, `trim`): `boolean`
 
-Defined in: [packages/common/src/str.ts:18](https://github.com/rainbowatcher/js-utils/blob/68384686cd8847044b7e3911b28a2c08c926d445/packages/common/src/str.ts#L18)
+Defined in: [str.ts:16](https://github.com/rainbowatcher/js-utils/blob/863115a1625327043cdd04e9106ea4a32f58a369/packages/common/src/str.ts#L16)
 
 #### Parameters
 
-##### str
-
-`undefined` | `string`
-
-##### trim
-
-`boolean` = `false`
+| Parameter | Type                    | Default value |
+| --------- | ----------------------- | ------------- |
+| `str`     | `undefined` \| `string` | `undefined`   |
+| `trim`    | `boolean`               | `false`       |
 
 #### Returns
 

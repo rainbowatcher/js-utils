@@ -8,21 +8,27 @@
 
 > **isEmpty**\<`T`\>(`arrayLike`): `boolean`
 
-Defined in: [packages/common/src/collections.ts:1](https://github.com/rainbowatcher/js-utils/blob/68384686cd8847044b7e3911b28a2c08c926d445/packages/common/src/collections.ts#L1)
+Defined in: [collections.ts:6](https://github.com/rainbowatcher/js-utils/blob/863115a1625327043cdd04e9106ea4a32f58a369/packages/common/src/collections.ts#L6)
+
+check array like object is empty
 
 #### Type Parameters
 
-• **T**
+| Type Parameter |
+| -------------- |
+| `T`            |
 
 #### Parameters
 
-##### arrayLike
-
-`undefined` | `ArrayLike`\<`T`\>
+| Parameter   | Type                              | Description                                    |
+| ----------- | --------------------------------- | ---------------------------------------------- |
+| `arrayLike` | `undefined` \| `ArrayLike`\<`T`\> | the array like object that has length property |
 
 #### Returns
 
 `boolean`
+
+true if length equals 0, true if object is undefined
 
 ---
 
@@ -30,18 +36,24 @@ Defined in: [packages/common/src/collections.ts:1](https://github.com/rainbowatc
 
 > **isNotEmpty**\<`T`\>(`arrayLike`): `boolean`
 
-Defined in: [packages/common/src/collections.ts:5](https://github.com/rainbowatcher/js-utils/blob/68384686cd8847044b7e3911b28a2c08c926d445/packages/common/src/collections.ts#L5)
+Defined in: [collections.ts:15](https://github.com/rainbowatcher/js-utils/blob/863115a1625327043cdd04e9106ea4a32f58a369/packages/common/src/collections.ts#L15)
+
+check array like object is not empty
 
 #### Type Parameters
 
-• **T**
+| Type Parameter |
+| -------------- |
+| `T`            |
 
 #### Parameters
 
-##### arrayLike
-
-`undefined` | `ArrayLike`\<`T`\>
+| Parameter   | Type                              | Description                                    |
+| ----------- | --------------------------------- | ---------------------------------------------- |
+| `arrayLike` | `undefined` \| `ArrayLike`\<`T`\> | the array like object that has length property |
 
 #### Returns
 
 `boolean`
+
+true if length great than 0, false if object is undefined

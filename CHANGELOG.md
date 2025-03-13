@@ -1,3 +1,18 @@
+## 0.4.0 (2025-03-13)
+
+* test: add test case ([6566dc7](https://github.com/rainbowatcher/js-utils/commit/6566dc7))
+* docs: adjust doc gen ([bbdecb5](https://github.com/rainbowatcher/js-utils/commit/bbdecb5))
+* docs(common): add docs for collections ([1e9a0c8](https://github.com/rainbowatcher/js-utils/commit/1e9a0c8))
+* chore: tweaks ([8f373b3](https://github.com/rainbowatcher/js-utils/commit/8f373b3))
+* chore(deps): update all non-major dependencies ([152982c](https://github.com/rainbowatcher/js-utils/commit/152982c))
+* chore(deps): update all non-major dependencies ([19d077f](https://github.com/rainbowatcher/js-utils/commit/19d077f))
+* chore(deps): update all non-major dependencies (#100) ([576f95b](https://github.com/rainbowatcher/js-utils/commit/576f95b)), closes [#100](https://github.com/rainbowatcher/js-utils/issues/100)
+* chore(deps): update all non-major dependencies (#97) ([2879b40](https://github.com/rainbowatcher/js-utils/commit/2879b40)), closes [#97](https://github.com/rainbowatcher/js-utils/issues/97)
+* feat(common): add mergeWith function ([3ab9977](https://github.com/rainbowatcher/js-utils/commit/3ab9977))
+* feat(common): remove dep @sindresorhus/is ([cc75bd2](https://github.com/rainbowatcher/js-utils/commit/cc75bd2))
+
+
+
 ## 0.3.0 (2025-03-03)
 
 * docs: add docs for repositories and add script for gen doc ([8a8106c](https://github.com/rainbowatcher/js-utils/commit/8a8106c))

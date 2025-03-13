@@ -8,17 +8,15 @@
 
 > **normalize**(`inputPath`): `string`
 
-Defined in: [normalize.ts:19](https://github.com/rainbowatcher/js-utils/blob/68384686cd8847044b7e3911b28a2c08c926d445/packages/path-extra/src/normalize.ts#L19)
+Defined in: [normalize.ts:19](https://github.com/rainbowatcher/js-utils/blob/863115a1625327043cdd04e9106ea4a32f58a369/packages/path-extra/src/normalize.ts#L19)
 
 Normalizes a given file path to a consistent format.
 
 #### Parameters
 
-##### inputPath
-
-`string`
-
-the path to be normalized
+| Parameter   | Type     | Description               |
+| ----------- | -------- | ------------------------- |
+| `inputPath` | `string` | the path to be normalized |
 
 #### Returns
 
@@ -43,23 +41,16 @@ ref: <https://github.com/lint-staged/lint-staged/blob/master/lib/normalizePath.j
 
 > **toAbsolute**(`inputPath`, `cwd`): `string`
 
-Defined in: [to_absolute.ts:12](https://github.com/rainbowatcher/js-utils/blob/68384686cd8847044b7e3911b28a2c08c926d445/packages/path-extra/src/to_absolute.ts#L12)
+Defined in: [to_absolute.ts:12](https://github.com/rainbowatcher/js-utils/blob/863115a1625327043cdd04e9106ea4a32f58a369/packages/path-extra/src/to_absolute.ts#L12)
 
 Returns the absolute path of the given input path.
 
 #### Parameters
 
-##### inputPath
-
-`string`
-
-the path to be converted to absolute
-
-##### cwd
-
-`string` = `...`
-
-the current working directory
+| Parameter   | Type     | Description                          |
+| ----------- | -------- | ------------------------------------ |
+| `inputPath` | `string` | the path to be converted to absolute |
+| `cwd`       | `string` | the current working directory        |
 
 #### Returns
 
