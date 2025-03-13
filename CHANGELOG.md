@@ -1,3 +1,10 @@
+## <small>0.4.1 (2025-03-13)</small>
+
+* fix: improve object merging logic in `mergeWith` function ([e5a68b2](https://github.com/rainbowatcher/js-utils/commit/e5a68b2))
+* docs: update links ([f31115b](https://github.com/rainbowatcher/js-utils/commit/f31115b))
+
+
+
 ## 0.4.0 (2025-03-13)
 
 * test: add test case ([6566dc7](https://github.com/rainbowatcher/js-utils/commit/6566dc7))
