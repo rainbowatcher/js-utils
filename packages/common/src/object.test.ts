@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest"
-import { deepCopy, deepEqual } from "./object"
+import { deepCopy, deepEqual, mergeWith } from "./object"
+import type { Composer } from "./object"
 
 describe("deepEqual", () => {
     it("accurately compare two non-object", () => {
@@ -117,5 +118,94 @@ describe("deepCopy", () => {
         const copiedObject = deepCopy(originalObject)
         expect(copiedObject).not.toBe(originalObject)
         expect(copiedObject).toStrictEqual(originalObject)
+    })
+})
+
+describe("mergeWith", () => {
+    it("should merge two objects, preferring the right object's values", () => {
+        const left = { a: 1, b: 2 }
+        const right = { b: 3, c: 4 }
+        const expected = { a: 1, b: 3, c: 4 }
+        expect(mergeWith(left, right)).toStrictEqual(expected)
+    })
+
+    it("should handle undefined values in the right object", () => {
+        const left = { a: 1, b: 2 }
+        const right = { b: undefined, c: 4 }
+        const expected = { a: 1, b: 2, c: 4 }
+        expect(mergeWith(left, right)).toStrictEqual(expected)
+    })
+
+    it("should use the composer function to customize the merge behavior", () => {
+        const left = { a: 1, b: 2, d: ["first"] }
+        const right = { b: 3, c: 4, d: ["second"] }
+        const composer: Composer = (leftValue, rightValue, key) => {
+            if (key === "b") {
+                return leftValue + rightValue
+            }
+            if (Array.isArray(leftValue) && Array.isArray(rightValue)) {
+                return [...new Set([...leftValue, ...rightValue])]
+            }
+            return rightValue
+        }
+        const expected = {
+            a: 1, b: 5, c: 4, d: ["first", "second"],
+        }
+        expect(mergeWith(left, right, composer)).toStrictEqual(expected)
+    })
+
+    it("should work with empty objects", () => {
+        const left = {}
+        const right = { a: 1 }
+        const expected = { a: 1 }
+        expect(mergeWith(left, right)).toStrictEqual(expected)
+    })
+
+    it("should work when the left object is empty", () => {
+        const left: any = null
+        const right = { a: 1 }
+        const expected = { a: 1 }
+        expect(mergeWith(left, right)).toStrictEqual(expected)
+    })
+
+    it("should work when objects are nested", () => {
+        const left = {
+            a: 1,
+            b: 2,
+            c: {
+                d: 1,
+                foo: "bar",
+            },
+        }
+        const right = {
+            b: 3,
+            c: {
+                e: null,
+                foo: "baz",
+            },
+        }
+        const expected = {
+            a: 1, b: 3, c: { d: 1, e: null, foo: "baz" },
+        }
+        expect(mergeWith(left, right)).toStrictEqual(expected)
+    })
+
+    it("should work with function property", () => {
+        const left = {
+            get: () => "left",
+            print: (value: string) => { console.log(value) },
+        }
+        const right = {
+            get() {
+                return "right"
+            },
+        }
+        const expected = {
+            get() {
+                return "right"
+            },
+            print: (value: string) => { console.log(value) },
+        }
+        expect(mergeWith(left, right).get()).toStrictEqual(expected.get())
     })
 })

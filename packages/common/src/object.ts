@@ -106,3 +106,50 @@ export function deepEqual(first: unknown, second: unknown, keys?: string[]): boo
     }
     return true
 }
+
+export type Composer<L = any, R = any> = (leftValue: L[keyof L], rightValue: R[keyof R], key: PropertyKey, left: L, right: R) => unknown
+
+/**
+ * Merges two plain objects, using the right object's value if defined,
+ * and allowing custom merge behavior with a composer function.
+ *
+ * @param left - The left object to merge into.
+ * @param right - The right object to merge from.
+ * @param composer - An optional function to customize the merge behavior.
+ * @returns A new object with the merged properties.
+ */
+export function mergeWith<L extends Record<PropertyKey, any>, R extends undefined>(left: L, right: R, composer?: Composer<L, R>): L
+export function mergeWith<L extends undefined, R extends Record<PropertyKey, any>>(left: L, right: R, composer?: Composer<L, R>): R
+export function mergeWith<L extends Record<PropertyKey, any>, R extends Record<PropertyKey, any>>(left: L, right: R, composer?: Composer<L, R>): L & R
+
+export function mergeWith<L extends Record<PropertyKey, any>, R extends Record<PropertyKey, any>>(
+    left: L,
+    right: R,
+    composer?: Composer<L, R>,
+): L | (L & R) | R {
+    if (!left) return right
+
+    const result: Record<PropertyKey, any> = { ...left }
+    const rightKeys = Object.keys(right) as Array<keyof R>
+    for (const key of rightKeys) {
+        if (Object.prototype.hasOwnProperty.call(right, key)) {
+            const leftValue = left[key]
+            const rightValue = right[key]
+
+            const composered = composer?.(leftValue, rightValue, key, left, right)
+            if (composered) {
+                result[key] = composered
+            } else if (isObject(leftValue) && isObject(rightValue)) {
+                result[key] = mergeWith(leftValue as Record<PropertyKey, any>, rightValue as Record<PropertyKey, any>, composer)
+            } else if (rightValue !== undefined) {
+                result[key] = rightValue
+            }
+        }
+    }
+
+    return result
+}
+
+export function isObject(value?: unknown): value is Record<string, unknown> {
+    return typeof value === "object" && value !== null
+}
