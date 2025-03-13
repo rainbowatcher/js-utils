@@ -9,6 +9,7 @@ describe("List Utils", () => {
         expect(Collections.isEmpty(" ")).toBeFalsy()
         expect(Collections.isEmpty([])).toBeTruthy()
         expect(Collections.isEmpty(["a"])).toBeFalsy()
+        expect(Collections.isEmpty(new Int8Array())).toBeTruthy()
         expect(Collections.isEmpty(ud)).toBeTruthy()
     })
 
@@ -18,6 +19,7 @@ describe("List Utils", () => {
         expect(Collections.isNotEmpty(" ")).toBeTruthy()
         expect(Collections.isNotEmpty([])).toBeFalsy()
         expect(Collections.isNotEmpty(["a"])).toBeTruthy()
+        expect(Collections.isNotEmpty(new Int8Array())).toBeFalsy()
         expect(Collections.isNotEmpty(ud)).toBeFalsy()
     })
 })
