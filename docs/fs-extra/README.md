@@ -8,7 +8,7 @@
 
 > **exists**(`inputPath`): `Promise`\<`boolean`\>
 
-Defined in: [is.ts:9](https://github.com/rainbowatcher/js-utils/blob/863115a1625327043cdd04e9106ea4a32f58a369/packages/fs-extra/src/is.ts#L9)
+Defined in: [is.ts:9](https://github.com/rainbowatcher/js-utils/blob/61ffa0ab6afc1579d638930ef16f8d14406414ff/packages/fs-extra/src/is.ts#L9)
 
 Checks if a given path exists.
 
@@ -30,7 +30,7 @@ Whether the path exists or not.
 
 > **isDir**(`inputPath`): `Promise`\<`boolean`\>
 
-Defined in: [is.ts:24](https://github.com/rainbowatcher/js-utils/blob/863115a1625327043cdd04e9106ea4a32f58a369/packages/fs-extra/src/is.ts#L24)
+Defined in: [is.ts:24](https://github.com/rainbowatcher/js-utils/blob/61ffa0ab6afc1579d638930ef16f8d14406414ff/packages/fs-extra/src/is.ts#L24)
 
 Checks if a given path is a directory.
 
@@ -52,7 +52,7 @@ Whether the path is a directory.
 
 > **isDirSync**(`inputPath`): `boolean`
 
-Defined in: [is.ts:56](https://github.com/rainbowatcher/js-utils/blob/863115a1625327043cdd04e9106ea4a32f58a369/packages/fs-extra/src/is.ts#L56)
+Defined in: [is.ts:56](https://github.com/rainbowatcher/js-utils/blob/61ffa0ab6afc1579d638930ef16f8d14406414ff/packages/fs-extra/src/is.ts#L56)
 
 Checks if a path is a directory.
 
@@ -81,7 +81,7 @@ const isDir = await isDirSync("./")
 
 > **isFile**(`inputPath`): `Promise`\<`boolean`\>
 
-Defined in: [is.ts:38](https://github.com/rainbowatcher/js-utils/blob/863115a1625327043cdd04e9106ea4a32f58a369/packages/fs-extra/src/is.ts#L38)
+Defined in: [is.ts:38](https://github.com/rainbowatcher/js-utils/blob/61ffa0ab6afc1579d638930ef16f8d14406414ff/packages/fs-extra/src/is.ts#L38)
 
 Checks if a given path is a file.
 
@@ -103,7 +103,7 @@ Whether the path is a file.
 
 > **isFileSync**(`inputPath`): `boolean`
 
-Defined in: [is.ts:73](https://github.com/rainbowatcher/js-utils/blob/863115a1625327043cdd04e9106ea4a32f58a369/packages/fs-extra/src/is.ts#L73)
+Defined in: [is.ts:71](https://github.com/rainbowatcher/js-utils/blob/61ffa0ab6afc1579d638930ef16f8d14406414ff/packages/fs-extra/src/is.ts#L71)
 
 Checks if a file exists.
 
@@ -121,7 +121,7 @@ Whether the file exists.
 
 #### Example
 
-```js
+```ts
 const isFile = await isFileSync("./package.json")
 // isFile === true
 ```

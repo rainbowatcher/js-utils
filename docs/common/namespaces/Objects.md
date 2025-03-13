@@ -8,7 +8,7 @@
 
 > **Composer**\<`L`, `R`\>: (`leftValue`, `rightValue`, `key`, `left`, `right`) => `unknown`
 
-Defined in: [object.ts:111](https://github.com/rainbowatcher/js-utils/blob/863115a1625327043cdd04e9106ea4a32f58a369/packages/common/src/object.ts#L111)
+Defined in: [object.ts:111](https://github.com/rainbowatcher/js-utils/blob/61ffa0ab6afc1579d638930ef16f8d14406414ff/packages/common/src/object.ts#L111)
 
 #### Type Parameters
 
@@ -37,14 +37,14 @@ Defined in: [object.ts:111](https://github.com/rainbowatcher/js-utils/blob/86311
 
 > **DeepCopyOptions**: `object`
 
-Defined in: [object.ts:5](https://github.com/rainbowatcher/js-utils/blob/863115a1625327043cdd04e9106ea4a32f58a369/packages/common/src/object.ts#L5)
+Defined in: [object.ts:5](https://github.com/rainbowatcher/js-utils/blob/61ffa0ab6afc1579d638930ef16f8d14406414ff/packages/common/src/object.ts#L5)
 
 #### Type declaration
 
 | Name                          | Type                                          | Description                                                                | Defined in                                                                                                                                |
 | ----------------------------- | --------------------------------------------- | -------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| <a id="cycle"></a> `cycle`?   | `boolean`                                     | -                                                                          | [object.ts:6](https://github.com/rainbowatcher/js-utils/blob/863115a1625327043cdd04e9106ea4a32f58a369/packages/common/src/object.ts#L6)   |
-| <a id="filter"></a> `filter`? | [`FilterFunction`](Objects.md#filterfunction) | if the return value is true, the attribute will be removed from the object | [object.ts:11](https://github.com/rainbowatcher/js-utils/blob/863115a1625327043cdd04e9106ea4a32f58a369/packages/common/src/object.ts#L11) |
+| <a id="cycle"></a> `cycle`?   | `boolean`                                     | -                                                                          | [object.ts:6](https://github.com/rainbowatcher/js-utils/blob/61ffa0ab6afc1579d638930ef16f8d14406414ff/packages/common/src/object.ts#L6)   |
+| <a id="filter"></a> `filter`? | [`FilterFunction`](Objects.md#filterfunction) | if the return value is true, the attribute will be removed from the object | [object.ts:11](https://github.com/rainbowatcher/js-utils/blob/61ffa0ab6afc1579d638930ef16f8d14406414ff/packages/common/src/object.ts#L11) |
 
 ---
 
@@ -52,7 +52,7 @@ Defined in: [object.ts:5](https://github.com/rainbowatcher/js-utils/blob/863115a
 
 > **FilterFunction**: (`key`, `value`) => `boolean`
 
-Defined in: [object.ts:3](https://github.com/rainbowatcher/js-utils/blob/863115a1625327043cdd04e9106ea4a32f58a369/packages/common/src/object.ts#L3)
+Defined in: [object.ts:3](https://github.com/rainbowatcher/js-utils/blob/61ffa0ab6afc1579d638930ef16f8d14406414ff/packages/common/src/object.ts#L3)
 
 #### Parameters
 
@@ -71,7 +71,7 @@ Defined in: [object.ts:3](https://github.com/rainbowatcher/js-utils/blob/863115a
 
 > **deepCopy**\<`T`, `U`\>(`input`, `opts`?): `U`
 
-Defined in: [object.ts:21](https://github.com/rainbowatcher/js-utils/blob/863115a1625327043cdd04e9106ea4a32f58a369/packages/common/src/object.ts#L21)
+Defined in: [object.ts:21](https://github.com/rainbowatcher/js-utils/blob/61ffa0ab6afc1579d638930ef16f8d14406414ff/packages/common/src/object.ts#L21)
 
 Creates a deep copy of the input object, applying a filter function to exclude specific properties.
 
@@ -105,7 +105,7 @@ DeepCopyOptions
 
 > **deepEqual**(`first`, `second`, `keys`?): `boolean`
 
-Defined in: [object.ts:62](https://github.com/rainbowatcher/js-utils/blob/863115a1625327043cdd04e9106ea4a32f58a369/packages/common/src/object.ts#L62)
+Defined in: [object.ts:62](https://github.com/rainbowatcher/js-utils/blob/61ffa0ab6afc1579d638930ef16f8d14406414ff/packages/common/src/object.ts#L62)
 
 Check if two objects are deeply equal.
 
@@ -129,7 +129,7 @@ true if the objects are deeply equal, false otherwise
 
 > **isObject**(`value`?): `value is Record<string, unknown>`
 
-Defined in: [object.ts:154](https://github.com/rainbowatcher/js-utils/blob/863115a1625327043cdd04e9106ea4a32f58a369/packages/common/src/object.ts#L154)
+Defined in: [object.ts:154](https://github.com/rainbowatcher/js-utils/blob/61ffa0ab6afc1579d638930ef16f8d14406414ff/packages/common/src/object.ts#L154)
 
 #### Parameters
 
@@ -149,7 +149,7 @@ Defined in: [object.ts:154](https://github.com/rainbowatcher/js-utils/blob/86311
 
 > **mergeWith**\<`L`, `R`\>(`left`, `right`, `composer`?): `L`
 
-Defined in: [object.ts:122](https://github.com/rainbowatcher/js-utils/blob/863115a1625327043cdd04e9106ea4a32f58a369/packages/common/src/object.ts#L122)
+Defined in: [object.ts:122](https://github.com/rainbowatcher/js-utils/blob/61ffa0ab6afc1579d638930ef16f8d14406414ff/packages/common/src/object.ts#L122)
 
 Merges two plain objects, using the right object's value if defined,
 and allowing custom merge behavior with a composer function.
@@ -179,7 +179,7 @@ A new object with the merged properties.
 
 > **mergeWith**\<`L`, `R`\>(`left`, `right`, `composer`?): `R`
 
-Defined in: [object.ts:123](https://github.com/rainbowatcher/js-utils/blob/863115a1625327043cdd04e9106ea4a32f58a369/packages/common/src/object.ts#L123)
+Defined in: [object.ts:123](https://github.com/rainbowatcher/js-utils/blob/61ffa0ab6afc1579d638930ef16f8d14406414ff/packages/common/src/object.ts#L123)
 
 Merges two plain objects, using the right object's value if defined,
 and allowing custom merge behavior with a composer function.
@@ -209,7 +209,7 @@ A new object with the merged properties.
 
 > **mergeWith**\<`L`, `R`\>(`left`, `right`, `composer`?): `L` & `R`
 
-Defined in: [object.ts:124](https://github.com/rainbowatcher/js-utils/blob/863115a1625327043cdd04e9106ea4a32f58a369/packages/common/src/object.ts#L124)
+Defined in: [object.ts:124](https://github.com/rainbowatcher/js-utils/blob/61ffa0ab6afc1579d638930ef16f8d14406414ff/packages/common/src/object.ts#L124)
 
 Merges two plain objects, using the right object's value if defined,
 and allowing custom merge behavior with a composer function.

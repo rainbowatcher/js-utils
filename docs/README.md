@@ -1,4 +1,4 @@
-# Documentation v0.3.0
+# Documentation v0.4.0
 
 ## Packages
 
