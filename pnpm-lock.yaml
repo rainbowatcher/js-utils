@@ -84,11 +84,7 @@ importers:
         specifier: ^3.0.8
         version: 3.0.8(@types/debug@4.1.12)(@types/node@22.13.10)(happy-dom@17.4.4)
 
-  packages/common:
-    devDependencies:
-      '@sindresorhus/is':
-        specifier: ^7.0.1
-        version: 7.0.1
+  packages/common: {}
 
   packages/fs-extra:
     devDependencies:
@@ -827,10 +823,6 @@ packages:
 
   '@sinclair/typebox@0.27.8':
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
-
-  '@sindresorhus/is@7.0.1':
-    resolution: {integrity: sha512-QWLl2P+rsCJeofkDNIT3WFmb6NrRud1SUYW8dIhXK/46XFV8Q/g7Bsvib0Askb0reRLe+WYPeeE+l5cH7SlkuQ==}
-    engines: {node: '>=18'}
 
   '@stylistic/eslint-plugin-js@4.1.0':
     resolution: {integrity: sha512-YOe+dChNoR26JVVt+7BjyebsPIQF05OLNmHCXivq8lLZ4ZeVs4+wXaW+pREVboDiAaSRznauAdAU8f+iQouw6Q==}
@@ -3759,8 +3751,6 @@ snapshots:
   '@shikijs/vscode-textmate@10.0.2': {}
 
   '@sinclair/typebox@0.27.8': {}
-
-  '@sindresorhus/is@7.0.1': {}
 
   '@stylistic/eslint-plugin-js@4.1.0(eslint@9.22.0(jiti@2.4.2))':
     dependencies:
