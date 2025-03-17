@@ -1,3 +1,12 @@
+## 0.5.0 (2025-03-17)
+
+* refactor: refactor: Improve type safety of deep copy and merge functions ([66a6c72](https://github.com/rainbowatcher/js-utils/commit/66a6c72))
+* refactor(common): rename functions ([a9781a8](https://github.com/rainbowatcher/js-utils/commit/a9781a8))
+* chore: add zed editor config and fix TypeScript project files ([8ee03ef](https://github.com/rainbowatcher/js-utils/commit/8ee03ef))
+* docs: update links ([87b2e88](https://github.com/rainbowatcher/js-utils/commit/87b2e88))
+
+
+
 ## <small>0.4.1 (2025-03-13)</small>
 
 * fix: improve object merging logic in `mergeWith` function ([e5a68b2](https://github.com/rainbowatcher/js-utils/commit/e5a68b2))
