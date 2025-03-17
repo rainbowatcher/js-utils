@@ -11,6 +11,15 @@ export type DeepCopyOptions = {
     filter?: FilterFunction
 }
 
+type IsObject<T> = T extends Record<PropertyKey, any> ? true : false
+type IsArray<T> = T extends any[] ? true : false
+type HandleUndefined<L, R> = R extends undefined ? L : R
+type ArrayElement<T> = T extends Array<infer U> ? U : never
+
+export type DeepCopyResult<T> = IsArray<T> extends true ? Array<DeepCopyResult<ArrayElement<T>>> :
+    IsObject<T> extends true
+        ? { [K in keyof T]: DeepCopyResult<T[K]> } : T
+
 /**
  * Creates a deep copy of the input object, applying a filter function to exclude specific properties.
  *
@@ -18,18 +27,18 @@ export type DeepCopyOptions = {
  * @param opts - options to control copy behaviors @see DeepCopyOptions
  * @return the deep copied object with excluded properties
  */
-export function deepCopy<T, U>(input: T, opts?: DeepCopyOptions): U {
+export function deepCopy<T>(input: T, opts?: DeepCopyOptions): DeepCopyResult<T> {
     const {
         cycle = true,
         filter = () => false,
     } = opts ?? {}
 
     if (typeof input !== "object" || input === null) {
-        return input as unknown as U
+        return input as DeepCopyResult<T>
     }
 
     if (Array.isArray(input)) {
-        return input.map(item => deepCopy(item, opts)) as unknown as U
+        return input.map(item => deepCopy(item, opts)) as DeepCopyResult<T>
     }
 
     const output: Record<string, unknown> = {}
@@ -48,7 +57,7 @@ export function deepCopy<T, U>(input: T, opts?: DeepCopyOptions): U {
         }
     }
 
-    return output as U
+    return output as DeepCopyResult<T>
 }
 
 /**
@@ -108,7 +117,31 @@ export function deepEqual(first: unknown, second: unknown, keys?: string[]): boo
     return true
 }
 
-export type Composer<L = any, R = any> = (leftValue: L[keyof L], rightValue: R[keyof R], key: PropertyKey, left: L, right: R) => unknown
+export type Composer<L extends Record<PropertyKey, any> = any, R extends Record<PropertyKey, any> = any> = (
+    leftValue: L[keyof L],
+    rightValue: R[keyof R],
+    key: keyof L & keyof R,
+    left: L,
+    right: R
+) => any
+
+export type MergedType<L, R> =
+  IsObject<L> extends true
+      ? IsObject<R> extends true
+          ? {
+              [K in keyof L | keyof R]:
+              K extends keyof R
+                  ? R[K] extends undefined
+                      ? K extends keyof L
+                          ? L[K]
+                          : undefined
+                      : R[K]
+                  : K extends keyof L
+                      ? L[K]
+                      : never
+          }
+          : HandleUndefined<L, R>
+      : HandleUndefined<L, R>
 
 /**
  * Merges two plain objects, using the right object's value if defined,
@@ -119,19 +152,16 @@ export type Composer<L = any, R = any> = (leftValue: L[keyof L], rightValue: R[k
  * @param composer - An optional function to customize the merge behavior.
  * @returns A new object with the merged properties.
  */
-export function mergeWith<L extends Record<PropertyKey, any>, R extends undefined>(left: L, right: R, composer?: Composer<L, R>): L
-export function mergeWith<L extends undefined, R extends Record<PropertyKey, any>>(left: L, right: R, composer?: Composer<L, R>): R
-export function mergeWith<L extends Record<PropertyKey, any>, R extends Record<PropertyKey, any>>(left: L, right: R, composer?: Composer<L, R>): L & R
-
 export function mergeWith<L extends Record<PropertyKey, any>, R extends Record<PropertyKey, any>>(
     left: L,
     right: R,
     composer?: Composer<L, R>,
-): L | (L & R) | R {
+): MergedType<L, R> {
     if (!isObject(left) || !isObject(right)) {
-        return left ?? right
+        return (right ?? left) as MergedType<L, R>
     }
-    const result: Record<PropertyKey, any> = { ...left }
+
+    const result = { ...left }
     const rightKeys = Object.keys(right) as Array<keyof R>
     for (const key of rightKeys) {
         if (Object.prototype.hasOwnProperty.call(right, key)) {
@@ -142,16 +172,16 @@ export function mergeWith<L extends Record<PropertyKey, any>, R extends Record<P
             if (composered) {
                 result[key] = composered
             } else if (isObject(leftValue) && isObject(rightValue)) {
-                result[key] = mergeWith(leftValue as Record<PropertyKey, any>, rightValue as Record<PropertyKey, any>, composer)
+                result[key] = mergeWith(leftValue as Record<PropertyKey, any>, rightValue as Record<PropertyKey, any>, composer) as any
             } else if (rightValue !== undefined) {
                 result[key] = rightValue
             }
         }
     }
 
-    return result
+    return result as MergedType<L, R>
 }
 
-export function isObject(value?: unknown): value is Record<string, unknown> {
+export function isObject(value?: unknown): value is Record<PropertyKey, any> {
     return typeof value === "object" && value !== null
 }

@@ -81,7 +81,7 @@ describe("deepCopy", () => {
         expect(deepCopy(1)).toBe(1)
         expect(deepCopy("string")).toBe("string")
         expect(deepCopy(null)).toBeNull()
-
+        // eslint-disable-next-line ts/no-confusing-void-expression
         expect(deepCopy(undefined)).toBeUndefined()
     })
 
@@ -126,14 +126,16 @@ describe("mergeWith", () => {
         const left = { a: 1, b: 2 }
         const right = { b: 3, c: 4 }
         const expected = { a: 1, b: 3, c: 4 }
-        expect(mergeWith(left, right)).toStrictEqual(expected)
+        const result = mergeWith(left, right)
+        expect(result).toStrictEqual(expected)
     })
 
     it("should handle undefined values in the right object", () => {
         const left = { a: 1, b: 2 }
         const right = { b: undefined, c: 4 }
         const expected = { a: 1, b: 2, c: 4 }
-        expect(mergeWith(left, right)).toStrictEqual(expected)
+        const result = mergeWith(left, right)
+        expect(result).toStrictEqual(expected)
     })
 
     it("should use the composer function to customize the merge behavior", () => {
@@ -151,7 +153,8 @@ describe("mergeWith", () => {
         const expected = {
             a: 1, b: 5, c: 4, d: ["first", "second"],
         }
-        expect(mergeWith(left, right, composer)).toStrictEqual(expected)
+        const result = mergeWith(left, right, composer)
+        expect(result).toStrictEqual(expected)
     })
 
     it("should work with empty objects", () => {
@@ -187,7 +190,8 @@ describe("mergeWith", () => {
         const expected = {
             a: 1, b: 3, c: { d: 1, e: null, foo: "baz" },
         }
-        expect(mergeWith(left, right)).toStrictEqual(expected)
+        const result = mergeWith(left, right)
+        expect(result).toStrictEqual(expected)
     })
 
     it("should work with function property", () => {
