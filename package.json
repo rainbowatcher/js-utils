@@ -3,7 +3,7 @@
     "type": "module",
     "version": "0.5.0",
     "private": true,
-    "packageManager": "pnpm@10.6.2",
+    "packageManager": "pnpm@10.6.3",
     "scripts": {
         "build": "pnpm -r build",
         "doc": "tsx scripts/gendoc.ts",
@@ -37,10 +37,10 @@
         "tsd": "^0.31.2",
         "tsup": "^8.4.0",
         "tsx": "^4.19.3",
-        "typedoc": "^0.27.9",
-        "typedoc-plugin-markdown": "^4.4.2",
+        "typedoc": "^0.28.0",
+        "typedoc-plugin-markdown": "^4.5.0",
         "typescript": "^5.8.2",
-        "vitest": "^3.0.8"
+        "vitest": "^3.0.9"
     },
     "simple-git-hooks": {
         "pre-commit": "npx lint-staged",
