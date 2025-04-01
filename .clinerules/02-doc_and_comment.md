@@ -1,0 +1,8 @@
+- Comment Purpose
+  - Write comments to explain "why" not "what"
+  - Comment complex or non-obvious code sections
+  - Document any workarounds or temporary solutions
+- Documentation
+  - Document public APIs with basic usage information
+  - Include parameter descriptions and return values
+  - Document any exceptions or errors that may occur

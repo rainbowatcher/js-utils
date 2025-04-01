@@ -1,0 +1,2 @@
+- Use Vitest as the testing library
+- Running test by alias

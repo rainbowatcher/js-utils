@@ -1,0 +1,4 @@
+- Use double quotes for all strings
+- Whitespace
+  - Add empty lines to separate logical code sections
+- Limit the number of function parameters (ideally 3 or fewer)
