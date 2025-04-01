@@ -1,4 +1,4 @@
-import { isDate } from "./is"
+import { isDate, isObject } from "./is"
 
 export type FilterFunction = (key: string, value: any) => boolean
 
@@ -161,7 +161,9 @@ export function mergeWith<L extends Record<PropertyKey, any>, R extends Record<P
         return (right ?? left) as MergedType<L, R>
     }
 
-    const result = { ...left }
+    const result = Object.create(Object.getPrototypeOf(left))
+    Object.assign(result, left)
+
     const rightKeys = Object.keys(right) as Array<keyof R>
     for (const key of rightKeys) {
         if (Object.prototype.hasOwnProperty.call(right, key)) {
@@ -171,9 +173,18 @@ export function mergeWith<L extends Record<PropertyKey, any>, R extends Record<P
             const composered = composer?.(leftValue, rightValue, key, left, right)
             if (composered) {
                 result[key] = composered
+            } else if (Array.isArray(leftValue) && Array.isArray(rightValue)) {
+                result[key] = rightValue.length > 0 ? rightValue : leftValue
             } else if (isObject(leftValue) && isObject(rightValue)) {
-                result[key] = mergeWith(leftValue as Record<PropertyKey, any>, rightValue as Record<PropertyKey, any>, composer) as any
-            } else if (rightValue !== undefined) {
+                if (rightValue === left || rightValue === right) {
+                    throw new Error("Detected circular reference in mergeWith, You must handle it in composer manually")
+                }
+                result[key] = mergeWith(
+                    leftValue as Record<PropertyKey, any>,
+                    rightValue as Record<PropertyKey, any>,
+                    composer,
+                ) as any
+            } else if (hasValue(rightValue) || !hasValue(leftValue)) {
                 result[key] = rightValue
             }
         }
@@ -182,6 +193,24 @@ export function mergeWith<L extends Record<PropertyKey, any>, R extends Record<P
     return result as MergedType<L, R>
 }
 
-export function isObject(value?: unknown): value is Record<PropertyKey, any> {
-    return typeof value === "object" && value !== null
+export function hasValue(value?: unknown): boolean {
+    if (value === null || value === undefined) {
+        return false
+    }
+    if (typeof value === "number"
+        || typeof value === "bigint"
+        || typeof value === "boolean"
+        || typeof value === "function"
+        || typeof value === "symbol"
+        || typeof value === "string"
+        || isDate(value)
+    ) {
+        return true
+    }
+    if (Array.isArray(value)) {
+        return value.length > 0
+    } else if (isObject(value)) {
+        return Object.keys(value)?.length > 0
+    }
+    return false
 }

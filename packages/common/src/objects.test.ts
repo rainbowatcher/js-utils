@@ -1,5 +1,10 @@
 import { describe, expect, it } from "vitest"
-import { deepCopy, deepEqual, mergeWith } from "./objects"
+import {
+    deepCopy,
+    deepEqual,
+    hasValue,
+    mergeWith,
+} from "./objects"
 import type { Composer } from "./objects"
 
 describe("deepEqual", () => {
@@ -122,6 +127,40 @@ describe("deepCopy", () => {
 })
 
 describe("mergeWith", () => {
+    it("should handle class instances and prototype chain", () => {
+        class Person {
+            age: number
+            name: string
+            constructor(name: string, age: number) {
+                this.name = name
+                this.age = age
+            }
+            greet() {
+                return `Hello, my name is ${this.name}`
+            }
+        }
+
+        const left = new Person("Alice", 30)
+        const right = { gender: "male", name: "Bob" }
+
+        const result = mergeWith(left, right)
+        expect(result).toBeInstanceOf(Person)
+        expect(result.name).toBe("Bob")
+        expect(result.age).toBe(30)
+        expect(result.gender).toBe("male")
+        expect(result.greet()).toBe("Hello, my name is Bob")
+    })
+
+    it("should raise when meet circular references", () => {
+        const left: Record<string, any> = { a: 1 }
+        left.self = left
+
+        const right: Record<string, any> = { b: 2 }
+        right.self = right
+
+        expect(() => mergeWith(left, right)).toThrow("Detected circular reference in mergeWith, You must handle it in composer manually")
+    })
+
     it("should merge two objects, preferring the right object's values", () => {
         const left = { a: 1, b: 2 }
         const right = { b: 3, c: 4 }
@@ -171,6 +210,32 @@ describe("mergeWith", () => {
         expect(mergeWith(left, right)).toStrictEqual(expected)
     })
 
+    it("should work when the right object is empty", () => {
+        const left: any = { a: 1 }
+        const right = null
+        const expected = { a: 1 }
+        expect(mergeWith(left, right as unknown as {})).toStrictEqual(expected)
+    })
+
+    it("should work when the right props is empty", () => {
+        const left: any = { a: 1, b: ["first"] }
+        const right = { a: null, b: [] }
+        const expected = { a: 1, b: ["first"] }
+        expect(mergeWith(left, right as unknown as {})).toStrictEqual(expected)
+    })
+
+    it("should work when the right props is empty with composer", () => {
+        const left: any = { a: 1, b: ["first"] }
+        const right = { a: null, b: [] }
+        const composer: Composer = (left, right, key) => {
+            if (["commit", "push", "tag"].includes(key as string) && right === true) {
+                return left
+            }
+        }
+        const expected = { a: 1, b: ["first"] }
+        expect(mergeWith(left, right, composer)).toStrictEqual(expected)
+    })
+
     it("should work when objects are nested", () => {
         const left = {
             a: 1,
@@ -211,5 +276,45 @@ describe("mergeWith", () => {
             print: (value: string) => { console.log(value) },
         }
         expect(mergeWith(left, right).get()).toStrictEqual(expected.get())
+    })
+})
+
+
+describe("hasValue", () => {
+    it("should return false for null and undefined", () => {
+        expect(hasValue(null)).toBeFalsy()
+        expect(hasValue(undefined)).toBeFalsy()
+    })
+
+    it("should return true for primitive values", () => {
+        expect(hasValue(0)).toBeTruthy()
+        expect(hasValue("")).toBeTruthy()
+        expect(hasValue(false)).toBeTruthy()
+        expect(hasValue(true)).toBeTruthy()
+        expect(hasValue(Number.NaN)).toBeTruthy()
+        expect(hasValue(BigInt(1))).toBeTruthy()
+    })
+
+    it("should check array length", () => {
+        expect(hasValue([])).toBeFalsy()
+        expect(hasValue([1, 2, 3])).toBeTruthy()
+        expect(hasValue(new Uint8Array([1]))).toBeTruthy()
+    })
+
+    it("should check object properties", () => {
+        expect(hasValue({})).toBeFalsy()
+        expect(hasValue({ a: 1 })).toBeTruthy()
+    })
+
+    it("should handle special objects", () => {
+        expect(hasValue(new Date())).toBeTruthy()
+        expect(hasValue(() => {})).toBeTruthy()
+        expect(hasValue(Symbol())).toBeTruthy()
+    })
+
+    it("should handle edge cases", () => {
+        expect(hasValue(" ")).toBeTruthy()
+        expect(hasValue(0)).toBeTruthy()
+        expect(hasValue(false)).toBeTruthy()
     })
 })
