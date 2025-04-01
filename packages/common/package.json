@@ -1,7 +1,7 @@
 {
     "name": "@rainbowatcher/common",
     "type": "module",
-    "version": "0.5.0",
+    "version": "0.6.0",
     "packageManager": "pnpm@10.7.0",
     "description": "Opinionated collection of common JavaScript / TypeScript utils by @rainbowatcher",
     "author": "rainbowatcher <rainbow-w@outlook.com>",

@@ -1,3 +1,13 @@
+## 0.6.0 (2025-04-01)
+
+* chore: enforce code style, documentation, and testing rules ([6a02533](https://github.com/rainbowatcher/js-utils/commit/6a02533))
+* chore(deps): update all non-major dependencies ([c65492a](https://github.com/rainbowatcher/js-utils/commit/c65492a))
+* chore(deps): update all non-major dependencies ([c892411](https://github.com/rainbowatcher/js-utils/commit/c892411))
+* chore(deps): update all non-major dependencies ([42d8ad4](https://github.com/rainbowatcher/js-utils/commit/42d8ad4))
+* feat: improve data handling and type checking utilities ([05cc648](https://github.com/rainbowatcher/js-utils/commit/05cc648))
+
+
+
 ## 0.5.0 (2025-03-17)
 
 * refactor: refactor: Improve type safety of deep copy and merge functions ([66a6c72](https://github.com/rainbowatcher/js-utils/commit/66a6c72))
