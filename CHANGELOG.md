@@ -1,3 +1,11 @@
+## 0.7.0 (2025-04-02)
+
+* fix: improve TypeScript code quality. ([27a43b9](https://github.com/rainbowatcher/js-utils/commit/27a43b9))
+* chore(deps): bump deps ([02222d3](https://github.com/rainbowatcher/js-utils/commit/02222d3))
+* feat: improve mergeWith function to handle edge cases ([22107d1](https://github.com/rainbowatcher/js-utils/commit/22107d1))
+
+
+
 ## 0.6.0 (2025-04-01)
 
 * chore: enforce code style, documentation, and testing rules ([6a02533](https://github.com/rainbowatcher/js-utils/commit/6a02533))
