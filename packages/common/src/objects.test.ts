@@ -244,6 +244,7 @@ describe("mergeWith", () => {
                 d: 1,
                 foo: "bar",
             },
+            f: undefined,
         }
         const right = {
             b: 3,
@@ -255,7 +256,7 @@ describe("mergeWith", () => {
         const expected = {
             a: 1, b: 3, c: { d: 1, e: null, foo: "baz" },
         }
-        const result = mergeWith(left, right)
+        const result = mergeWith(left, right, { ignoreUndefined: true })
         expect(result).toStrictEqual(expected)
     })
 

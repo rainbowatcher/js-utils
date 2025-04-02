@@ -125,6 +125,15 @@ export type Composer<L extends Record<PropertyKey, any> = any, R extends Record<
     right: R
 ) => any
 
+export type MergeWithOptions<L extends Record<PropertyKey, any> = any, R extends Record<PropertyKey, any> = any> = {
+    composer?: Composer<L, R>
+
+    /**
+     * if true, undefined value in left will be ignored
+     */
+    ignoreUndefined?: boolean
+}
+
 export type MergedType<L, R> =
   IsObject<L> extends true
       ? IsObject<R> extends true
@@ -149,20 +158,25 @@ export type MergedType<L, R> =
  *
  * @param left - The left object to merge into.
  * @param right - The right object to merge from.
- * @param composer - An optional function to customize the merge behavior.
+ * @param options - An optional function or options object to customize the merge behavior. @see MergeWithOptions
  * @returns A new object with the merged properties.
  */
 export function mergeWith<L extends Record<PropertyKey, any>, R extends Record<PropertyKey, any>>(
     left: L,
     right: R,
-    composer?: Composer<L, R>,
+    options?: Composer<L, R> | MergeWithOptions<L, R>,
 ): MergedType<L, R> {
+    const { composer, ignoreUndefined = false } = typeof options === "function" ? { composer: options } : options ?? {}
+
     if (!isObject(left) || !isObject(right)) {
         return (right ?? left) as MergedType<L, R>
     }
 
     const result = Object.create(Object.getPrototypeOf(left))
-    Object.assign(result, left)
+    const _left = ignoreUndefined
+        ? Object.fromEntries(Object.entries(left).filter(([_, value]) => value !== undefined))
+        : left
+    Object.assign(result, _left)
 
     const rightKeys = Object.keys(right) as Array<keyof R>
     for (const key of rightKeys) {
@@ -174,6 +188,7 @@ export function mergeWith<L extends Record<PropertyKey, any>, R extends Record<P
             if (composered) {
                 result[key] = composered
             } else if (Array.isArray(leftValue) && Array.isArray(rightValue)) {
+                // Use right array if it's not empty, otherwise use left
                 result[key] = rightValue.length > 0 ? rightValue : leftValue
             } else if (isObject(leftValue) && isObject(rightValue)) {
                 if (rightValue === left || rightValue === right) {
@@ -182,11 +197,16 @@ export function mergeWith<L extends Record<PropertyKey, any>, R extends Record<P
                 result[key] = mergeWith(
                     leftValue as Record<PropertyKey, any>,
                     rightValue as Record<PropertyKey, any>,
-                    composer,
+                    options, // Pass the original options down
                 ) as any
-            } else if (hasValue(rightValue) || !hasValue(leftValue)) {
+            } else if (hasValue(rightValue)) {
+                // Prefer right value if it has value
+                result[key] = rightValue
+            } else if (!hasValue(leftValue)) {
+                // If left also has no value (both are null/undefined/empty), use right's value (which is null/undefined)
                 result[key] = rightValue
             }
+            // If rightValue has no value but leftValue does, keep leftValue (already assigned via Object.assign)
         }
     }
 
