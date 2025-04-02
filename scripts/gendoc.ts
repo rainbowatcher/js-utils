@@ -28,7 +28,6 @@ const options = {
     useCodeBlocks: false,
 }
 
-// @ts-expect-error type missmatch
 const app = await td.Application.bootstrapWithPlugins(options)
 
 const project = await app.convert()
