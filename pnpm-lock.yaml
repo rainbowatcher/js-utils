@@ -57,8 +57,8 @@ importers:
         specifier: ^15.5.2
         version: 15.5.2
       nano-spawn:
-        specifier: ^0.2.0
-        version: 0.2.0
+        specifier: ^1.0.0
+        version: 1.0.0
       simple-git-hooks:
         specifier: ^2.13.0
         version: 2.13.0
@@ -2506,9 +2506,9 @@ packages:
   mz@2.7.0:
     resolution: {integrity: sha512-z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q==}
 
-  nano-spawn@0.2.0:
-    resolution: {integrity: sha512-IjZBIOLxSlxu+m/kacg9JuP93oUpRemeV0mEuCy64nzBKKIL9m0aLJHtVPcVuzJDHFhElzjpwbW4a3tMzgKoZQ==}
-    engines: {node: '>=18.19'}
+  nano-spawn@1.0.0:
+    resolution: {integrity: sha512-plU3uxtqhW8tzz6VjM02oOAOp0hfSBFW6sCrZwdZzN/PwY9rgtwfo4v9Wyk/+FghaSjyqilerUt3HKsbvQmVjg==}
+    engines: {node: '>=20.18'}
 
   nanoid@3.3.7:
     resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
@@ -6071,7 +6071,7 @@ snapshots:
       object-assign: 4.1.1
       thenify-all: 1.6.0
 
-  nano-spawn@0.2.0: {}
+  nano-spawn@1.0.0: {}
 
   nanoid@3.3.7: {}
 
