@@ -31,7 +31,7 @@
         "conventional-changelog-cli": "^5.0.0",
         "eslint": "^9.27.0",
         "happy-dom": "^17.4.7",
-        "lint-staged": "^15.5.2",
+        "lint-staged": "^16.0.0",
         "nano-spawn": "^0.2.1",
         "simple-git-hooks": "^2.13.0",
         "tsd": "^0.32.0",
