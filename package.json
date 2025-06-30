@@ -25,7 +25,7 @@
         "@rainbowatcher/eslint-config-md": "^0.21.1",
         "@rainbowatcher/eslint-config-prettier": "^0.21.1",
         "@rainbowatcher/eslint-config-ts": "^0.21.1",
-        "@types/node": "^22.15.33",
+        "@types/node": "^22.15.34",
         "bumpp": "^10.2.0",
         "commitlint": "^19.8.1",
         "conventional-changelog-cli": "^5.0.0",
@@ -37,7 +37,7 @@
         "tsd": "^0.32.0",
         "tsup": "^8.5.0",
         "tsx": "^4.20.3",
-        "typedoc": "^0.28.6",
+        "typedoc": "^0.28.7",
         "typedoc-plugin-markdown": "^4.7.0",
         "typescript": "^5.8.3",
         "vitest": "^3.2.4"
