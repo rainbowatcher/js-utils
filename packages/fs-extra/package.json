@@ -18,6 +18,6 @@
         "build": "tsup"
     },
     "devDependencies": {
-        "memfs": "^4.23.0"
+        "memfs": "^4.34.0"
     }
 }
