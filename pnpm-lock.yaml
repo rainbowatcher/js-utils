@@ -89,8 +89,8 @@ importers:
   packages/fs-extra:
     devDependencies:
       memfs:
-        specifier: ^4.38.2
-        version: 4.38.2
+        specifier: ^4.39.0
+        version: 4.39.0
 
   packages/maybe: {}
 
@@ -2228,8 +2228,8 @@ packages:
   mdurl@2.0.0:
     resolution: {integrity: sha512-Lf+9+2r+Tdp5wXDXC4PcIBjTDtq4UKjCPMQhKIuzpJNW0b96kVqSwW0bT7FhRSfmAiFYgP+SCRvdrDozfh0U5w==}
 
-  memfs@4.38.2:
-    resolution: {integrity: sha512-FpWsVHpAkoSh/LfY1BgAl72BVd374ooMRtDi2VqzBycX4XEfvC0XKACCe0C9VRZoYq5viuoyTv6lYXZ/Q7TrLQ==}
+  memfs@4.39.0:
+    resolution: {integrity: sha512-tFRr2IkSXl2B6IAJsxjHIMTOsfLt9W+8+t2uNxCeQcz4tFqgQR8DYk8hlLH2HsucTctLuoHq3U0G08atyBE3yw==}
     engines: {node: '>= 4.0.0'}
 
   meow@12.1.1:
@@ -5382,7 +5382,7 @@ snapshots:
 
   mdurl@2.0.0: {}
 
-  memfs@4.38.2:
+  memfs@4.39.0:
     dependencies:
       '@jsonjoy.com/json-pack': 1.11.0(tslib@2.7.0)
       '@jsonjoy.com/util': 1.9.0(tslib@2.7.0)
