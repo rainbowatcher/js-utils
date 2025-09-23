@@ -2,7 +2,7 @@
     "name": "@rainbowatcher/maybe",
     "type": "module",
     "version": "0.7.0",
-    "packageManager": "pnpm@10.17.0",
+    "packageManager": "pnpm@10.17.1",
     "description": "Type",
     "author": "rainbowatcher <rainbow-w@outlook.com>",
     "license": "MIT",
