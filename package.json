@@ -16,8 +16,8 @@
         "release": "bumpp --all -rx 'pnpm changelog' && pnpm build && pnpm -r publish"
     },
     "devDependencies": {
-        "@commitlint/config-conventional": "^19.8.1",
-        "@commitlint/types": "^19.8.1",
+        "@commitlint/config-conventional": "^20.0.0",
+        "@commitlint/types": "^20.0.0",
         "@rainbowatcher/eslint-config": "^0.21.1",
         "@rainbowatcher/eslint-config-ignore": "^0.21.1",
         "@rainbowatcher/eslint-config-js": "^0.21.1",
@@ -27,7 +27,7 @@
         "@rainbowatcher/eslint-config-ts": "^0.21.1",
         "@types/node": "^22.19.1",
         "bumpp": "^10.3.2",
-        "commitlint": "^19.8.1",
+        "commitlint": "^20.1.0",
         "conventional-changelog-cli": "^5.0.0",
         "eslint": "^9.39.1",
         "happy-dom": "^17.6.3",
