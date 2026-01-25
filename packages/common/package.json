@@ -2,7 +2,7 @@
     "name": "@rainbowatcher/common",
     "type": "module",
     "version": "0.7.0",
-    "packageManager": "pnpm@10.27.0",
+    "packageManager": "pnpm@10.28.1",
     "description": "Opinionated collection of common JavaScript / TypeScript utils by @rainbowatcher",
     "author": "rainbowatcher <rainbow-w@outlook.com>",
     "license": "MIT",
