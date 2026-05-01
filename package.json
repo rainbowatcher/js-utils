@@ -3,7 +3,7 @@
     "type": "module",
     "version": "0.7.0",
     "private": true,
-    "packageManager": "pnpm@10.33.0",
+    "packageManager": "pnpm@10.33.2",
     "scripts": {
         "build": "pnpm -r build",
         "doc": "tsx scripts/gendoc.ts",
@@ -16,7 +16,7 @@
         "release": "bumpp --all -rx 'pnpm changelog' && pnpm build && pnpm -r publish"
     },
     "devDependencies": {
-        "@commitlint/config-conventional": "^20.5.0",
+        "@commitlint/config-conventional": "^20.5.3",
         "@commitlint/types": "^20.5.0",
         "@rainbowatcher/eslint-config": "^0.21.1",
         "@rainbowatcher/eslint-config-ignore": "^0.21.1",
@@ -27,7 +27,7 @@
         "@rainbowatcher/eslint-config-ts": "^0.21.1",
         "@types/node": "^24.12.2",
         "bumpp": "^11.0.1",
-        "commitlint": "^20.5.0",
+        "commitlint": "^20.5.3",
         "conventional-changelog-cli": "^5.0.0",
         "eslint": "^9.39.4",
         "happy-dom": "^20.9.0",
