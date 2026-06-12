@@ -29,7 +29,7 @@
         "bumpp": "^11.1.0",
         "commitlint": "^20.5.3",
         "conventional-changelog-cli": "^5.0.0",
-        "eslint": "^9.39.4",
+        "eslint": "^10.5.0",
         "happy-dom": "^20.10.2",
         "lint-staged": "^16.4.0",
         "nano-spawn": "^2.1.0",
