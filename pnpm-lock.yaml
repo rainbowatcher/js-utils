@@ -16,13 +16,13 @@ importers:
         version: 20.5.0
       '@rainbowatcher/eslint-config':
         specifier: ^0.21.1
-        version: 0.21.1(@rainbowatcher/eslint-config-ignore@0.21.1(eslint@9.39.5(jiti@2.6.1)))(@rainbowatcher/eslint-config-js@0.21.1(@typescript-eslint/eslint-plugin@8.25.0(@typescript-eslint/parser@8.25.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/utils@8.25.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3)(vitest@4.1.11(@types/node@24.13.3)(happy-dom@20.12.0)(vite@7.1.11(@types/node@24.13.3)(jiti@2.6.1)(tsx@4.23.13)(yaml@2.9.0))))(@rainbowatcher/eslint-config-json@0.21.1(eslint@9.39.5(jiti@2.6.1)))(@rainbowatcher/eslint-config-md@0.21.1(eslint@9.39.5(jiti@2.6.1)))(@rainbowatcher/eslint-config-prettier@0.21.1(@types/eslint@9.6.0)(eslint@9.39.5(jiti@2.6.1)))(@rainbowatcher/eslint-config-ts@0.21.1(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.5(jiti@2.6.1))
+        version: 0.21.1(@rainbowatcher/eslint-config-ignore@0.21.1(eslint@9.39.5(jiti@2.6.1)))(@rainbowatcher/eslint-config-js@0.21.1(@typescript-eslint/eslint-plugin@8.25.0(@typescript-eslint/parser@8.25.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/utils@8.25.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3)(vitest@4.1.11(@types/node@24.13.3)(happy-dom@20.14.0)(vite@7.1.11(@types/node@24.13.3)(jiti@2.6.1)(tsx@4.23.13)(yaml@2.9.0))))(@rainbowatcher/eslint-config-json@0.21.1(eslint@9.39.5(jiti@2.6.1)))(@rainbowatcher/eslint-config-md@0.21.1(eslint@9.39.5(jiti@2.6.1)))(@rainbowatcher/eslint-config-prettier@0.21.1(@types/eslint@9.6.0)(eslint@9.39.5(jiti@2.6.1)))(@rainbowatcher/eslint-config-ts@0.21.1(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.5(jiti@2.6.1))
       '@rainbowatcher/eslint-config-ignore':
         specifier: ^0.21.1
         version: 0.21.1(eslint@9.39.5(jiti@2.6.1))
       '@rainbowatcher/eslint-config-js':
         specifier: ^0.21.1
-        version: 0.21.1(@typescript-eslint/eslint-plugin@8.25.0(@typescript-eslint/parser@8.25.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/utils@8.25.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3)(vitest@4.1.11(@types/node@24.13.3)(happy-dom@20.12.0)(vite@7.1.11(@types/node@24.13.3)(jiti@2.6.1)(tsx@4.23.13)(yaml@2.9.0)))
+        version: 0.21.1(@typescript-eslint/eslint-plugin@8.25.0(@typescript-eslint/parser@8.25.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/utils@8.25.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3)(vitest@4.1.11(@types/node@24.13.3)(happy-dom@20.14.0)(vite@7.1.11(@types/node@24.13.3)(jiti@2.6.1)(tsx@4.23.13)(yaml@2.9.0)))
       '@rainbowatcher/eslint-config-json':
         specifier: ^0.21.1
         version: 0.21.1(eslint@9.39.5(jiti@2.6.1))
@@ -51,8 +51,8 @@ importers:
         specifier: ^9.39.5
         version: 9.39.5(jiti@2.6.1)
       happy-dom:
-        specifier: ^20.12.0
-        version: 20.12.0
+        specifier: ^20.14.0
+        version: 20.14.0
       lint-staged:
         specifier: ^16.4.0
         version: 16.4.0
@@ -82,15 +82,15 @@ importers:
         version: 5.9.3
       vitest:
         specifier: ^4.1.11
-        version: 4.1.11(@types/node@24.13.3)(happy-dom@20.12.0)(vite@7.1.11(@types/node@24.13.3)(jiti@2.6.1)(tsx@4.23.13)(yaml@2.9.0))
+        version: 4.1.11(@types/node@24.13.3)(happy-dom@20.14.0)(vite@7.1.11(@types/node@24.13.3)(jiti@2.6.1)(tsx@4.23.13)(yaml@2.9.0))
 
   packages/common: {}
 
   packages/fs-extra:
     devDependencies:
       memfs:
-        specifier: ^4.68.2
-        version: 4.68.2
+        specifier: ^4.71.0
+        version: 4.71.0
 
   packages/maybe: {}
 
@@ -831,50 +831,50 @@ packages:
     peerDependencies:
       tslib: '2'
 
-  '@jsonjoy.com/fs-core@4.68.2':
-    resolution: {integrity: sha512-PoBeUNEbjyLKKwCap2z8LkkqdhdfttS4rTHCALVuP65BdF+sAoyBqHo1m+uGTRBiQWv3H7MGfr8f7lY4pDwanw==}
+  '@jsonjoy.com/fs-core@4.71.0':
+    resolution: {integrity: sha512-9DFR/j+bm+tig1abs1CWS1/r0IVjNUdTp/+q6R/PXayXpO1rgbUh7tkanGYP40I0zdxbOreN3tmzBpVHgfMKzg==}
     engines: {node: '>=10.0'}
     peerDependencies:
       tslib: '2'
 
-  '@jsonjoy.com/fs-fsa@4.68.2':
-    resolution: {integrity: sha512-h6eGXlLGGMyPfNliDQrbuHKTB9Z29ksCLjreAmdBqrDOBdfrTrHssi+b9WLfrF+J2KzAbIt9OMjJu6AEpTnYkg==}
+  '@jsonjoy.com/fs-fsa@4.71.0':
+    resolution: {integrity: sha512-dRw5ojxzep3lntVGVBLzQUMYj1hXLH+DAz9sK0vKU+594x/zA2nYPOiitlyhYtOJ2nv1FXNq7c55rgwANknIWw==}
     engines: {node: '>=10.0'}
     peerDependencies:
       tslib: '2'
 
-  '@jsonjoy.com/fs-node-builtins@4.68.2':
-    resolution: {integrity: sha512-V8WzQsW2YIrH3RxBGY6HZisxn+dDUltHgksVRuCdPEOXEkAfXuhL/01eHFrabNu84Dn13XuLqvcQUKOYVKAUOA==}
+  '@jsonjoy.com/fs-node-builtins@4.71.0':
+    resolution: {integrity: sha512-BSzl+QFSxZF58BxGjV1wqCJ+qSn3b2IZnb+z3hDQq6goqOO5RuxF8gRihjsFx17AfpEpa7XjYcP8XpQtDU8RrQ==}
     engines: {node: '>=10.0'}
     peerDependencies:
       tslib: '2'
 
-  '@jsonjoy.com/fs-node-to-fsa@4.68.2':
-    resolution: {integrity: sha512-4O1K4w5G4oJIpKpoa3WSLG83AsQYVnGv+aUSBGOvIUph9Axm6bB1mPlvldkNg2tBx/4dkiTlZnqNrK5SQ21Wtg==}
+  '@jsonjoy.com/fs-node-to-fsa@4.71.0':
+    resolution: {integrity: sha512-OlXBZKIeDx5bIGcQmn0w+nVkLheCiuQSepKiBAiWSWimSdn8Q6Yc9ih2y8zStcJk31fieqnov9V+o8XTWn/5Rw==}
     engines: {node: '>=10.0'}
     peerDependencies:
       tslib: '2'
 
-  '@jsonjoy.com/fs-node-utils@4.68.2':
-    resolution: {integrity: sha512-CxFwyG9fJr7dAKAd1uanNRNrRMtDDqbYJA8do53+M4LY7SxcBEEmMjC1zi9MOsBlVLHTXvA7OP9+n639UqtIcw==}
+  '@jsonjoy.com/fs-node-utils@4.71.0':
+    resolution: {integrity: sha512-YtzCL3jbKYx6LHxqS9ymJ9Ob7SO9cucI+kpNO3LijGNFEjFbvNsTlHkvFgocAMAjUk96TpQTCsYkzFQi1CdlAA==}
     engines: {node: '>=10.0'}
     peerDependencies:
       tslib: '2'
 
-  '@jsonjoy.com/fs-node@4.68.2':
-    resolution: {integrity: sha512-Kpj519Qk4OXG4+mZ8vTf9BEflliJrPueIDEVcbx8tAOufMJJ8IxR0WwdbcEvJol2KQog3PJjtALXVclorE+xbQ==}
+  '@jsonjoy.com/fs-node@4.71.0':
+    resolution: {integrity: sha512-yt5Ak0otPdHPIlmMvF16aLG2qSZL52EYJ7HOkYpBcIPWw+kmT1FtTSj4oiV2OUkJbG8pLzA+RhMgrlRl85QuBw==}
     engines: {node: '>=10.0'}
     peerDependencies:
       tslib: '2'
 
-  '@jsonjoy.com/fs-print@4.68.2':
-    resolution: {integrity: sha512-cBABQmZJXig6bahwNka3+yPNGUF1GeMWbR76ZM1N2ajgCd+S+twZigCoe9+0ueZmkhM9xd2a7688Gy/ch7T+2w==}
+  '@jsonjoy.com/fs-print@4.71.0':
+    resolution: {integrity: sha512-OhfDSdvyO8uGV0U11OP+mOeVCPgjuP1HqCGR/TdBQLxHoDEWJAK3KOP5fPXo57H7i3G0x0Vmv8xPRHDle4XGzA==}
     engines: {node: '>=10.0'}
     peerDependencies:
       tslib: '2'
 
-  '@jsonjoy.com/fs-snapshot@4.68.2':
-    resolution: {integrity: sha512-Aix7+NM38LzvewM0T3PICSgFdF5BVCtVgsjNsrlDPGc9hiMgJzReTDDl2/elgl0A9USMl3QP27x5WwxZSOtrfw==}
+  '@jsonjoy.com/fs-snapshot@4.71.0':
+    resolution: {integrity: sha512-md+Wov365xa9A3nfW9YQTHLcweHHAee/e/0UoVRbldEHxboPJknuO3sEkNVVECO0dTqKra/ERaQylAMRrGWd0Q==}
     engines: {node: '>=10.0'}
     peerDependencies:
       tslib: '2'
@@ -2125,8 +2125,8 @@ packages:
     engines: {node: '>=0.4.7'}
     hasBin: true
 
-  happy-dom@20.12.0:
-    resolution: {integrity: sha512-7uMYJu2SEwwL8vVcKp0C0lnt6d2LSGGe+T+oY79PiCJNNSgFpbxW8n5KuzpDQvrU4mt+fYiK1+Jy7Z2v39YR6g==}
+  happy-dom@20.14.0:
+    resolution: {integrity: sha512-4bRh1KzRvKDnFNTlLhzT1RZTpkKhQbQDl9j+7GXszWsvuspYdo29k6OHRf4PwiM6oLb8r/pMWeYiJjkfod5AvQ==}
     engines: {node: '>=20.0.0'}
 
   hard-rejection@2.1.0:
@@ -2433,8 +2433,8 @@ packages:
   mdurl@2.0.0:
     resolution: {integrity: sha512-Lf+9+2r+Tdp5wXDXC4PcIBjTDtq4UKjCPMQhKIuzpJNW0b96kVqSwW0bT7FhRSfmAiFYgP+SCRvdrDozfh0U5w==}
 
-  memfs@4.68.2:
-    resolution: {integrity: sha512-Un1ElEBoIdPI9kg0sm3LebVEuEViodfIvlaG8Z1MFXa7ZnR9vWuPKUo3dt/vuWY2ivc05l76B5QOjdgCzAzmGw==}
+  memfs@4.71.0:
+    resolution: {integrity: sha512-Zwrk7TpTXBkic7taZL+2QeppbauG0QOufRsT1zuXDYLW8jCajH0W1VSZ17+I7ODqiNbH9J1Vf1QJCqFlCfurDg==}
 
   meow@13.2.0:
     resolution: {integrity: sha512-pxQJQzB6djGPXh08dacEloMFopsOqGVRKFPYvPOt9XDZ1HasbgDZA74CJGreSU4G3Ak7EFJGoiH2auq+yXISgA==}
@@ -3909,59 +3909,59 @@ snapshots:
     dependencies:
       tslib: 2.7.0
 
-  '@jsonjoy.com/fs-core@4.68.2(tslib@2.7.0)':
+  '@jsonjoy.com/fs-core@4.71.0(tslib@2.7.0)':
     dependencies:
-      '@jsonjoy.com/fs-node-builtins': 4.68.2(tslib@2.7.0)
-      '@jsonjoy.com/fs-node-utils': 4.68.2(tslib@2.7.0)
+      '@jsonjoy.com/fs-node-builtins': 4.71.0(tslib@2.7.0)
+      '@jsonjoy.com/fs-node-utils': 4.71.0(tslib@2.7.0)
       thingies: 2.5.0(tslib@2.7.0)
       tslib: 2.7.0
 
-  '@jsonjoy.com/fs-fsa@4.68.2(tslib@2.7.0)':
+  '@jsonjoy.com/fs-fsa@4.71.0(tslib@2.7.0)':
     dependencies:
-      '@jsonjoy.com/fs-core': 4.68.2(tslib@2.7.0)
-      '@jsonjoy.com/fs-node-builtins': 4.68.2(tslib@2.7.0)
-      '@jsonjoy.com/fs-node-utils': 4.68.2(tslib@2.7.0)
+      '@jsonjoy.com/fs-core': 4.71.0(tslib@2.7.0)
+      '@jsonjoy.com/fs-node-builtins': 4.71.0(tslib@2.7.0)
+      '@jsonjoy.com/fs-node-utils': 4.71.0(tslib@2.7.0)
       thingies: 2.5.0(tslib@2.7.0)
       tslib: 2.7.0
 
-  '@jsonjoy.com/fs-node-builtins@4.68.2(tslib@2.7.0)':
+  '@jsonjoy.com/fs-node-builtins@4.71.0(tslib@2.7.0)':
     dependencies:
       tslib: 2.7.0
 
-  '@jsonjoy.com/fs-node-to-fsa@4.68.2(tslib@2.7.0)':
+  '@jsonjoy.com/fs-node-to-fsa@4.71.0(tslib@2.7.0)':
     dependencies:
-      '@jsonjoy.com/fs-fsa': 4.68.2(tslib@2.7.0)
-      '@jsonjoy.com/fs-node-builtins': 4.68.2(tslib@2.7.0)
-      '@jsonjoy.com/fs-node-utils': 4.68.2(tslib@2.7.0)
+      '@jsonjoy.com/fs-fsa': 4.71.0(tslib@2.7.0)
+      '@jsonjoy.com/fs-node-builtins': 4.71.0(tslib@2.7.0)
+      '@jsonjoy.com/fs-node-utils': 4.71.0(tslib@2.7.0)
       tslib: 2.7.0
 
-  '@jsonjoy.com/fs-node-utils@4.68.2(tslib@2.7.0)':
+  '@jsonjoy.com/fs-node-utils@4.71.0(tslib@2.7.0)':
     dependencies:
-      '@jsonjoy.com/fs-node-builtins': 4.68.2(tslib@2.7.0)
+      '@jsonjoy.com/fs-node-builtins': 4.71.0(tslib@2.7.0)
       glob-to-regex.js: 1.0.1(tslib@2.7.0)
       tslib: 2.7.0
 
-  '@jsonjoy.com/fs-node@4.68.2(tslib@2.7.0)':
+  '@jsonjoy.com/fs-node@4.71.0(tslib@2.7.0)':
     dependencies:
-      '@jsonjoy.com/fs-core': 4.68.2(tslib@2.7.0)
-      '@jsonjoy.com/fs-node-builtins': 4.68.2(tslib@2.7.0)
-      '@jsonjoy.com/fs-node-utils': 4.68.2(tslib@2.7.0)
-      '@jsonjoy.com/fs-print': 4.68.2(tslib@2.7.0)
-      '@jsonjoy.com/fs-snapshot': 4.68.2(tslib@2.7.0)
+      '@jsonjoy.com/fs-core': 4.71.0(tslib@2.7.0)
+      '@jsonjoy.com/fs-node-builtins': 4.71.0(tslib@2.7.0)
+      '@jsonjoy.com/fs-node-utils': 4.71.0(tslib@2.7.0)
+      '@jsonjoy.com/fs-print': 4.71.0(tslib@2.7.0)
+      '@jsonjoy.com/fs-snapshot': 4.71.0(tslib@2.7.0)
       glob-to-regex.js: 1.0.1(tslib@2.7.0)
       thingies: 2.5.0(tslib@2.7.0)
       tslib: 2.7.0
 
-  '@jsonjoy.com/fs-print@4.68.2(tslib@2.7.0)':
+  '@jsonjoy.com/fs-print@4.71.0(tslib@2.7.0)':
     dependencies:
-      '@jsonjoy.com/fs-node-utils': 4.68.2(tslib@2.7.0)
+      '@jsonjoy.com/fs-node-utils': 4.71.0(tslib@2.7.0)
       tree-dump: 1.1.0(tslib@2.7.0)
       tslib: 2.7.0
 
-  '@jsonjoy.com/fs-snapshot@4.68.2(tslib@2.7.0)':
+  '@jsonjoy.com/fs-snapshot@4.71.0(tslib@2.7.0)':
     dependencies:
       '@jsonjoy.com/buffers': 17.65.0(tslib@2.7.0)
-      '@jsonjoy.com/fs-node-utils': 4.68.2(tslib@2.7.0)
+      '@jsonjoy.com/fs-node-utils': 4.71.0(tslib@2.7.0)
       '@jsonjoy.com/json-pack': 17.65.0(tslib@2.7.0)
       '@jsonjoy.com/util': 17.65.0(tslib@2.7.0)
       tslib: 2.7.0
@@ -4039,14 +4039,14 @@ snapshots:
     transitivePeerDependencies:
       - eslint
 
-  '@rainbowatcher/eslint-config-js@0.21.1(@typescript-eslint/eslint-plugin@8.25.0(@typescript-eslint/parser@8.25.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/utils@8.25.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3)(vitest@4.1.11(@types/node@24.13.3)(happy-dom@20.12.0)(vite@7.1.11(@types/node@24.13.3)(jiti@2.6.1)(tsx@4.23.13)(yaml@2.9.0)))':
+  '@rainbowatcher/eslint-config-js@0.21.1(@typescript-eslint/eslint-plugin@8.25.0(@typescript-eslint/parser@8.25.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/utils@8.25.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3)(vitest@4.1.11(@types/node@24.13.3)(happy-dom@20.14.0)(vite@7.1.11(@types/node@24.13.3)(jiti@2.6.1)(tsx@4.23.13)(yaml@2.9.0)))':
     dependencies:
       '@eslint/js': 9.21.0
       '@rainbowatcher/eslint-config-shared': 0.21.1
       '@stylistic/eslint-plugin-js': 4.1.0(eslint@9.39.5(jiti@2.6.1))
       '@stylistic/eslint-plugin-jsx': 4.1.0(eslint@9.39.5(jiti@2.6.1))
       '@stylistic/eslint-plugin-plus': 4.1.0(eslint@9.39.5(jiti@2.6.1))
-      '@vitest/eslint-plugin': 1.1.36(@typescript-eslint/utils@8.25.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3)(vitest@4.1.11(@types/node@24.13.3)(happy-dom@20.12.0)(vite@7.1.11(@types/node@24.13.3)(jiti@2.6.1)(tsx@4.23.13)(yaml@2.9.0)))
+      '@vitest/eslint-plugin': 1.1.36(@typescript-eslint/utils@8.25.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3)(vitest@4.1.11(@types/node@24.13.3)(happy-dom@20.14.0)(vite@7.1.11(@types/node@24.13.3)(jiti@2.6.1)(tsx@4.23.13)(yaml@2.9.0)))
       eslint: 9.39.5(jiti@2.6.1)
       eslint-plugin-antfu: 3.1.0(eslint@9.39.5(jiti@2.6.1))
       eslint-plugin-import-x: 4.6.1(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3)
@@ -4110,7 +4110,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@rainbowatcher/eslint-config@0.21.1(@rainbowatcher/eslint-config-ignore@0.21.1(eslint@9.39.5(jiti@2.6.1)))(@rainbowatcher/eslint-config-js@0.21.1(@typescript-eslint/eslint-plugin@8.25.0(@typescript-eslint/parser@8.25.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/utils@8.25.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3)(vitest@4.1.11(@types/node@24.13.3)(happy-dom@20.12.0)(vite@7.1.11(@types/node@24.13.3)(jiti@2.6.1)(tsx@4.23.13)(yaml@2.9.0))))(@rainbowatcher/eslint-config-json@0.21.1(eslint@9.39.5(jiti@2.6.1)))(@rainbowatcher/eslint-config-md@0.21.1(eslint@9.39.5(jiti@2.6.1)))(@rainbowatcher/eslint-config-prettier@0.21.1(@types/eslint@9.6.0)(eslint@9.39.5(jiti@2.6.1)))(@rainbowatcher/eslint-config-ts@0.21.1(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.5(jiti@2.6.1))':
+  '@rainbowatcher/eslint-config@0.21.1(@rainbowatcher/eslint-config-ignore@0.21.1(eslint@9.39.5(jiti@2.6.1)))(@rainbowatcher/eslint-config-js@0.21.1(@typescript-eslint/eslint-plugin@8.25.0(@typescript-eslint/parser@8.25.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/utils@8.25.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3)(vitest@4.1.11(@types/node@24.13.3)(happy-dom@20.14.0)(vite@7.1.11(@types/node@24.13.3)(jiti@2.6.1)(tsx@4.23.13)(yaml@2.9.0))))(@rainbowatcher/eslint-config-json@0.21.1(eslint@9.39.5(jiti@2.6.1)))(@rainbowatcher/eslint-config-md@0.21.1(eslint@9.39.5(jiti@2.6.1)))(@rainbowatcher/eslint-config-prettier@0.21.1(@types/eslint@9.6.0)(eslint@9.39.5(jiti@2.6.1)))(@rainbowatcher/eslint-config-ts@0.21.1(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.5(jiti@2.6.1))':
     dependencies:
       '@antfu/install-pkg': 1.0.0
       '@clack/prompts': 0.10.0
@@ -4123,7 +4123,7 @@ snapshots:
       picocolors: 1.1.1
     optionalDependencies:
       '@rainbowatcher/eslint-config-ignore': 0.21.1(eslint@9.39.5(jiti@2.6.1))
-      '@rainbowatcher/eslint-config-js': 0.21.1(@typescript-eslint/eslint-plugin@8.25.0(@typescript-eslint/parser@8.25.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/utils@8.25.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3)(vitest@4.1.11(@types/node@24.13.3)(happy-dom@20.12.0)(vite@7.1.11(@types/node@24.13.3)(jiti@2.6.1)(tsx@4.23.13)(yaml@2.9.0)))
+      '@rainbowatcher/eslint-config-js': 0.21.1(@typescript-eslint/eslint-plugin@8.25.0(@typescript-eslint/parser@8.25.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/utils@8.25.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3)(vitest@4.1.11(@types/node@24.13.3)(happy-dom@20.14.0)(vite@7.1.11(@types/node@24.13.3)(jiti@2.6.1)(tsx@4.23.13)(yaml@2.9.0)))
       '@rainbowatcher/eslint-config-json': 0.21.1(eslint@9.39.5(jiti@2.6.1))
       '@rainbowatcher/eslint-config-md': 0.21.1(eslint@9.39.5(jiti@2.6.1))
       '@rainbowatcher/eslint-config-prettier': 0.21.1(@types/eslint@9.6.0)(eslint@9.39.5(jiti@2.6.1))
@@ -4422,13 +4422,13 @@ snapshots:
       '@typescript-eslint/types': 8.25.0
       eslint-visitor-keys: 4.2.1
 
-  '@vitest/eslint-plugin@1.1.36(@typescript-eslint/utils@8.25.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3)(vitest@4.1.11(@types/node@24.13.3)(happy-dom@20.12.0)(vite@7.1.11(@types/node@24.13.3)(jiti@2.6.1)(tsx@4.23.13)(yaml@2.9.0)))':
+  '@vitest/eslint-plugin@1.1.36(@typescript-eslint/utils@8.25.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3)(vitest@4.1.11(@types/node@24.13.3)(happy-dom@20.14.0)(vite@7.1.11(@types/node@24.13.3)(jiti@2.6.1)(tsx@4.23.13)(yaml@2.9.0)))':
     dependencies:
       '@typescript-eslint/utils': 8.25.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3)
       eslint: 9.39.5(jiti@2.6.1)
     optionalDependencies:
       typescript: 5.9.3
-      vitest: 4.1.11(@types/node@24.13.3)(happy-dom@20.12.0)(vite@7.1.11(@types/node@24.13.3)(jiti@2.6.1)(tsx@4.23.13)(yaml@2.9.0))
+      vitest: 4.1.11(@types/node@24.13.3)(happy-dom@20.14.0)(vite@7.1.11(@types/node@24.13.3)(jiti@2.6.1)(tsx@4.23.13)(yaml@2.9.0))
 
   '@vitest/expect@4.1.11':
     dependencies:
@@ -5341,7 +5341,7 @@ snapshots:
     optionalDependencies:
       uglify-js: 3.19.2
 
-  happy-dom@20.12.0:
+  happy-dom@20.14.0:
     dependencies:
       '@types/node': 24.13.3
       '@types/whatwg-mimetype': 3.0.2
@@ -5689,16 +5689,16 @@ snapshots:
 
   mdurl@2.0.0: {}
 
-  memfs@4.68.2:
+  memfs@4.71.0:
     dependencies:
-      '@jsonjoy.com/fs-core': 4.68.2(tslib@2.7.0)
-      '@jsonjoy.com/fs-fsa': 4.68.2(tslib@2.7.0)
-      '@jsonjoy.com/fs-node': 4.68.2(tslib@2.7.0)
-      '@jsonjoy.com/fs-node-builtins': 4.68.2(tslib@2.7.0)
-      '@jsonjoy.com/fs-node-to-fsa': 4.68.2(tslib@2.7.0)
-      '@jsonjoy.com/fs-node-utils': 4.68.2(tslib@2.7.0)
-      '@jsonjoy.com/fs-print': 4.68.2(tslib@2.7.0)
-      '@jsonjoy.com/fs-snapshot': 4.68.2(tslib@2.7.0)
+      '@jsonjoy.com/fs-core': 4.71.0(tslib@2.7.0)
+      '@jsonjoy.com/fs-fsa': 4.71.0(tslib@2.7.0)
+      '@jsonjoy.com/fs-node': 4.71.0(tslib@2.7.0)
+      '@jsonjoy.com/fs-node-builtins': 4.71.0(tslib@2.7.0)
+      '@jsonjoy.com/fs-node-to-fsa': 4.71.0(tslib@2.7.0)
+      '@jsonjoy.com/fs-node-utils': 4.71.0(tslib@2.7.0)
+      '@jsonjoy.com/fs-print': 4.71.0(tslib@2.7.0)
+      '@jsonjoy.com/fs-snapshot': 4.71.0(tslib@2.7.0)
       '@jsonjoy.com/json-pack': 1.11.0(tslib@2.7.0)
       '@jsonjoy.com/util': 1.9.0(tslib@2.7.0)
       glob-to-regex.js: 1.0.1(tslib@2.7.0)
@@ -6574,7 +6574,7 @@ snapshots:
       tsx: 4.23.13
       yaml: 2.9.0
 
-  vitest@4.1.11(@types/node@24.13.3)(happy-dom@20.12.0)(vite@7.1.11(@types/node@24.13.3)(jiti@2.6.1)(tsx@4.23.13)(yaml@2.9.0)):
+  vitest@4.1.11(@types/node@24.13.3)(happy-dom@20.14.0)(vite@7.1.11(@types/node@24.13.3)(jiti@2.6.1)(tsx@4.23.13)(yaml@2.9.0)):
     dependencies:
       '@vitest/expect': 4.1.11
       '@vitest/mocker': 4.1.11(vite@7.1.11(@types/node@24.13.3)(jiti@2.6.1)(tsx@4.23.13)(yaml@2.9.0))
@@ -6598,7 +6598,7 @@ snapshots:
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 24.13.3
-      happy-dom: 20.12.0
+      happy-dom: 20.14.0
     transitivePeerDependencies:
       - msw
 
